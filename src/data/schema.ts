@@ -2,7 +2,7 @@ import { z } from 'zod';
 
 const isoDate = z.string().regex(/^\d{4}-\d{2}-\d{2}$/, 'expected YYYY-MM-DD');
 
-// Mirrors the structure of model-releases.json. Only the fields the UI reads are
+// Mirrors the structure of the files in data/. Only the fields the UI reads are
 // required; everything else is optional so other labs' files can be sparser.
 // Unknown keys are kept (loose) so new metadata never breaks loading.
 export const eventSchema = z.looseObject({
@@ -34,6 +34,7 @@ export const modelSchema = z.looseObject({
   documentation_url: z.string().nullish(),
   channels: z.array(z.string()).nullish(),
   notes: z.string().nullish(),
+  date_disputed: z.boolean().optional(),
   events: z.array(eventSchema).min(1),
 });
 

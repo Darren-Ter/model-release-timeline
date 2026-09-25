@@ -1,0 +1,550 @@
+{
+  "title": "Alibaba Qwen model releases",
+  "researched_on": "2026-09-25",
+  "timezone": "UTC+08:00",
+  "models": [
+    {
+      "id": "qwen2",
+      "company": "Alibaba Qwen",
+      "name": "Qwen2",
+      "description": "Open-weight language model family released in several sizes.",
+      "release_note_url": "https://qwenlm.github.io/blog/qwen2/",
+      "channels": [
+        "Open weights"
+      ],
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2024-06-07",
+          "source_url": "https://qwenlm.github.io/blog/qwen2/"
+        },
+        {
+          "type": "availability",
+          "source_date": "2024-06-07",
+          "source_url": "https://qwenlm.github.io/blog/qwen2/",
+          "channels": [
+            "Open weights"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "qwen2-5",
+      "company": "Alibaba Qwen",
+      "name": "Qwen2.5",
+      "description": "Open-weight general language model family from 0.5B to 72B parameters.",
+      "release_note_url": "https://qwenlm.github.io/blog/qwen2.5/",
+      "channels": [
+        "Open weights"
+      ],
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2024-09-19",
+          "source_url": "https://qwenlm.github.io/blog/qwen2.5/"
+        },
+        {
+          "type": "availability",
+          "source_date": "2024-09-19",
+          "source_url": "https://qwenlm.github.io/blog/qwen2.5/",
+          "channels": [
+            "Open weights"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "qwen2-5-coder-32b",
+      "company": "Alibaba Qwen",
+      "name": "Qwen2.5-Coder-32B",
+      "description": "Flagship 32B open coding model in the Qwen2.5-Coder family.",
+      "release_note_url": "https://qwenlm.github.io/blog/qwen2.5-coder-family/",
+      "channels": [
+        "Open weights"
+      ],
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2024-11-12",
+          "source_url": "https://qwenlm.github.io/blog/qwen2.5-coder-family/"
+        },
+        {
+          "type": "availability",
+          "source_date": "2024-11-12",
+          "source_url": "https://qwenlm.github.io/blog/qwen2.5-coder-family/",
+          "channels": [
+            "Open weights"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "qwen2-5-1m",
+      "company": "Alibaba Qwen",
+      "name": "Qwen2.5-1M",
+      "description": "Long-context Qwen2.5 models with up to 1M tokens.",
+      "release_note_url": "https://qwenlm.github.io/blog/qwen2.5-1m/",
+      "channels": [
+        "Open weights"
+      ],
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-01-27",
+          "source_url": "https://qwenlm.github.io/blog/qwen2.5-1m/"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-01-27",
+          "source_url": "https://qwenlm.github.io/blog/qwen2.5-1m/",
+          "channels": [
+            "Open weights"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "qwen2-5-max",
+      "company": "Alibaba Qwen",
+      "name": "Qwen2.5-Max",
+      "description": "Large hosted mixture-of-experts model.",
+      "release_note_url": "https://qwenlm.github.io/blog/qwen2.5-max/",
+      "channels": [
+        "Qwen Chat",
+        "Alibaba Cloud Model Studio"
+      ],
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-01-28",
+          "source_url": "https://qwenlm.github.io/blog/qwen2.5-max/"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-01-28",
+          "source_url": "https://qwenlm.github.io/blog/qwen2.5-max/",
+          "channels": [
+            "Qwen Chat",
+            "Alibaba Cloud Model Studio"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "qwq-32b",
+      "company": "Alibaba Qwen",
+      "name": "QwQ-32B",
+      "description": "Open-weight 32B reasoning model trained with reinforcement learning.",
+      "release_note_url": "https://qwenlm.github.io/blog/qwq-32b/",
+      "channels": [
+        "Open weights"
+      ],
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-03-06",
+          "source_url": "https://qwenlm.github.io/blog/qwq-32b/"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-03-06",
+          "source_url": "https://qwenlm.github.io/blog/qwq-32b/",
+          "channels": [
+            "Open weights"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "qwen3",
+      "company": "Alibaba Qwen",
+      "name": "Qwen3",
+      "description": "Open-weight language model family with thinking and non-thinking modes.",
+      "release_note_url": "https://qwenlm.github.io/blog/qwen3/",
+      "channels": [
+        "Open weights"
+      ],
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-04-29",
+          "source_url": "https://qwenlm.github.io/blog/qwen3/"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-04-29",
+          "source_url": "https://qwenlm.github.io/blog/qwen3/",
+          "channels": [
+            "Open weights"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "qwen3-coder",
+      "company": "Alibaba Qwen",
+      "name": "Qwen3-Coder",
+      "description": "Open coding model family for agentic programming.",
+      "release_note_url": "https://qwenlm.github.io/blog/qwen3-coder/",
+      "channels": [
+        "Open weights"
+      ],
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-07-22",
+          "source_url": "https://qwenlm.github.io/blog/qwen3-coder/"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-07-22",
+          "source_url": "https://qwenlm.github.io/blog/qwen3-coder/",
+          "channels": [
+            "Open weights"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "qwen3-next-80b-a3b",
+      "company": "Alibaba Qwen",
+      "name": "Qwen3-Next-80B-A3B",
+      "description": "Efficient hybrid-attention open language model.",
+      "release_note_url": "https://github.com/QwenLM/Qwen3.8/blob/main/README.md",
+      "channels": [
+        "Open weights"
+      ],
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-09-11",
+          "source_url": "https://github.com/QwenLM/Qwen3.8/blob/main/README.md"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-09-11",
+          "source_url": "https://github.com/QwenLM/Qwen3.8/blob/main/README.md",
+          "channels": [
+            "Open weights"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "qwen3-max",
+      "company": "Alibaba Qwen",
+      "name": "Qwen3-Max",
+      "description": "Largest Qwen3 hosted model for coding, reasoning, and agents.",
+      "release_note_url": "https://qwen.ai/blog?from=research.latest-advancements-list&id=241398b9cd6353de490b0f82806c7848c5d2777d",
+      "channels": [
+        "Qwen Chat",
+        "Alibaba Cloud Model Studio"
+      ],
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-09-24",
+          "source_url": "https://qwen.ai/blog?from=research.latest-advancements-list&id=241398b9cd6353de490b0f82806c7848c5d2777d"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-09-24",
+          "source_url": "https://qwen.ai/blog?from=research.latest-advancements-list&id=241398b9cd6353de490b0f82806c7848c5d2777d",
+          "channels": [
+            "Qwen Chat",
+            "Alibaba Cloud Model Studio"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "qwen3-max-thinking",
+      "company": "Alibaba Qwen",
+      "name": "Qwen3-Max-Thinking",
+      "description": "Flagship Qwen3 reasoning model with tool use.",
+      "release_note_url": "https://qwen.ai/blog?id=qwen3-max-thinking",
+      "channels": [
+        "Qwen Chat",
+        "Alibaba Cloud Model Studio"
+      ],
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-01-26",
+          "source_url": "https://qwen.ai/blog?id=qwen3-max-thinking"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-01-26",
+          "source_url": "https://qwen.ai/blog?id=qwen3-max-thinking",
+          "channels": [
+            "Qwen Chat",
+            "Alibaba Cloud Model Studio"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "qwen3-coder-next",
+      "company": "Alibaba Qwen",
+      "name": "Qwen3-Coder-Next",
+      "description": "Open-weight coding agent model based on Qwen3-Next.",
+      "release_note_url": "https://qwen.ai/blog?id=qwen3-coder-next",
+      "channels": [
+        "Open weights"
+      ],
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-02-03",
+          "source_url": "https://qwen.ai/blog?id=qwen3-coder-next"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-02-03",
+          "source_url": "https://qwen.ai/blog?id=qwen3-coder-next",
+          "channels": [
+            "Open weights"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "qwen3-5-397b-a17b",
+      "company": "Alibaba Qwen",
+      "name": "Qwen3.5-397B-A17B",
+      "description": "Open-weight multimodal reasoning and coding model.",
+      "release_note_url": "https://qwen.ai/blog?id=qwen3.5",
+      "channels": [
+        "Open weights"
+      ],
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-02-16",
+          "source_url": "https://qwen.ai/blog?id=qwen3.5"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-02-16",
+          "source_url": "https://github.com/QwenLM/Qwen3.8/blob/main/README.md",
+          "channels": [
+            "Open weights"
+          ],
+          "is_first_availability": true
+        }
+      ],
+      "notes": "The rendered launch article and official repository both date this release to February 16."
+    },
+    {
+      "id": "qwen3-5-plus",
+      "company": "Alibaba Qwen",
+      "name": "Qwen3.5-Plus",
+      "description": "Hosted Qwen3.5 model with a 1M-token context window.",
+      "release_note_url": "https://qwen.ai/blog?id=qwen3.5",
+      "channels": [
+        "Alibaba Cloud Model Studio"
+      ],
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-02-16",
+          "source_url": "https://qwen.ai/blog?id=qwen3.5"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-02-16",
+          "source_url": "https://qwen.ai/blog?id=qwen3.5",
+          "channels": [
+            "Alibaba Cloud Model Studio"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "qwen3-6-35b-a3b",
+      "company": "Alibaba Qwen",
+      "name": "Qwen3.6-35B-A3B",
+      "description": "Open multimodal model for agentic coding.",
+      "release_note_url": "https://qwen.ai/blog?id=qwen3.6-35b-a3b",
+      "channels": [
+        "Open weights"
+      ],
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-04-15",
+          "source_url": "https://qwen.ai/blog?id=qwen3.6-35b-a3b"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-04-16",
+          "source_url": "https://github.com/QwenLM/Qwen3.8/blob/main/README.md",
+          "channels": [
+            "Open weights"
+          ],
+          "is_first_availability": true
+        }
+      ],
+      "date_disputed": true,
+      "notes": "Source dates differ: the rendered launch article is dated April 15 and says access and weights are live, while the official repository dates the open-weight release to April 16. The article date is used for announcement and the repository date for documented weight availability; exact first access remains uncertain."
+    },
+    {
+      "id": "qwen3-6-max-preview",
+      "company": "Alibaba Qwen",
+      "name": "Qwen3.6-Max-Preview",
+      "release_kind": "Model preview",
+      "description": "Early preview of a stronger agentic coding model.",
+      "release_note_url": "https://qwen.ai/blog?id=qwen3.6-max-preview",
+      "notes": "The April 18 post gives conflicting statements about API readiness, so only the announcement date is recorded.",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-04-18",
+          "source_url": "https://qwen.ai/blog?id=qwen3.6-max-preview"
+        }
+      ]
+    },
+    {
+      "id": "qwen3-6-27b",
+      "company": "Alibaba Qwen",
+      "name": "Qwen3.6-27B",
+      "description": "Open-weight dense multimodal model with strong agentic coding.",
+      "release_note_url": "https://qwen.ai/blog?id=qwen3.6-27b",
+      "channels": [
+        "Qwen Studio",
+        "Open weights"
+      ],
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-04-22",
+          "source_url": "https://qwen.ai/blog?id=qwen3.6-27b"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-04-22",
+          "source_url": "https://qwen.ai/blog?id=qwen3.6-27b",
+          "channels": [
+            "Qwen Studio"
+          ],
+          "is_first_availability": true
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-04-22",
+          "source_url": "https://github.com/QwenLM/Qwen3.8/blob/main/README.md",
+          "channels": [
+            "Open weights"
+          ],
+          "is_first_availability": false
+        }
+      ],
+      "notes": "The rendered launch article and repository both use April 22 for this release."
+    },
+    {
+      "id": "qwen3-7-max",
+      "company": "Alibaba Qwen",
+      "name": "Qwen3.7-Max",
+      "description": "Hosted agent model for coding and long-horizon workflows.",
+      "release_note_url": "https://qwen.ai/blog?id=qwen3.7",
+      "channels": [
+        "Alibaba Cloud Model Studio"
+      ],
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-05-20",
+          "source_url": "https://qwen.ai/blog?id=qwen3.7"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-05-20",
+          "source_url": "https://qwen.ai/blog?id=qwen3.7",
+          "channels": [
+            "Alibaba Cloud Model Studio"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "qwen3-8-max",
+      "company": "Alibaba Qwen",
+      "name": "Qwen3.8-Max",
+      "description": "Flagship model for coding, work, research, and long-horizon agents.",
+      "release_note_url": "https://qwen.ai/blog?id=qwen3.8",
+      "channels": [
+        "Qwen Studio",
+        "Alibaba Cloud Model Studio",
+        "Open weights"
+      ],
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-08-03",
+          "source_url": "https://qwen.ai/blog?id=qwen3.8"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-08-03",
+          "source_url": "https://qwen.ai/blog?id=qwen3.8",
+          "channels": [
+            "Qwen Studio",
+            "Alibaba Cloud Model Studio"
+          ],
+          "is_first_availability": true
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-08-12",
+          "source_url": "https://github.com/QwenLM/Qwen3.8/blob/main/README.md",
+          "channels": [
+            "Open weights"
+          ],
+          "is_first_availability": false
+        }
+      ],
+      "notes": "Hosted access launched August 3. The launch article promised weights later; the official repository dates their release to August 12."
+    },
+    {
+      "id": "qwen3-8-27b",
+      "company": "Alibaba Qwen",
+      "name": "Qwen3.8-27B",
+      "description": "Open dense 27B Qwen3.8 model.",
+      "release_note_url": "https://github.com/QwenLM/Qwen3.8/blob/main/README.md",
+      "channels": [
+        "Open weights"
+      ],
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-08-14",
+          "source_url": "https://github.com/QwenLM/Qwen3.8/blob/main/README.md"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-08-14",
+          "source_url": "https://github.com/QwenLM/Qwen3.8/blob/main/README.md",
+          "channels": [
+            "Open weights"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    }
+  ]
+}

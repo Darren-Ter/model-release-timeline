@@ -22,6 +22,7 @@ export interface Release {
   kind: string;
   description: string;
   notes: string;
+  dateDisputed: boolean;
   channels: string[];
   snapshotIds: string[];
   releaseNoteUrl: string | null;
@@ -77,6 +78,7 @@ export function normalizeModel(raw: RawModel): Release {
     kind: raw.release_kind ?? 'Model release',
     description: raw.description ?? '',
     notes: raw.notes ?? '',
+    dateDisputed: raw.date_disputed === true,
     channels: raw.channels ?? [...new Set(events.flatMap((e) => e.channels))],
     snapshotIds,
     releaseNoteUrl: raw.release_note_url ?? null,
@@ -92,7 +94,7 @@ export function normalizeModel(raw: RawModel): Release {
 }
 
 /**
- * Parses any number of release files (same shape as model-releases.json) and
+ * Parses any number of release files (data/*.json) and
  * merges them. Later files win on duplicate ids. Invalid entries are skipped
  * and reported instead of failing the whole load.
  */
@@ -133,4 +135,15 @@ export function normalizeFiles(files: Record<string, unknown>): {
 
 export function releaseDate(r: Release, basis: DateBasis): string {
   return basis === 'announcement' ? r.announcementDate : r.availabilityDate;
+}
+
+/** The sourced event for this basis, without inventing a missing event. */
+export function releaseEvent(r: Release, basis: DateBasis): ReleaseEvent | null {
+  const events = r.events.filter((e) => e.type === basis);
+  return (basis === 'availability' ? events.find((e) => e.isFirstAvailability) ?? events[0] : events[0]) ?? null;
+}
+
+/** A fallback keeps sparse records on the timeline; callers must label it. */
+export function timelineEvent(r: Release, basis: DateBasis): ReleaseEvent {
+  return releaseEvent(r, basis) ?? releaseEvent(r, basis === 'announcement' ? 'availability' : 'announcement') ?? r.events[0];
 }

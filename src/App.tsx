@@ -5,8 +5,9 @@ import { applyFilters, facet, hasActiveFilters } from './lib/filter';
 import { gapStats } from './lib/gaps';
 import { onThisDay } from './lib/onThisDay';
 import { buildLabs } from './lib/labColors';
-import { formatDate, localToday } from './lib/dates';
+import { daysBetween, localToday } from './lib/dates';
 import { useFilters } from './state/useFilters';
+import { Hero } from './components/Hero';
 import { FilterBar } from './components/FilterBar';
 import { SummaryStats } from './components/SummaryStats';
 import { Swimlane } from './components/Swimlane';
@@ -38,70 +39,119 @@ export default function App() {
   const today = useToday();
   const { filters, update, reset } = useFilters();
   const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [statsOpen, setStatsOpen] = useState(false);
+  const { basis } = filters;
 
   const filtered = useMemo(() => applyFilters(releases, filters), [filters]);
-  const stats = useMemo(() => gapStats(filtered, filters.basis, today), [filtered, filters.basis, today]);
-  const otd = useMemo(() => onThisDay(releases, filters.basis, today), [filters.basis, today]);
-  const years = useMemo(
-    () => [...new Set(releases.map((r) => +releaseDate(r, filters.basis).slice(0, 4)))].sort((a, b) => b - a),
-    [filters.basis],
+  const stats = useMemo(() => gapStats(filtered, basis, today), [filtered, basis, today]);
+  const perLab = useMemo(
+    () =>
+      labs
+        .map((lab) => ({ lab, stats: gapStats(filtered.filter((r) => r.lab === lab.name), basis, today) }))
+        .filter((p) => p.stats.count > 0),
+    [filtered, basis, today],
   );
-  const active = hasActiveFilters(filters);
+  const otd = useMemo(() => onThisDay(releases, basis, today), [basis, today]);
+  const years = useMemo(
+    () => [...new Set(releases.map((r) => +releaseDate(r, basis).slice(0, 4)))].sort((a, b) => b - a),
+    [basis],
+  );
+
+  // Hero: most recent release date overall (not filtered), and everything on that day.
+  const hero = useMemo(() => {
+    const past = releases.filter((r) => releaseDate(r, basis) <= today);
+    const latestDate = past.reduce<string | null>((m, r) => (!m || releaseDate(r, basis) > m ? releaseDate(r, basis) : m), null);
+    const earliest = releases.reduce<string | null>((m, r) => (!m || releaseDate(r, basis) < m ? releaseDate(r, basis) : m), null);
+    return {
+      latestDate,
+      latest: latestDate ? past.filter((r) => releaseDate(r, basis) === latestDate) : [],
+      daysSince: latestDate ? daysBetween(latestDate, today) : null,
+      firstYear: earliest?.slice(0, 4) ?? null,
+    };
+  }, [basis, today]);
+
+  const activeCount =
+    (filters.query.trim() ? 1 : 0) +
+    (filters.from || filters.to ? 1 : 0) +
+    filters.labs.length +
+    filters.kinds.length +
+    filters.channels.length;
+  // "All time" leaves from/to empty, so it never counts as a filter.
+  const showGaps = hasActiveFilters(filters);
   const select = useCallback((id: string) => setSelectedId(id), []);
 
   return (
     <div className="page">
-      <header className="page-head">
-        <div>
-          <h1>Model release timeline</h1>
-          <p className="muted">
-            {releases.length} releases from {labs.length} {labs.length === 1 ? 'lab' : 'labs'}
-            {datasetMeta.researchedOn && <> · data checked {formatDate(datasetMeta.researchedOn)}</>}
-          </p>
-        </div>
-        <p className="muted today">Today · {formatDate(today)}</p>
-      </header>
-
-      <OnThisDay result={otd} today={today} labColor={labColor} onSelect={select} />
-
-      <FilterBar
-        filters={filters}
-        update={update}
-        reset={reset}
-        active={active}
+      <Hero
         labs={labs}
-        kinds={kinds}
-        channels={channels}
-        years={years}
-        today={today}
-      />
-
-      <p className="result-line muted" aria-live="polite">
-        {active
-          ? `${filtered.length} of ${releases.length} releases match. Gaps below are between matching releases.`
-          : `Showing all ${releases.length} releases. Gaps below are between consecutive releases.`}
-      </p>
-
-      <SummaryStats stats={stats} basis={filters.basis} onSelect={select} />
-
-      <Swimlane
-        releases={filtered}
-        labs={labs}
-        basis={filters.basis}
-        from={filters.from}
-        to={filters.to}
-        today={today}
+        total={releases.length}
+        firstYear={hero.firstYear}
+        researchedOn={datasetMeta.researchedOn}
+        latest={hero.latest}
+        latestDate={hero.latestDate}
+        daysSince={hero.daysSince}
         onSelect={select}
+        aside={<OnThisDay result={otd} today={today} labColor={labColor} onSelect={select} />}
       />
 
-      <TimelineList
-        releases={filtered}
-        basis={filters.basis}
-        sort={filters.sort}
-        daysSinceLatest={stats.daysSinceLatest}
-        labColor={labColor}
-        onSelect={select}
-      />
+      <main className="main">
+        <FilterBar
+          filters={filters}
+          update={update}
+          reset={reset}
+          activeCount={activeCount}
+          labs={labs}
+          kinds={kinds}
+          channels={channels}
+          years={years}
+          today={today}
+          statsOpen={statsOpen}
+          onToggleStats={() => setStatsOpen((o) => !o)}
+        />
+
+        <SummaryStats open={statsOpen} stats={stats} perLab={perLab} basis={basis} onSelect={select} />
+
+        <p className="result-line" aria-live="polite">
+          {showGaps ? (
+            <>
+              <strong>{filtered.length}</strong> of {releases.length} releases match · gaps shown between matches
+            </>
+          ) : (
+            <>
+              <strong>{releases.length}</strong> releases · filter to see the gaps between them
+            </>
+          )}
+        </p>
+
+        <details className="cadence-toggle">
+          <summary>Cadence by lab</summary>
+          <Swimlane
+            releases={filtered}
+            labs={labs}
+            basis={basis}
+            from={filters.from}
+            to={filters.to}
+            today={today}
+            onSelect={select}
+          />
+        </details>
+
+        <TimelineList
+          releases={filtered}
+          basis={basis}
+          sort={filters.sort}
+          showGaps={showGaps}
+          daysSinceLatest={stats.daysSinceLatest}
+          today={today}
+          labColor={labColor}
+          onSelect={select}
+        />
+      </main>
+
+      <footer className="foot muted">
+        Dates follow the dataset: timestamped announcements in {datasetMeta.timezone ?? 'the dataset timezone'}, otherwise the
+        official source date.
+      </footer>
 
       <ReleaseDrawer
         release={selectedId ? byId.get(selectedId) ?? null : null}

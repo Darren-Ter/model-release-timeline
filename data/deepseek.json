@@ -1,0 +1,513 @@
+{
+  "title": "DeepSeek model releases",
+  "researched_on": "2026-09-25",
+  "timezone": "UTC+08:00",
+  "models": [
+    {
+      "id": "deepseek-v2",
+      "company": "DeepSeek",
+      "name": "DeepSeek-V2",
+      "description": "Open-weight mixture-of-experts language model.",
+      "release_note_url": "https://github.com/deepseek-ai/DeepSeek-V2",
+      "channels": [
+        "Open weights",
+        "DeepSeek Web",
+        "DeepSeek API"
+      ],
+      "events": [
+        {
+          "type": "availability",
+          "source_date": "2024-05-06",
+          "source_url": "https://github.com/deepseek-ai/DeepSeek-V2",
+          "channels": [
+            "Open weights",
+            "DeepSeek Web",
+            "DeepSeek API"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "deepseek-v2-lite",
+      "company": "DeepSeek",
+      "name": "DeepSeek-V2-Lite",
+      "description": "Smaller open-weight DeepSeek-V2 variant.",
+      "release_note_url": "https://github.com/deepseek-ai/DeepSeek-V2",
+      "channels": [
+        "Open weights"
+      ],
+      "events": [
+        {
+          "type": "availability",
+          "source_date": "2024-05-16",
+          "source_url": "https://github.com/deepseek-ai/DeepSeek-V2",
+          "channels": [
+            "Open weights"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "deepseek-v2-0517",
+      "company": "DeepSeek",
+      "name": "DeepSeek-V2-0517",
+      "release_kind": "Dated update",
+      "description": "V2 chat model update for instruction following.",
+      "release_note_url": "https://api-docs.deepseek.com/updates/",
+      "channels": [
+        "DeepSeek API"
+      ],
+      "events": [
+        {
+          "type": "availability",
+          "source_date": "2024-05-17",
+          "source_url": "https://api-docs.deepseek.com/updates/",
+          "channels": [
+            "DeepSeek API"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "deepseek-coder-v2-0614",
+      "company": "DeepSeek",
+      "name": "DeepSeek-Coder-V2-0614",
+      "release_kind": "Dated update",
+      "description": "Coder V2 update for code generation and debugging.",
+      "release_note_url": "https://api-docs.deepseek.com/updates/",
+      "channels": [
+        "DeepSeek API"
+      ],
+      "events": [
+        {
+          "type": "availability",
+          "source_date": "2024-06-14",
+          "source_url": "https://api-docs.deepseek.com/updates/",
+          "channels": [
+            "DeepSeek API"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "deepseek-v2-0628",
+      "company": "DeepSeek",
+      "name": "DeepSeek-V2-0628",
+      "release_kind": "Dated update",
+      "description": "V2 update with stronger coding, mathematics, and reasoning.",
+      "release_note_url": "https://api-docs.deepseek.com/updates/",
+      "channels": [
+        "DeepSeek API"
+      ],
+      "events": [
+        {
+          "type": "availability",
+          "source_date": "2024-06-28",
+          "source_url": "https://api-docs.deepseek.com/updates/",
+          "channels": [
+            "DeepSeek API"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "deepseek-coder-v2-0724",
+      "company": "DeepSeek",
+      "name": "DeepSeek-Coder-V2-0724",
+      "release_kind": "Dated update",
+      "description": "July update to the Coder V2 API model.",
+      "release_note_url": "https://api-docs.deepseek.com/updates/",
+      "channels": [
+        "DeepSeek API"
+      ],
+      "events": [
+        {
+          "type": "availability",
+          "source_date": "2024-07-24",
+          "source_url": "https://api-docs.deepseek.com/updates/",
+          "channels": [
+            "DeepSeek API"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "deepseek-v2-5",
+      "company": "DeepSeek",
+      "name": "DeepSeek-V2.5",
+      "description": "Merged general and coding model with stronger instruction following.",
+      "release_note_url": "https://api-docs.deepseek.com/updates/",
+      "channels": [
+        "DeepSeek API"
+      ],
+      "events": [
+        {
+          "type": "availability",
+          "source_date": "2024-09-05",
+          "source_url": "https://api-docs.deepseek.com/updates/",
+          "channels": [
+            "DeepSeek API"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "deepseek-r1-lite-preview",
+      "company": "DeepSeek",
+      "name": "DeepSeek-R1-Lite-Preview",
+      "release_kind": "Model preview",
+      "description": "Early DeepSeek reasoning model preview.",
+      "release_note_url": "https://www.deepseek.com/en/news/r1-lite-preview/",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2024-11-20",
+          "source_url": "https://www.deepseek.com/en/news/r1-lite-preview/"
+        },
+        {
+          "type": "availability",
+          "source_date": "2024-11-20",
+          "source_url": "https://www.deepseek.com/en/news/r1-lite-preview/",
+          "channels": [
+            "DeepSeek Web"
+          ],
+          "is_first_availability": true
+        }
+      ],
+      "channels": [
+        "DeepSeek Web"
+      ]
+    },
+    {
+      "id": "deepseek-v2-5-1210",
+      "company": "DeepSeek",
+      "name": "DeepSeek-V2.5-1210",
+      "release_kind": "Dated update",
+      "description": "V2.5 update for mathematics, coding, and writing.",
+      "release_note_url": "https://api-docs.deepseek.com/updates/",
+      "channels": [
+        "DeepSeek API"
+      ],
+      "events": [
+        {
+          "type": "availability",
+          "source_date": "2024-12-10",
+          "source_url": "https://api-docs.deepseek.com/updates/",
+          "channels": [
+            "DeepSeek API"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "deepseek-v3",
+      "company": "DeepSeek",
+      "name": "DeepSeek-V3",
+      "description": "Large open-weight mixture-of-experts language model.",
+      "release_note_url": "https://api-docs.deepseek.com/updates/",
+      "channels": [
+        "DeepSeek API",
+        "Open weights"
+      ],
+      "events": [
+        {
+          "type": "availability",
+          "source_date": "2024-12-26",
+          "source_url": "https://api-docs.deepseek.com/updates/",
+          "channels": [
+            "DeepSeek API"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "deepseek-r1",
+      "company": "DeepSeek",
+      "name": "DeepSeek-R1",
+      "description": "Open-weight reasoning model.",
+      "release_note_url": "https://api-docs.deepseek.com/updates/",
+      "channels": [
+        "DeepSeek API",
+        "Open weights"
+      ],
+      "events": [
+        {
+          "type": "availability",
+          "source_date": "2025-01-20",
+          "source_url": "https://api-docs.deepseek.com/updates/",
+          "channels": [
+            "DeepSeek API"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "deepseek-v3-0324",
+      "company": "DeepSeek",
+      "name": "DeepSeek-V3-0324",
+      "release_kind": "Dated update",
+      "description": "V3 update for reasoning and front-end coding.",
+      "release_note_url": "https://api-docs.deepseek.com/updates/",
+      "channels": [
+        "DeepSeek API"
+      ],
+      "events": [
+        {
+          "type": "availability",
+          "source_date": "2025-03-24",
+          "source_url": "https://api-docs.deepseek.com/updates/",
+          "channels": [
+            "DeepSeek API"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "deepseek-r1-0528",
+      "company": "DeepSeek",
+      "name": "DeepSeek-R1-0528",
+      "release_kind": "Dated update",
+      "description": "R1 reasoning update with stronger mathematics and coding.",
+      "release_note_url": "https://api-docs.deepseek.com/updates/",
+      "channels": [
+        "DeepSeek API"
+      ],
+      "events": [
+        {
+          "type": "availability",
+          "source_date": "2025-05-28",
+          "source_url": "https://api-docs.deepseek.com/updates/",
+          "channels": [
+            "DeepSeek API"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "deepseek-v3-1",
+      "company": "DeepSeek",
+      "name": "DeepSeek-V3.1",
+      "description": "Hybrid model with thinking and non-thinking modes.",
+      "release_note_url": "https://api-docs.deepseek.com/updates/",
+      "channels": [
+        "DeepSeek API"
+      ],
+      "events": [
+        {
+          "type": "availability",
+          "source_date": "2025-08-21",
+          "source_url": "https://api-docs.deepseek.com/updates/",
+          "channels": [
+            "DeepSeek API"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "deepseek-v3-1-terminus",
+      "company": "DeepSeek",
+      "name": "DeepSeek-V3.1-Terminus",
+      "release_kind": "Dated update",
+      "description": "V3.1 update improving language consistency and code agents.",
+      "release_note_url": "https://api-docs.deepseek.com/updates/",
+      "channels": [
+        "DeepSeek API"
+      ],
+      "events": [
+        {
+          "type": "availability",
+          "source_date": "2025-09-22",
+          "source_url": "https://api-docs.deepseek.com/updates/",
+          "channels": [
+            "DeepSeek API"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "deepseek-v3-2-exp",
+      "company": "DeepSeek",
+      "name": "DeepSeek-V3.2-Exp",
+      "release_kind": "Model preview",
+      "description": "Experimental V3.2 with sparse attention.",
+      "release_note_url": "https://api-docs.deepseek.com/updates/",
+      "channels": [
+        "DeepSeek API"
+      ],
+      "events": [
+        {
+          "type": "availability",
+          "source_date": "2025-09-29",
+          "source_url": "https://api-docs.deepseek.com/updates/",
+          "channels": [
+            "DeepSeek API"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "deepseek-v3-2",
+      "company": "DeepSeek",
+      "name": "DeepSeek-V3.2",
+      "description": "General and reasoning model with thinking in tool use.",
+      "release_note_url": "https://api-docs.deepseek.com/updates/",
+      "channels": [
+        "DeepSeek API"
+      ],
+      "events": [
+        {
+          "type": "availability",
+          "source_date": "2025-12-01",
+          "source_url": "https://api-docs.deepseek.com/updates/",
+          "channels": [
+            "DeepSeek API"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "deepseek-v3-2-speciale",
+      "company": "DeepSeek",
+      "name": "DeepSeek-V3.2-Speciale",
+      "release_kind": "Limited-time release",
+      "description": "Higher-compute reasoning variant available through a temporary endpoint.",
+      "release_note_url": "https://api-docs.deepseek.com/updates/",
+      "channels": [
+        "DeepSeek API"
+      ],
+      "events": [
+        {
+          "type": "availability",
+          "source_date": "2025-12-01",
+          "source_url": "https://api-docs.deepseek.com/updates/",
+          "channels": [
+            "DeepSeek API"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "deepseek-v4-flash",
+      "company": "DeepSeek",
+      "name": "DeepSeek-V4-Flash",
+      "description": "Efficient V4 model, initially in preview.",
+      "release_note_url": "https://api-docs.deepseek.com/updates/",
+      "channels": [
+        "DeepSeek API"
+      ],
+      "events": [
+        {
+          "type": "availability",
+          "source_date": "2026-04-24",
+          "source_url": "https://api-docs.deepseek.com/updates/",
+          "channels": [
+            "DeepSeek API"
+          ],
+          "is_first_availability": true
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-07-31",
+          "source_url": "https://api-docs.deepseek.com/updates/",
+          "channels": [
+            "DeepSeek API"
+          ],
+          "is_first_availability": false
+        }
+      ]
+    },
+    {
+      "id": "deepseek-v4-pro",
+      "company": "DeepSeek",
+      "name": "DeepSeek-V4-Pro",
+      "description": "Million-token-context V4 flagship model, initially in preview.",
+      "release_note_url": "https://api-docs.deepseek.com/updates/",
+      "channels": [
+        "DeepSeek API",
+        "DeepSeek Web",
+        "DeepSeek App"
+      ],
+      "events": [
+        {
+          "type": "availability",
+          "source_date": "2026-04-24",
+          "source_url": "https://api-docs.deepseek.com/updates/",
+          "channels": [
+            "DeepSeek API"
+          ],
+          "is_first_availability": true
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-08-13",
+          "source_url": "https://api-docs.deepseek.com/updates/",
+          "channels": [
+            "DeepSeek API",
+            "DeepSeek Web",
+            "DeepSeek App"
+          ],
+          "is_first_availability": false
+        }
+      ]
+    },
+    {
+      "id": "deepseek-v4-flash-vision-exp",
+      "company": "DeepSeek",
+      "name": "DeepSeek-V4-Flash-Vision-Exp",
+      "description": "Experimental multimodal V4 model for visual and text agents.",
+      "release_note_url": "https://api-docs.deepseek.com/updates/",
+      "channels": [
+        "DeepSeek API"
+      ],
+      "events": [
+        {
+          "type": "availability",
+          "source_date": "2026-08-21",
+          "source_url": "https://api-docs.deepseek.com/updates/",
+          "channels": [
+            "DeepSeek API"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "deepseek-v4-1-flash",
+      "company": "DeepSeek",
+      "name": "DeepSeek-V4.1-Flash",
+      "description": "Efficient multimodal model for coding, reasoning, and agents.",
+      "release_note_url": "https://api-docs.deepseek.com/updates/",
+      "channels": [
+        "DeepSeek API"
+      ],
+      "events": [
+        {
+          "type": "availability",
+          "source_date": "2026-09-10",
+          "source_url": "https://api-docs.deepseek.com/updates/",
+          "channels": [
+            "DeepSeek API"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    }
+  ]
+}

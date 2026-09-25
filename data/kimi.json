@@ -1,0 +1,255 @@
+{
+  "title": "Moonshot AI Kimi model releases",
+  "researched_on": "2026-09-25",
+  "timezone": "UTC+08:00",
+  "models": [
+    {
+      "id": "kimi-k1-5",
+      "company": "Moonshot AI",
+      "name": "Kimi K1.5",
+      "description": "Reasoning model trained with reinforcement learning.",
+      "release_note_url": "https://www.kimi.com/en/blog/",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-01-20",
+          "source_url": "https://www.kimi.com/en/blog/"
+        }
+      ]
+    },
+    {
+      "id": "kimi-dev",
+      "company": "Moonshot AI",
+      "name": "Kimi-Dev",
+      "description": "Open coding model for software engineering tasks.",
+      "release_note_url": "https://www.kimi.com/en/blog/",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-06-17",
+          "source_url": "https://www.kimi.com/en/blog/"
+        }
+      ]
+    },
+    {
+      "id": "kimi-k2",
+      "company": "Moonshot AI",
+      "name": "Kimi K2",
+      "description": "Open-weight model for coding and agentic tasks.",
+      "release_note_url": "https://www.kimi.com/en/blog/kimi-k2",
+      "channels": [
+        "Kimi",
+        "Kimi API",
+        "Open weights"
+      ],
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-07-11",
+          "source_url": "https://www.kimi.com/en/blog/kimi-k2"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-07-11",
+          "source_url": "https://www.kimi.com/en/blog/kimi-k2",
+          "channels": [
+            "Kimi",
+            "Kimi API",
+            "Open weights"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "kimi-k2-instruct-0905",
+      "company": "Moonshot AI",
+      "name": "Kimi-K2-Instruct-0905",
+      "release_kind": "Dated update",
+      "description": "K2 update with stronger agentic coding and 256K context.",
+      "release_note_url": "https://www.kimi.com/en/blog/",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-09-05",
+          "source_url": "https://www.kimi.com/en/blog/"
+        }
+      ]
+    },
+    {
+      "id": "kimi-k2-thinking",
+      "company": "Moonshot AI",
+      "name": "Kimi K2 Thinking",
+      "description": "Reasoning-focused K2 model for multi-step agent work.",
+      "release_note_url": "https://www.kimi.com/en/blog/kimi-k2-thinking",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-11-06",
+          "source_url": "https://www.kimi.com/en/blog/kimi-k2-thinking"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-11-06",
+          "source_url": "https://www.kimi.com/en/blog/kimi-k2-thinking",
+          "channels": [
+            "Kimi",
+            "Kimi API"
+          ],
+          "is_first_availability": true
+        }
+      ],
+      "channels": [
+        "Kimi",
+        "Kimi API"
+      ]
+    },
+    {
+      "id": "kimi-k2-5",
+      "company": "Moonshot AI",
+      "name": "Kimi K2.5",
+      "description": "General-purpose multimodal model for reasoning, coding, and agents.",
+      "release_note_url": "https://www.kimi.com/en/blog/kimi-k2-5",
+      "channels": [
+        "Kimi",
+        "Kimi API",
+        "Kimi Code"
+      ],
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-01-27",
+          "source_url": "https://www.kimi.com/en/blog/kimi-k2-5"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-01-27",
+          "source_url": "https://www.kimi.com/en/blog/kimi-k2-5",
+          "channels": [
+            "Kimi",
+            "Kimi API",
+            "Kimi Code"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "kimi-k2-6",
+      "company": "Moonshot AI",
+      "name": "Kimi K2.6",
+      "description": "K2 series update for reasoning and agentic work.",
+      "release_note_url": "https://www.kimi.com/en/blog/kimi-k2-6",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-04-20",
+          "source_url": "https://www.kimi.com/en/blog/kimi-k2-6"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-04-20",
+          "source_url": "https://www.kimi.com/en/blog/kimi-k2-6",
+          "channels": [
+            "Kimi",
+            "Kimi API",
+            "Kimi Code",
+            "Open weights"
+          ],
+          "is_first_availability": true
+        }
+      ],
+      "channels": [
+        "Kimi",
+        "Kimi API",
+        "Kimi Code",
+        "Open weights"
+      ]
+    },
+    {
+      "id": "kimi-k2-7-code",
+      "company": "Moonshot AI",
+      "name": "Kimi K2.7 Code",
+      "description": "Open coding model for Kimi Code with thinking enabled.",
+      "release_note_url": "https://www.kimi.com/code/docs/en/kimi-code/whats-new.html",
+      "channels": [
+        "Kimi Code",
+        "Open weights"
+      ],
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-06-12",
+          "source_url": "https://www.kimi.com/code/docs/en/kimi-code/whats-new.html"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-06-12",
+          "source_url": "https://www.kimi.com/code/docs/en/kimi-code/whats-new.html",
+          "channels": [
+            "Kimi Code",
+            "Open weights"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "kimi-k3",
+      "company": "Moonshot AI",
+      "name": "Kimi K3",
+      "description": "Flagship reasoning and coding model with a 1M-token context window.",
+      "release_note_url": "https://www.kimi.com/en/blog/kimi-k3",
+      "channels": [
+        "Kimi",
+        "Kimi Code",
+        "Kimi API"
+      ],
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-07-16",
+          "source_url": "https://www.kimi.com/en/blog/kimi-k3"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-07-16",
+          "source_url": "https://www.kimi.com/en/blog/kimi-k3",
+          "channels": [
+            "Kimi",
+            "Kimi Code",
+            "Kimi API"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "kimi-k2-8-preview",
+      "company": "Moonshot AI",
+      "name": "Kimi K2.8 Preview",
+      "release_kind": "Model preview",
+      "description": "Coding model preview with adjustable thinking and up to 1M context.",
+      "release_note_url": "https://www.kimi.com/code/docs/en/kimi-code/whats-new.html",
+      "channels": [
+        "Kimi Code"
+      ],
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-09-11",
+          "source_url": "https://www.kimi.com/code/docs/en/kimi-code/whats-new.html"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-09-11",
+          "source_url": "https://www.kimi.com/code/docs/en/kimi-code/whats-new.html",
+          "channels": [
+            "Kimi Code"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    }
+  ]
+}

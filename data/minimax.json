@@ -1,0 +1,215 @@
+{
+  "title": "MiniMax language model releases",
+  "researched_on": "2026-09-25",
+  "timezone": "UTC+08:00",
+  "models": [
+    {
+      "id": "minimax-text-01",
+      "company": "MiniMax",
+      "name": "MiniMax-Text-01",
+      "description": "Long-context language model in the MiniMax-01 series.",
+      "release_note_url": "https://www.minimax.io/news/minimax-01-series-2",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-01-15",
+          "source_url": "https://www.minimax.io/news/minimax-01-series-2"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-01-15",
+          "source_url": "https://www.minimax.io/news/minimax-01-series-2",
+          "channels": [
+            "Open weights"
+          ],
+          "is_first_availability": true
+        }
+      ],
+      "channels": [
+        "Open weights"
+      ]
+    },
+    {
+      "id": "minimax-m1",
+      "company": "MiniMax",
+      "name": "MiniMax-M1",
+      "description": "Open-weight reasoning model with a 1M-token context window.",
+      "release_note_url": "https://www.minimax.io/news/minimaxm1",
+      "channels": [
+        "MiniMax",
+        "MiniMax API",
+        "Open weights"
+      ],
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-06-16",
+          "source_url": "https://www.minimax.io/news/minimaxm1"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-06-16",
+          "source_url": "https://www.minimax.io/news/minimaxm1",
+          "channels": [
+            "MiniMax",
+            "MiniMax API",
+            "Open weights"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "minimax-m2",
+      "company": "MiniMax",
+      "name": "MiniMax M2",
+      "description": "Agent-first model for coding, tool use, and search.",
+      "release_note_url": "https://www.minimax.io/blog/minimax-m2-en-1748600000",
+      "channels": [
+        "MiniMax API",
+        "MiniMax Agent",
+        "Open weights"
+      ],
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-10-27",
+          "source_url": "https://www.minimax.io/blog/minimax-m2-en-1748600000"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-10-27",
+          "source_url": "https://www.minimax.io/blog/minimax-m2-en-1748600000",
+          "channels": [
+            "MiniMax API",
+            "MiniMax Agent",
+            "Open weights"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "minimax-m2-1",
+      "company": "MiniMax",
+      "name": "MiniMax M2.1",
+      "description": "Open-weight coding and workplace task model.",
+      "release_note_url": "https://www.minimax.io/blog/minimax-m21",
+      "channels": [
+        "Open weights"
+      ],
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-12-23",
+          "source_url": "https://www.minimax.io/blog/minimax-m21"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-12-23",
+          "source_url": "https://www.minimax.io/blog/minimax-m21",
+          "channels": [
+            "Open weights"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "minimax-m2-5",
+      "company": "MiniMax",
+      "name": "MiniMax M2.5",
+      "description": "Productivity model for coding, search, and tool use.",
+      "release_note_url": "https://www.minimax.io/news/minimax-m25",
+      "channels": [
+        "MiniMax API",
+        "MiniMax Agent"
+      ],
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-02-12",
+          "source_url": "https://www.minimax.io/news/minimax-m25"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-02-12",
+          "source_url": "https://www.minimax.io/news/minimax-m25",
+          "channels": [
+            "MiniMax API",
+            "MiniMax Agent"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "minimax-m2-7",
+      "company": "MiniMax",
+      "name": "MiniMax M2.7",
+      "description": "Agent model for software engineering and professional work.",
+      "release_note_url": "https://www.minimax.io/news/minimax-m27-en",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-03-18",
+          "source_url": "https://www.minimax.io/news/minimax-m27-en"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-03-18",
+          "source_url": "https://www.minimax.io/news/minimax-m27-en",
+          "channels": [
+            "MiniMax Agent",
+            "MiniMax API"
+          ],
+          "is_first_availability": true
+        }
+      ],
+      "channels": [
+        "MiniMax Agent",
+        "MiniMax API"
+      ]
+    },
+    {
+      "id": "minimax-m3",
+      "company": "MiniMax",
+      "name": "MiniMax M3",
+      "description": "Open-weight multimodal model for coding and agents with 1M context.",
+      "release_note_url": "https://www.minimax.io/blog/minimax-m3",
+      "channels": [
+        "MiniMax Code",
+        "MiniMax API",
+        "Open weights"
+      ],
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-06-01",
+          "source_url": "https://www.minimax.io/blog/minimax-m3"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-06-01",
+          "source_url": "https://www.minimax.io/blog/minimax-m3",
+          "channels": [
+            "MiniMax Code",
+            "MiniMax API"
+          ],
+          "is_first_availability": true
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-06-12",
+          "source_url": "https://huggingface.co/MiniMaxAI/MiniMax-M3/commit/3a41b311ffa5719cef48fed3974ccf2cc03733ea",
+          "channels": [
+            "Open weights"
+          ],
+          "is_first_availability": false
+        }
+      ],
+      "documentation_url": "https://huggingface.co/MiniMaxAI/MiniMax-M3",
+      "notes": "The June 1 launch offered hosted access and promised weights later. June 12 is the dated Hugging Face commit containing the weights; a repository upload establishes a recorded artifact date, not necessarily the exact moment the repository became public."
+    }
+  ]
+}

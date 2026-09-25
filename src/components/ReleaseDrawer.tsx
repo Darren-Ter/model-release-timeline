@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import type { Release } from '../data/normalize';
+import { releaseEvent, type Release } from '../data/normalize';
 import { formatDate, formatWeekday } from '../lib/dates';
 
 interface Props {
@@ -23,6 +23,8 @@ const host = (url: string) => {
 
 export function ReleaseDrawer({ release, labColor, onClose }: Props) {
   const ref = useRef<HTMLDialogElement>(null);
+  const announcement = release ? releaseEvent(release, 'announcement') : null;
+  const availability = release ? releaseEvent(release, 'availability') : null;
 
   useEffect(() => {
     const d = ref.current;
@@ -57,15 +59,16 @@ export function ReleaseDrawer({ release, labColor, onClose }: Props) {
           </header>
 
           {release.description && <p className="drawer-desc">{release.description}</p>}
+          {release.dateDisputed && <p className="date-caveat">Date uncertain — official sources differ. See notes below.</p>}
 
           <dl className="facts">
             <dt>Announced</dt>
-            <dd>{formatDate(release.announcementDate)}</dd>
-            <dt>First available</dt>
-            <dd>{formatDate(release.availabilityDate)}</dd>
+            <dd>{announcement ? formatDate(announcement.date) : 'Not documented'}</dd>
+            <dt>{availability?.isFirstAvailability ? 'First documented access' : 'Recorded access'}</dt>
+            <dd>{availability ? formatDate(availability.date) : 'Not documented'}</dd>
             {release.channels.length > 0 && (
               <>
-                <dt>Channels</dt>
+                <dt>Recorded channels</dt>
                 <dd>{release.channels.join(', ')}</dd>
               </>
             )}

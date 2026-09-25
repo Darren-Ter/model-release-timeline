@@ -1,0 +1,1489 @@
+{
+  "title": "Anthropic Claude model releases",
+  "coverage_start": "2024-01-01",
+  "coverage_end": "2026-09-25",
+  "researched_on": "2026-09-25",
+  "timezone": "UTC+08:00",
+  "methodology": [
+    "Covers named text, reasoning and coding releases, publicly announced external previews, and explicitly dated model updates. Standalone media, embedding and moderation models are excluded.",
+    "Announcement and availability are distinct events. Additional API access milestones are included when later than initial product access.",
+    "Precise announcement times identify a verified official post, not necessarily the earliest livestream mention. Availability times are unknown unless separately evidenced.",
+    "A date-only source is not converted to UTC+8. Its weekday_utc8 and datetime_utc8 remain null. Plot positions use the source calendar date and are explicitly marked approximate.",
+    "Snapshot suffixes are identifiers, not release dates. Rolling aliases and product-only updates are labelled; aliases are not counted as additional foundational models.",
+    "Raw RSS publication values are retained where found but not promoted to verified timestamps. Some values disagree with contemporaneous official posts.",
+    "Retirements, rollbacks, pricing changes, prompt-only changes and reasoning-budget adjustments are not new model releases. Relevant rollback notes are retained.",
+    "A release entry may represent a distinct model, a named variant, a rolling alias launch, or a documented update. Entry count is not a count of unique trained models."
+  ],
+  "coverage_sources": [
+    "https://platform.claude.com/docs/en/release-notes/overview",
+    "https://platform.claude.com/docs/en/models/overview",
+    "https://platform.claude.com/docs/en/about-claude/model-deprecations"
+  ],
+  "models": [
+    {
+      "id": "claude-opus-5-5",
+      "company": "Anthropic",
+      "name": "Claude Opus 5.5",
+      "slug": "claude-opus-5-5",
+      "snapshot_ids": [],
+      "description": "Opus update bringing frontier-level coding and knowledge work at lower cost.",
+      "release_kind": "Model release",
+      "release_note_url": "https://www.anthropic.com/claude-opus-5-5",
+      "documentation_url": "https://platform.claude.com/docs/en/models/overview",
+      "channels": [
+        "Claude API",
+        "Claude",
+        "Claude Code"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-09-22",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://www.anthropic.com/claude-opus-5-5",
+          "channels": [
+            "Claude API",
+            "Claude",
+            "Claude Code"
+          ],
+          "is_first_availability": null,
+          "id": "claude-opus-5-5-announcement-1",
+          "display_date": "2026-09-22",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-09-22",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://www.anthropic.com/claude-opus-5-5",
+          "channels": [
+            "Claude API",
+            "Claude",
+            "Claude Code"
+          ],
+          "is_first_availability": true,
+          "id": "claude-opus-5-5-availability-2",
+          "display_date": "2026-09-22",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "claude-fable-5-1",
+      "company": "Anthropic",
+      "name": "Claude Fable 5.1",
+      "slug": "claude-fable-5-1",
+      "snapshot_ids": [],
+      "description": "Updated frontier model for coding, research, and knowledge work.",
+      "release_kind": "Model release",
+      "release_note_url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "documentation_url": "https://platform.claude.com/docs/en/models/overview",
+      "channels": [
+        "Claude API",
+        "Claude",
+        "Claude Code"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-09-01",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+          "channels": [
+            "Claude API",
+            "Claude",
+            "Claude Code"
+          ],
+          "is_first_availability": null,
+          "id": "claude-fable-5-1-announcement-1",
+          "display_date": "2026-09-01",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-09-01",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+          "channels": [
+            "Claude API",
+            "Claude",
+            "Claude Code"
+          ],
+          "is_first_availability": true,
+          "id": "claude-fable-5-1-availability-2",
+          "display_date": "2026-09-01",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "claude-mythos-5-1",
+      "company": "Anthropic",
+      "name": "Claude Mythos 5.1",
+      "slug": "claude-mythos-5-1",
+      "snapshot_ids": [],
+      "description": "Restricted counterpart to Fable 5.1.",
+      "release_kind": "Model release",
+      "release_note_url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "documentation_url": "https://platform.claude.com/docs/en/models/overview",
+      "channels": [
+        "Trusted-access API"
+      ],
+      "notes": "Available through trusted-access programs for cybersecurity and life sciences. Access is broader than the Project Glasswing program alone; the API release notes supply the September 1 date.",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-09-01",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://platform.claude.com/docs/en/release-notes/overview",
+          "channels": [
+            "Trusted-access API"
+          ],
+          "is_first_availability": null,
+          "id": "claude-mythos-5-1-announcement-1",
+          "display_date": "2026-09-01",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-09-01",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://platform.claude.com/docs/en/release-notes/overview",
+          "channels": [
+            "Trusted-access API"
+          ],
+          "is_first_availability": true,
+          "id": "claude-mythos-5-1-availability-2",
+          "display_date": "2026-09-01",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "claude-opus-5",
+      "company": "Anthropic",
+      "name": "Claude Opus 5",
+      "slug": "claude-opus-5",
+      "snapshot_ids": [],
+      "description": "Next-generation Opus for long-running reasoning and agent work.",
+      "release_kind": "Model release",
+      "release_note_url": "https://www.anthropic.com/news/claude-opus-5",
+      "documentation_url": "https://platform.claude.com/docs/en/models/overview",
+      "channels": [
+        "Claude API",
+        "Claude",
+        "Claude Code"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-07-24",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://www.anthropic.com/news/claude-opus-5",
+          "channels": [
+            "Claude API",
+            "Claude",
+            "Claude Code"
+          ],
+          "is_first_availability": null,
+          "id": "claude-opus-5-announcement-1",
+          "display_date": "2026-07-24",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-07-24",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://www.anthropic.com/news/claude-opus-5",
+          "channels": [
+            "Claude API",
+            "Claude",
+            "Claude Code"
+          ],
+          "is_first_availability": true,
+          "id": "claude-opus-5-availability-2",
+          "display_date": "2026-07-24",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "claude-sonnet-5",
+      "company": "Anthropic",
+      "name": "Claude Sonnet 5",
+      "slug": "claude-sonnet-5",
+      "snapshot_ids": [],
+      "description": "Next-generation Sonnet with adaptive thinking on by default.",
+      "release_kind": "Model release",
+      "release_note_url": "https://www.anthropic.com/news/claude-sonnet-5",
+      "documentation_url": "https://platform.claude.com/docs/en/models/overview",
+      "channels": [
+        "Claude API",
+        "Claude",
+        "Claude Code"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-06-30",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://www.anthropic.com/news/claude-sonnet-5",
+          "channels": [
+            "Claude API",
+            "Claude",
+            "Claude Code"
+          ],
+          "is_first_availability": null,
+          "id": "claude-sonnet-5-announcement-1",
+          "display_date": "2026-06-30",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-06-30",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://www.anthropic.com/news/claude-sonnet-5",
+          "channels": [
+            "Claude API",
+            "Claude",
+            "Claude Code"
+          ],
+          "is_first_availability": true,
+          "id": "claude-sonnet-5-availability-2",
+          "display_date": "2026-06-30",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "claude-fable-5",
+      "company": "Anthropic",
+      "name": "Claude Fable 5",
+      "slug": "claude-fable-5",
+      "snapshot_ids": [],
+      "description": "Frontier model for long-running coding, research, and knowledge work.",
+      "release_kind": "Model release",
+      "release_note_url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+      "documentation_url": "https://platform.claude.com/docs/en/models/overview",
+      "channels": [
+        "Claude API",
+        "Claude",
+        "Claude Code"
+      ],
+      "notes": "Fable and Mythos share underlying model lineage but have distinct published identifiers and access policies.",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-06-09",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+          "channels": [
+            "Claude API",
+            "Claude",
+            "Claude Code"
+          ],
+          "is_first_availability": null,
+          "id": "claude-fable-5-announcement-1",
+          "display_date": "2026-06-09",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-06-09",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+          "channels": [
+            "Claude API",
+            "Claude",
+            "Claude Code"
+          ],
+          "is_first_availability": true,
+          "id": "claude-fable-5-availability-2",
+          "display_date": "2026-06-09",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "claude-mythos-5",
+      "company": "Anthropic",
+      "name": "Claude Mythos 5",
+      "slug": "claude-mythos-5",
+      "snapshot_ids": [],
+      "description": "Restricted counterpart to Fable 5 with different safeguards.",
+      "release_kind": "Model release",
+      "release_note_url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+      "documentation_url": "https://platform.claude.com/docs/en/models/overview",
+      "channels": [
+        "Project Glasswing invitation-only API"
+      ],
+      "notes": "Fable and Mythos share underlying model lineage but have distinct published identifiers and access policies.",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-06-09",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+          "channels": [
+            "Project Glasswing invitation-only API"
+          ],
+          "is_first_availability": null,
+          "id": "claude-mythos-5-announcement-1",
+          "display_date": "2026-06-09",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-06-09",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+          "channels": [
+            "Project Glasswing invitation-only API"
+          ],
+          "is_first_availability": true,
+          "id": "claude-mythos-5-availability-2",
+          "display_date": "2026-06-09",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "claude-opus-4-8",
+      "company": "Anthropic",
+      "name": "Claude Opus 4.8",
+      "slug": "claude-opus-4-8",
+      "snapshot_ids": [],
+      "description": "Opus update improving long work and reasoning efficiency.",
+      "release_kind": "Model release",
+      "release_note_url": "https://www.anthropic.com/news/claude-opus-4-8",
+      "documentation_url": "https://platform.claude.com/docs/en/models/overview",
+      "channels": [
+        "Claude API",
+        "Claude",
+        "Claude Code"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-05-28",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://www.anthropic.com/news/claude-opus-4-8",
+          "channels": [
+            "Claude API",
+            "Claude",
+            "Claude Code"
+          ],
+          "is_first_availability": null,
+          "id": "claude-opus-4-8-announcement-1",
+          "display_date": "2026-05-28",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-05-28",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://www.anthropic.com/news/claude-opus-4-8",
+          "channels": [
+            "Claude API",
+            "Claude",
+            "Claude Code"
+          ],
+          "is_first_availability": true,
+          "id": "claude-opus-4-8-availability-2",
+          "display_date": "2026-05-28",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "claude-opus-4-7",
+      "company": "Anthropic",
+      "name": "Claude Opus 4.7",
+      "slug": "claude-opus-4-7",
+      "snapshot_ids": [],
+      "description": "Opus update for complex software engineering and higher-resolution vision.",
+      "release_kind": "Model release",
+      "release_note_url": "https://www.anthropic.com/news/claude-opus-4-7",
+      "documentation_url": "https://platform.claude.com/docs/en/models/overview",
+      "channels": [
+        "Claude API",
+        "Claude",
+        "Claude Code"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-04-16",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://www.anthropic.com/news/claude-opus-4-7",
+          "channels": [
+            "Claude API",
+            "Claude",
+            "Claude Code"
+          ],
+          "is_first_availability": null,
+          "id": "claude-opus-4-7-announcement-1",
+          "display_date": "2026-04-16",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-04-16",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://www.anthropic.com/news/claude-opus-4-7",
+          "channels": [
+            "Claude API",
+            "Claude",
+            "Claude Code"
+          ],
+          "is_first_availability": true,
+          "id": "claude-opus-4-7-availability-2",
+          "display_date": "2026-04-16",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "claude-mythos-preview",
+      "company": "Anthropic",
+      "name": "Claude Mythos Preview",
+      "slug": "claude-mythos-preview",
+      "snapshot_ids": [],
+      "description": "Gated research model for defensive cybersecurity.",
+      "release_kind": "Model release",
+      "release_note_url": "https://platform.claude.com/docs/en/release-notes/overview",
+      "documentation_url": "https://platform.claude.com/docs/en/models/overview",
+      "channels": [
+        "Project Glasswing invitation-only API"
+      ],
+      "notes": "Publicly announced external research program; access is not generally available.",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-04-07",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://platform.claude.com/docs/en/release-notes/overview",
+          "channels": [
+            "Project Glasswing invitation-only API"
+          ],
+          "is_first_availability": null,
+          "id": "claude-mythos-preview-announcement-1",
+          "display_date": "2026-04-07",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-04-07",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://platform.claude.com/docs/en/release-notes/overview",
+          "channels": [
+            "Project Glasswing invitation-only API"
+          ],
+          "is_first_availability": true,
+          "id": "claude-mythos-preview-availability-2",
+          "display_date": "2026-04-07",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "claude-sonnet-4-6",
+      "company": "Anthropic",
+      "name": "Claude Sonnet 4.6",
+      "slug": "claude-sonnet-4-6",
+      "snapshot_ids": [],
+      "description": "Sonnet update improving coding, computer use, and agentic search.",
+      "release_kind": "Model release",
+      "release_note_url": "https://www.anthropic.com/news/claude-sonnet-4-6",
+      "documentation_url": "https://platform.claude.com/docs/en/models/overview",
+      "channels": [
+        "Claude API",
+        "Claude",
+        "Claude Code"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-02-17",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://www.anthropic.com/news/claude-sonnet-4-6",
+          "channels": [
+            "Claude API",
+            "Claude",
+            "Claude Code"
+          ],
+          "is_first_availability": null,
+          "id": "claude-sonnet-4-6-announcement-1",
+          "display_date": "2026-02-17",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-02-17",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://www.anthropic.com/news/claude-sonnet-4-6",
+          "channels": [
+            "Claude API",
+            "Claude",
+            "Claude Code"
+          ],
+          "is_first_availability": true,
+          "id": "claude-sonnet-4-6-availability-2",
+          "display_date": "2026-02-17",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "claude-opus-4-6",
+      "company": "Anthropic",
+      "name": "Claude Opus 4.6",
+      "slug": "claude-opus-4-6",
+      "snapshot_ids": [],
+      "description": "Opus model for long tasks, introducing adaptive thinking and a million-token context beta.",
+      "release_kind": "Model release",
+      "release_note_url": "https://www.anthropic.com/news/claude-opus-4-6",
+      "documentation_url": "https://platform.claude.com/docs/en/models/overview",
+      "channels": [
+        "Claude API",
+        "Claude",
+        "Claude Code"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-02-05",
+          "source_timezone": "UTC",
+          "datetime_utc": "2026-02-05T17:45:16+00:00",
+          "datetime_utc8": "2026-02-06T01:45:16+08:00",
+          "weekday_utc8": "Friday",
+          "precision": "second",
+          "timestamp_basis": "Publication time of the cited official announcement post; not a claim of the earliest spoken announcement or first successful request.",
+          "source_url": "https://x.com/claudeai/status/2019467372609040752",
+          "channels": [
+            "Claude API",
+            "Claude",
+            "Claude Code"
+          ],
+          "is_first_availability": null,
+          "timestamp_evidence_url": "https://cdn.syndication.twimg.com/tweet-result?id=2019467372609040752&token=0",
+          "id": "claude-opus-4-6-announcement-1",
+          "display_date": "2026-02-06",
+          "date_basis": "UTC+8"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-02-05",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://www.anthropic.com/news/claude-opus-4-6",
+          "channels": [
+            "Claude API",
+            "Claude",
+            "Claude Code"
+          ],
+          "is_first_availability": true,
+          "id": "claude-opus-4-6-availability-2",
+          "display_date": "2026-02-05",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "claude-opus-4-5",
+      "company": "Anthropic",
+      "name": "Claude Opus 4.5",
+      "slug": "claude-opus-4-5",
+      "snapshot_ids": [
+        "claude-opus-4-5-20251101"
+      ],
+      "description": "Opus model improving coding, agents, and computer use.",
+      "release_kind": "Model release",
+      "release_note_url": "https://www.anthropic.com/news/claude-opus-4-5",
+      "documentation_url": "https://platform.claude.com/docs/en/models/overview",
+      "channels": [
+        "Claude API",
+        "Claude",
+        "Claude Code"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-11-24",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://www.anthropic.com/news/claude-opus-4-5",
+          "channels": [
+            "Claude API",
+            "Claude",
+            "Claude Code"
+          ],
+          "is_first_availability": null,
+          "id": "claude-opus-4-5-announcement-1",
+          "display_date": "2025-11-24",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-11-24",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://www.anthropic.com/news/claude-opus-4-5",
+          "channels": [
+            "Claude API",
+            "Claude",
+            "Claude Code"
+          ],
+          "is_first_availability": true,
+          "id": "claude-opus-4-5-availability-2",
+          "display_date": "2025-11-24",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "claude-haiku-4-5",
+      "company": "Anthropic",
+      "name": "Claude Haiku 4.5",
+      "slug": "claude-haiku-4-5",
+      "snapshot_ids": [
+        "claude-haiku-4-5-20251001"
+      ],
+      "description": "Fast compact model with stronger reasoning and coding.",
+      "release_kind": "Model release",
+      "release_note_url": "https://www.anthropic.com/news/claude-haiku-4-5",
+      "documentation_url": "https://platform.claude.com/docs/en/models/overview",
+      "channels": [
+        "Claude API",
+        "Claude",
+        "Claude Code"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-10-15",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://www.anthropic.com/news/claude-haiku-4-5",
+          "channels": [
+            "Claude API",
+            "Claude",
+            "Claude Code"
+          ],
+          "is_first_availability": null,
+          "id": "claude-haiku-4-5-announcement-1",
+          "display_date": "2025-10-15",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-10-15",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://www.anthropic.com/news/claude-haiku-4-5",
+          "channels": [
+            "Claude API",
+            "Claude",
+            "Claude Code"
+          ],
+          "is_first_availability": true,
+          "id": "claude-haiku-4-5-availability-2",
+          "display_date": "2025-10-15",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "claude-sonnet-4-5",
+      "company": "Anthropic",
+      "name": "Claude Sonnet 4.5",
+      "slug": "claude-sonnet-4-5",
+      "snapshot_ids": [
+        "claude-sonnet-4-5-20250929"
+      ],
+      "description": "Sonnet model for complex coding and agent tasks.",
+      "release_kind": "Model release",
+      "release_note_url": "https://www.anthropic.com/news/claude-sonnet-4-5",
+      "documentation_url": "https://platform.claude.com/docs/en/models/overview",
+      "channels": [
+        "Claude API",
+        "Claude",
+        "Claude Code"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-09-29",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://www.anthropic.com/news/claude-sonnet-4-5",
+          "channels": [
+            "Claude API",
+            "Claude",
+            "Claude Code"
+          ],
+          "is_first_availability": null,
+          "id": "claude-sonnet-4-5-announcement-1",
+          "display_date": "2025-09-29",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-09-29",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://www.anthropic.com/news/claude-sonnet-4-5",
+          "channels": [
+            "Claude API",
+            "Claude",
+            "Claude Code"
+          ],
+          "is_first_availability": true,
+          "id": "claude-sonnet-4-5-availability-2",
+          "display_date": "2025-09-29",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "claude-opus-4-1",
+      "company": "Anthropic",
+      "name": "Claude Opus 4.1",
+      "slug": "claude-opus-4-1",
+      "snapshot_ids": [
+        "claude-opus-4-1-20250805"
+      ],
+      "description": "Opus update improving coding and reasoning.",
+      "release_kind": "Model release",
+      "release_note_url": "https://www.anthropic.com/news/claude-opus-4-1",
+      "documentation_url": "https://platform.claude.com/docs/en/models/overview",
+      "channels": [
+        "Claude API",
+        "Claude",
+        "Claude Code"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-08-05",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://www.anthropic.com/news/claude-opus-4-1",
+          "channels": [
+            "Claude API",
+            "Claude",
+            "Claude Code"
+          ],
+          "is_first_availability": null,
+          "id": "claude-opus-4-1-announcement-1",
+          "display_date": "2025-08-05",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-08-05",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://www.anthropic.com/news/claude-opus-4-1",
+          "channels": [
+            "Claude API",
+            "Claude",
+            "Claude Code"
+          ],
+          "is_first_availability": true,
+          "id": "claude-opus-4-1-availability-2",
+          "display_date": "2025-08-05",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "claude-opus-4",
+      "company": "Anthropic",
+      "name": "Claude Opus 4",
+      "slug": "claude-opus-4-20250514",
+      "snapshot_ids": [
+        "claude-opus-4-20250514"
+      ],
+      "description": "High-capability model for sustained coding and agent work.",
+      "release_kind": "Model release",
+      "release_note_url": "https://www.anthropic.com/news/claude-4",
+      "documentation_url": "https://platform.claude.com/docs/en/models/overview",
+      "channels": [
+        "Claude API",
+        "Claude",
+        "Claude Code"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-05-22",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://www.anthropic.com/news/claude-4",
+          "channels": [
+            "Claude API",
+            "Claude",
+            "Claude Code"
+          ],
+          "is_first_availability": null,
+          "id": "claude-opus-4-announcement-1",
+          "display_date": "2025-05-22",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-05-22",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://www.anthropic.com/news/claude-4",
+          "channels": [
+            "Claude API",
+            "Claude",
+            "Claude Code"
+          ],
+          "is_first_availability": true,
+          "id": "claude-opus-4-availability-2",
+          "display_date": "2025-05-22",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "claude-sonnet-4",
+      "company": "Anthropic",
+      "name": "Claude Sonnet 4",
+      "slug": "claude-sonnet-4-20250514",
+      "snapshot_ids": [
+        "claude-sonnet-4-20250514"
+      ],
+      "description": "Balanced model with stronger coding and extended thinking.",
+      "release_kind": "Model release",
+      "release_note_url": "https://www.anthropic.com/news/claude-4",
+      "documentation_url": "https://platform.claude.com/docs/en/models/overview",
+      "channels": [
+        "Claude API",
+        "Claude",
+        "Claude Code"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-05-22",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://www.anthropic.com/news/claude-4",
+          "channels": [
+            "Claude API",
+            "Claude",
+            "Claude Code"
+          ],
+          "is_first_availability": null,
+          "id": "claude-sonnet-4-announcement-1",
+          "display_date": "2025-05-22",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-05-22",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://www.anthropic.com/news/claude-4",
+          "channels": [
+            "Claude API",
+            "Claude",
+            "Claude Code"
+          ],
+          "is_first_availability": true,
+          "id": "claude-sonnet-4-availability-2",
+          "display_date": "2025-05-22",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "claude-3-7-sonnet",
+      "company": "Anthropic",
+      "name": "Claude 3.7 Sonnet",
+      "slug": "claude-3-7-sonnet-20250219",
+      "snapshot_ids": [
+        "claude-3-7-sonnet-20250219"
+      ],
+      "description": "Hybrid model supporting fast responses and extended reasoning.",
+      "release_kind": "Model release",
+      "release_note_url": "https://www.anthropic.com/news/claude-3-7-sonnet",
+      "documentation_url": "https://platform.claude.com/docs/en/models/overview",
+      "channels": [
+        "Claude API",
+        "Claude"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-02-24",
+          "source_timezone": "UTC",
+          "datetime_utc": "2025-02-24T18:30:00+00:00",
+          "datetime_utc8": "2025-02-25T02:30:00+08:00",
+          "weekday_utc8": "Tuesday",
+          "precision": "second",
+          "timestamp_basis": "Publication time of the cited official announcement post; not a claim of the earliest spoken announcement or first successful request.",
+          "source_url": "https://x.com/AnthropicAI/status/1894092430560965029",
+          "channels": [
+            "Claude API",
+            "Claude"
+          ],
+          "is_first_availability": null,
+          "timestamp_evidence_url": "https://cdn.syndication.twimg.com/tweet-result?id=1894092430560965029&token=0",
+          "id": "claude-3-7-sonnet-announcement-1",
+          "display_date": "2025-02-25",
+          "date_basis": "UTC+8"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-02-24",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://www.anthropic.com/news/claude-3-7-sonnet",
+          "channels": [
+            "Claude API",
+            "Claude"
+          ],
+          "is_first_availability": true,
+          "id": "claude-3-7-sonnet-availability-2",
+          "display_date": "2025-02-24",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "claude-3-5-haiku",
+      "company": "Anthropic",
+      "name": "Claude 3.5 Haiku",
+      "slug": "claude-3-5-haiku-20241022",
+      "snapshot_ids": [
+        "claude-3-5-haiku-20241022"
+      ],
+      "description": "Faster compact Claude 3.5 model, initially text-only.",
+      "release_kind": "Model release",
+      "release_note_url": "https://platform.claude.com/docs/en/release-notes/overview",
+      "documentation_url": "https://platform.claude.com/docs/en/models/overview",
+      "channels": [
+        "Claude API"
+      ],
+      "notes": "Announced October 22; API access began November 4. Vision was added February 24, 2025.",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2024-10-22",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://www.anthropic.com/news/3-5-models-and-computer-use",
+          "channels": [
+            "Claude API"
+          ],
+          "is_first_availability": null,
+          "id": "claude-3-5-haiku-announcement-1",
+          "display_date": "2024-10-22",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2024-11-04",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://platform.claude.com/docs/en/release-notes/overview",
+          "channels": [
+            "Claude API"
+          ],
+          "is_first_availability": true,
+          "id": "claude-3-5-haiku-availability-2",
+          "display_date": "2024-11-04",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "claude-3-5-sonnet-october",
+      "company": "Anthropic",
+      "name": "Claude 3.5 Sonnet (October)",
+      "slug": "claude-3-5-sonnet-20241022",
+      "snapshot_ids": [
+        "claude-3-5-sonnet-20241022"
+      ],
+      "description": "Upgraded Sonnet with improved coding and computer-use support.",
+      "release_kind": "Dated update",
+      "release_note_url": "https://www.anthropic.com/news/3-5-models-and-computer-use",
+      "documentation_url": "https://platform.claude.com/docs/en/models/overview",
+      "channels": [
+        "Claude API",
+        "Claude"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2024-10-22",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://www.anthropic.com/news/3-5-models-and-computer-use",
+          "channels": [
+            "Claude API",
+            "Claude"
+          ],
+          "is_first_availability": null,
+          "id": "claude-3-5-sonnet-october-announcement-1",
+          "display_date": "2024-10-22",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2024-10-22",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://www.anthropic.com/news/3-5-models-and-computer-use",
+          "channels": [
+            "Claude API",
+            "Claude"
+          ],
+          "is_first_availability": true,
+          "id": "claude-3-5-sonnet-october-availability-2",
+          "display_date": "2024-10-22",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "claude-3-5-sonnet-june",
+      "company": "Anthropic",
+      "name": "Claude 3.5 Sonnet (June)",
+      "slug": "claude-3-5-sonnet-20240620",
+      "snapshot_ids": [
+        "claude-3-5-sonnet-20240620"
+      ],
+      "description": "First Claude 3.5 release, improving coding, vision, and speed.",
+      "release_kind": "Model release",
+      "release_note_url": "https://www.anthropic.com/news/claude-3-5-sonnet",
+      "documentation_url": "https://platform.claude.com/docs/en/models/overview",
+      "channels": [
+        "Claude API",
+        "Claude"
+      ],
+      "notes": "The currently fetched blog displays June 21; the API changelog and original official announcement post establish June 20.",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2024-06-20",
+          "source_timezone": "UTC",
+          "datetime_utc": "2024-06-20T14:03:04+00:00",
+          "datetime_utc8": "2024-06-20T22:03:04+08:00",
+          "weekday_utc8": "Thursday",
+          "precision": "second",
+          "timestamp_basis": "Publication time of the cited official announcement post; not a claim of the earliest spoken announcement or first successful request.",
+          "source_url": "https://x.com/AnthropicAI/status/1803790676988920098",
+          "channels": [
+            "Claude API",
+            "Claude"
+          ],
+          "is_first_availability": null,
+          "timestamp_evidence_url": "https://cdn.syndication.twimg.com/tweet-result?id=1803790676988920098&token=0",
+          "id": "claude-3-5-sonnet-june-announcement-1",
+          "display_date": "2024-06-20",
+          "date_basis": "UTC+8"
+        },
+        {
+          "type": "availability",
+          "source_date": "2024-06-20",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://www.anthropic.com/news/claude-3-5-sonnet",
+          "channels": [
+            "Claude API",
+            "Claude"
+          ],
+          "is_first_availability": true,
+          "id": "claude-3-5-sonnet-june-availability-2",
+          "display_date": "2024-06-20",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "claude-3-haiku",
+      "company": "Anthropic",
+      "name": "Claude 3 Haiku",
+      "slug": "claude-3-haiku-20240307",
+      "snapshot_ids": [
+        "claude-3-haiku-20240307"
+      ],
+      "description": "Fast, low-cost Claude 3 variant.",
+      "release_kind": "Model release",
+      "release_note_url": "https://www.anthropic.com/news/claude-3-haiku",
+      "documentation_url": "https://platform.claude.com/docs/en/models/overview",
+      "channels": [
+        "Claude API",
+        "Claude"
+      ],
+      "notes": "Announced with the family on March 4; available March 13. The March 7 snapshot suffix is not the launch date.",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2024-03-04",
+          "source_timezone": "UTC",
+          "datetime_utc": "2024-03-04T14:07:13+00:00",
+          "datetime_utc8": "2024-03-04T22:07:13+08:00",
+          "weekday_utc8": "Monday",
+          "precision": "second",
+          "timestamp_basis": "Publication time of the cited official announcement post; not a claim of the earliest spoken announcement or first successful request.",
+          "source_url": "https://x.com/AnthropicAI/status/1764653830468428150",
+          "channels": [
+            "Claude API",
+            "Claude"
+          ],
+          "is_first_availability": null,
+          "timestamp_evidence_url": "https://cdn.syndication.twimg.com/tweet-result?id=1764653830468428150&token=0",
+          "id": "claude-3-haiku-announcement-1",
+          "display_date": "2024-03-04",
+          "date_basis": "UTC+8"
+        },
+        {
+          "type": "availability",
+          "source_date": "2024-03-13",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://www.anthropic.com/news/claude-3-haiku",
+          "channels": [
+            "Claude API",
+            "Claude"
+          ],
+          "is_first_availability": true,
+          "id": "claude-3-haiku-availability-2",
+          "display_date": "2024-03-13",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "claude-3-opus",
+      "company": "Anthropic",
+      "name": "Claude 3 Opus",
+      "slug": "claude-3-opus-20240229",
+      "snapshot_ids": [
+        "claude-3-opus-20240229"
+      ],
+      "description": "Highest-capability Claude 3 variant.",
+      "release_kind": "Model release",
+      "release_note_url": "https://www.anthropic.com/news/claude-3-family",
+      "documentation_url": "https://platform.claude.com/docs/en/models/overview",
+      "channels": [
+        "Claude API",
+        "Claude"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2024-03-04",
+          "source_timezone": "UTC",
+          "datetime_utc": "2024-03-04T14:07:13+00:00",
+          "datetime_utc8": "2024-03-04T22:07:13+08:00",
+          "weekday_utc8": "Monday",
+          "precision": "second",
+          "timestamp_basis": "Publication time of the cited official announcement post; not a claim of the earliest spoken announcement or first successful request.",
+          "source_url": "https://x.com/AnthropicAI/status/1764653830468428150",
+          "channels": [
+            "Claude API",
+            "Claude"
+          ],
+          "is_first_availability": null,
+          "timestamp_evidence_url": "https://cdn.syndication.twimg.com/tweet-result?id=1764653830468428150&token=0",
+          "id": "claude-3-opus-announcement-1",
+          "display_date": "2024-03-04",
+          "date_basis": "UTC+8"
+        },
+        {
+          "type": "availability",
+          "source_date": "2024-03-04",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://www.anthropic.com/news/claude-3-family",
+          "channels": [
+            "Claude API",
+            "Claude"
+          ],
+          "is_first_availability": true,
+          "id": "claude-3-opus-availability-2",
+          "display_date": "2024-03-04",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "claude-3-sonnet",
+      "company": "Anthropic",
+      "name": "Claude 3 Sonnet",
+      "slug": "claude-3-sonnet-20240229",
+      "snapshot_ids": [
+        "claude-3-sonnet-20240229"
+      ],
+      "description": "Balanced Claude 3 variant for speed and capability.",
+      "release_kind": "Model release",
+      "release_note_url": "https://www.anthropic.com/news/claude-3-family",
+      "documentation_url": "https://platform.claude.com/docs/en/models/overview",
+      "channels": [
+        "Claude API",
+        "Claude"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2024-03-04",
+          "source_timezone": "UTC",
+          "datetime_utc": "2024-03-04T14:07:13+00:00",
+          "datetime_utc8": "2024-03-04T22:07:13+08:00",
+          "weekday_utc8": "Monday",
+          "precision": "second",
+          "timestamp_basis": "Publication time of the cited official announcement post; not a claim of the earliest spoken announcement or first successful request.",
+          "source_url": "https://x.com/AnthropicAI/status/1764653830468428150",
+          "channels": [
+            "Claude API",
+            "Claude"
+          ],
+          "is_first_availability": null,
+          "timestamp_evidence_url": "https://cdn.syndication.twimg.com/tweet-result?id=1764653830468428150&token=0",
+          "id": "claude-3-sonnet-announcement-1",
+          "display_date": "2024-03-04",
+          "date_basis": "UTC+8"
+        },
+        {
+          "type": "availability",
+          "source_date": "2024-03-04",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://www.anthropic.com/news/claude-3-family",
+          "channels": [
+            "Claude API",
+            "Claude"
+          ],
+          "is_first_availability": true,
+          "id": "claude-3-sonnet-availability-2",
+          "display_date": "2024-03-04",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    }
+  ]
+}

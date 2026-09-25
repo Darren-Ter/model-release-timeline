@@ -1,0 +1,4711 @@
+{
+  "title": "OpenAI model releases",
+  "coverage_start": "2024-01-01",
+  "coverage_end": "2026-09-25",
+  "researched_on": "2026-09-25",
+  "timezone": "UTC+08:00",
+  "methodology": [
+    "Covers named text, reasoning and coding releases, publicly announced external previews, and explicitly dated model updates. Standalone media, embedding and moderation models are excluded.",
+    "Announcement and availability are distinct events. Additional API access milestones are included when later than initial product access.",
+    "Precise announcement times identify a verified official post, not necessarily the earliest livestream mention. Availability times are unknown unless separately evidenced.",
+    "A date-only source is not converted to UTC+8. Its weekday_utc8 and datetime_utc8 remain null. Plot positions use the source calendar date and are explicitly marked approximate.",
+    "Snapshot suffixes are identifiers, not release dates. Rolling aliases and product-only updates are labelled; aliases are not counted as additional foundational models.",
+    "Raw RSS publication values are retained where found but not promoted to verified timestamps. Some values disagree with contemporaneous official posts.",
+    "Retirements, rollbacks, pricing changes, prompt-only changes and reasoning-budget adjustments are not new model releases. Relevant rollback notes are retained.",
+    "A release entry may represent a distinct model, a named variant, a rolling alias launch, or a documented update. Entry count is not a count of unique trained models."
+  ],
+  "coverage_sources": [
+    "https://developers.openai.com/api/docs/changelog",
+    "https://learn.chatgpt.com/docs/changelog",
+    "https://help.openai.com/en/articles/9624314-model-release-notes",
+    "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+    "https://developers.openai.com/api/docs/models"
+  ],
+  "models": [
+    {
+      "id": "gpt-6-luna",
+      "company": "OpenAI",
+      "name": "GPT-6 Luna",
+      "slug": "gpt-6-luna",
+      "snapshot_ids": [],
+      "description": "Lower-cost reasoning model for focused, high-volume tasks.",
+      "release_kind": "Model release",
+      "release_note_url": "https://developers.openai.com/api/docs/changelog",
+      "documentation_url": "https://developers.openai.com/api/docs/models/gpt-6-luna",
+      "channels": [
+        "API",
+        "Codex",
+        "ChatGPT Work"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-09-22",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API",
+            "Codex",
+            "ChatGPT Work"
+          ],
+          "is_first_availability": null,
+          "id": "gpt-6-luna-announcement-1",
+          "display_date": "2026-09-22",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-09-22",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API",
+            "Codex",
+            "ChatGPT Work"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-6-luna-availability-2",
+          "display_date": "2026-09-22",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-6-sol",
+      "company": "OpenAI",
+      "name": "GPT-6 Sol",
+      "slug": "gpt-6-sol",
+      "snapshot_ids": [],
+      "description": "Reasoning model for complex coding and agent workflows.",
+      "release_kind": "Model release",
+      "release_note_url": "https://developers.openai.com/api/docs/changelog",
+      "documentation_url": "https://developers.openai.com/api/docs/models/gpt-6-sol",
+      "channels": [
+        "API",
+        "Codex",
+        "ChatGPT Work"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-09-22",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API",
+            "Codex",
+            "ChatGPT Work"
+          ],
+          "is_first_availability": null,
+          "id": "gpt-6-sol-announcement-1",
+          "display_date": "2026-09-22",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-09-22",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API",
+            "Codex",
+            "ChatGPT Work"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-6-sol-availability-2",
+          "display_date": "2026-09-22",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-6-pro",
+      "company": "OpenAI",
+      "name": "GPT-6 Pro",
+      "slug": "not published",
+      "snapshot_ids": [],
+      "description": "ChatGPT Pro option powered by GPT-6 Astra.",
+      "release_kind": "Model release",
+      "release_note_url": "https://x.com/OpenAI/status/2095998532692140283",
+      "documentation_url": null,
+      "channels": [
+        "ChatGPT Pro",
+        "ChatGPT Business",
+        "ChatGPT Enterprise"
+      ],
+      "notes": "Announced in an official OpenAI post as powered by GPT-6 Astra. No API model ID is published.",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-09-04",
+          "source_timezone": "UTC",
+          "datetime_utc": "2026-09-04T22:12:46+00:00",
+          "datetime_utc8": "2026-09-05T06:12:46+08:00",
+          "weekday_utc8": "Saturday",
+          "precision": "second",
+          "timestamp_basis": "Publication time of the cited official announcement post; not a claim of the earliest spoken announcement or first successful request.",
+          "source_url": "https://x.com/OpenAI/status/2095998532692140283",
+          "channels": [
+            "ChatGPT Pro",
+            "ChatGPT Business",
+            "ChatGPT Enterprise"
+          ],
+          "is_first_availability": null,
+          "timestamp_evidence_url": "https://cdn.syndication.twimg.com/tweet-result?id=2095998532692140283&token=0",
+          "id": "gpt-6-pro-announcement-1",
+          "display_date": "2026-09-05",
+          "date_basis": "UTC+8"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-09-04",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://x.com/OpenAI/status/2095998532692140283",
+          "channels": [
+            "ChatGPT Pro",
+            "ChatGPT Business",
+            "ChatGPT Enterprise"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-6-pro-availability-2",
+          "display_date": "2026-09-04",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-6-astra",
+      "company": "OpenAI",
+      "name": "GPT-6 Astra",
+      "slug": "gpt-6-astra",
+      "snapshot_ids": [],
+      "description": "Frontier reasoning model for complex tasks spanning code, research, and computer use.",
+      "release_kind": "Model release",
+      "release_note_url": "https://openai.com/index/gpt-6-astra/",
+      "documentation_url": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+      "channels": [
+        "Limited organization rollout",
+        "API",
+        "Codex",
+        "ChatGPT"
+      ],
+      "notes": "September 3 began a limited organization rollout. On September 4 OpenAI posted that it was available to Pro, Enterprise, and Business Premium users in ChatGPT and Codex, with Plus and Business users following over a few days; this is not a claim of universal availability at launch. Post: https://x.com/OpenAI/status/2095968413646737608",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-09-03",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/gpt-6-astra/",
+          "channels": [
+            "Limited organization rollout",
+            "API",
+            "Codex"
+          ],
+          "is_first_availability": null,
+          "rss_reported_pubdate": "Thu, 03 Sep 2026 11:00:00 GMT",
+          "rss_note": "Raw publisher feed metadata only. Not used for event timing: feed times can conflict with contemporaneous announcement evidence.",
+          "id": "gpt-6-astra-announcement-1",
+          "display_date": "2026-09-03",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-09-03",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/gpt-6-astra/",
+          "channels": [
+            "Limited organization rollout",
+            "API",
+            "Codex"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-6-astra-availability-2",
+          "display_date": "2026-09-03",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-09-04",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://x.com/OpenAI/status/2095968413646737608",
+          "channels": [
+            "ChatGPT Pro",
+            "ChatGPT Enterprise",
+            "ChatGPT Business Premium"
+          ],
+          "is_first_availability": false,
+          "id": "gpt-6-astra-availability-3",
+          "display_date": "2026-09-04",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-6-cyber",
+      "company": "OpenAI",
+      "name": "GPT-5.6 Cyber",
+      "slug": "gpt-5.6-cyber",
+      "snapshot_ids": [],
+      "description": "Purpose-trained model for approved cybersecurity work.",
+      "release_kind": "Model release",
+      "release_note_url": "https://developers.openai.com/api/docs/changelog",
+      "documentation_url": "https://developers.openai.com/api/docs/models/gpt-5.6-cyber",
+      "channels": [
+        "Daybreak Red approved API"
+      ],
+      "notes": "Restricted external access; Daybreak routing aliases are not counted as separate models.",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-08-07",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "Daybreak Red approved API"
+          ],
+          "is_first_availability": null,
+          "id": "gpt-5-6-cyber-announcement-1",
+          "display_date": "2026-08-07",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-08-07",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "Daybreak Red approved API"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-5-6-cyber-availability-2",
+          "display_date": "2026-08-07",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-6-sol-chat-chat-latest",
+      "company": "OpenAI",
+      "name": "chat-latest (August 2026 update)",
+      "slug": "chat-latest",
+      "snapshot_ids": [],
+      "description": "Rolling API snapshot of the latest chat model used by ChatGPT Plus and Pro.",
+      "release_kind": "Dated update",
+      "release_note_url": "https://developers.openai.com/api/docs/changelog",
+      "documentation_url": "https://developers.openai.com/api/docs/models/chat-latest",
+      "channels": [
+        "API"
+      ],
+      "notes": "The August 6 API changelog does not identify a pinned snapshot or establish a separate ChatGPT rollout date. Its recommendation to use GPT-5.6 Sol for production is not evidence that chat-latest is the same model. The existing record ID is retained for saved links.",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-08-06",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": null,
+          "id": "gpt-5-6-sol-chat-chat-latest-announcement-1",
+          "display_date": "2026-08-06",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-08-06",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-5-6-sol-chat-chat-latest-availability-2",
+          "display_date": "2026-08-06",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-6-luna",
+      "company": "OpenAI",
+      "name": "GPT-5.6 Luna",
+      "slug": "gpt-5.6-luna",
+      "snapshot_ids": [],
+      "description": "Efficient GPT-5.6 variant for focused, high-volume work.",
+      "release_kind": "Model release",
+      "release_note_url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+      "documentation_url": "https://developers.openai.com/api/docs/models/gpt-5.6-luna",
+      "channels": [
+        "Limited external partner preview"
+      ],
+      "notes": "Publicly announced external partner preview; broad ChatGPT, Codex, and API release followed July 9.",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-06-26",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+          "channels": [
+            "Limited external partner preview"
+          ],
+          "is_first_availability": null,
+          "rss_reported_pubdate": "Fri, 26 Jun 2026 10:00:00 GMT",
+          "rss_note": "Raw publisher feed metadata only. Not used for event timing: feed times can conflict with contemporaneous announcement evidence.",
+          "id": "gpt-5-6-luna-announcement-1",
+          "display_date": "2026-06-26",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-06-26",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+          "channels": [
+            "Limited external partner preview"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-5-6-luna-availability-2",
+          "display_date": "2026-06-26",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-07-09",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API",
+            "ChatGPT",
+            "Codex"
+          ],
+          "is_first_availability": false,
+          "id": "gpt-5-6-luna-availability-3",
+          "display_date": "2026-07-09",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-6-sol",
+      "company": "OpenAI",
+      "name": "GPT-5.6 Sol",
+      "slug": "gpt-5.6-sol",
+      "snapshot_ids": [],
+      "description": "Flagship reasoning model for complex coding and knowledge work.",
+      "release_kind": "Model release",
+      "release_note_url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+      "documentation_url": "https://developers.openai.com/api/docs/models/gpt-5.6-sol",
+      "channels": [
+        "Limited external partner preview"
+      ],
+      "notes": "Publicly announced external partner preview; broad ChatGPT, Codex, and API release followed July 9.",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-06-26",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+          "channels": [
+            "Limited external partner preview"
+          ],
+          "is_first_availability": null,
+          "rss_reported_pubdate": "Fri, 26 Jun 2026 10:00:00 GMT",
+          "rss_note": "Raw publisher feed metadata only. Not used for event timing: feed times can conflict with contemporaneous announcement evidence.",
+          "id": "gpt-5-6-sol-announcement-1",
+          "display_date": "2026-06-26",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-06-26",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+          "channels": [
+            "Limited external partner preview"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-5-6-sol-availability-2",
+          "display_date": "2026-06-26",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-07-09",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API",
+            "ChatGPT",
+            "Codex"
+          ],
+          "is_first_availability": false,
+          "id": "gpt-5-6-sol-availability-3",
+          "display_date": "2026-07-09",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-6-terra",
+      "company": "OpenAI",
+      "name": "GPT-5.6 Terra",
+      "slug": "gpt-5.6-terra",
+      "snapshot_ids": [],
+      "description": "Balanced GPT-5.6 variant for capability and cost.",
+      "release_kind": "Model release",
+      "release_note_url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+      "documentation_url": "https://developers.openai.com/api/docs/models/gpt-5.6-terra",
+      "channels": [
+        "Limited external partner preview"
+      ],
+      "notes": "Publicly announced external partner preview; broad ChatGPT, Codex, and API release followed July 9.",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-06-26",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+          "channels": [
+            "Limited external partner preview"
+          ],
+          "is_first_availability": null,
+          "rss_reported_pubdate": "Fri, 26 Jun 2026 10:00:00 GMT",
+          "rss_note": "Raw publisher feed metadata only. Not used for event timing: feed times can conflict with contemporaneous announcement evidence.",
+          "id": "gpt-5-6-terra-announcement-1",
+          "display_date": "2026-06-26",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-06-26",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+          "channels": [
+            "Limited external partner preview"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-5-6-terra-availability-2",
+          "display_date": "2026-06-26",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-07-09",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API",
+            "ChatGPT",
+            "Codex"
+          ],
+          "is_first_availability": false,
+          "id": "gpt-5-6-terra-availability-3",
+          "display_date": "2026-07-09",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "chat-latest-june-snapshot",
+      "company": "OpenAI",
+      "name": "Chat latest (June snapshot)",
+      "slug": "chat-latest",
+      "snapshot_ids": [],
+      "description": "Refresh of the rolling ChatGPT Instant API snapshot.",
+      "release_kind": "Dated update",
+      "release_note_url": "https://developers.openai.com/api/docs/changelog",
+      "documentation_url": "https://developers.openai.com/api/docs/models/chat-latest",
+      "channels": [
+        "API",
+        "ChatGPT"
+      ],
+      "notes": "No pinned snapshot ID is published for this rolling update.",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-06-24",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API",
+            "ChatGPT"
+          ],
+          "is_first_availability": null,
+          "id": "chat-latest-june-snapshot-announcement-1",
+          "display_date": "2026-06-24",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-06-24",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API",
+            "ChatGPT"
+          ],
+          "is_first_availability": true,
+          "id": "chat-latest-june-snapshot-availability-2",
+          "display_date": "2026-06-24",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-5-instant-may-update",
+      "company": "OpenAI",
+      "name": "GPT-5.5 Instant (May update)",
+      "slug": "chat-latest",
+      "snapshot_ids": [],
+      "description": "Updated Instant response style and pacing.",
+      "release_kind": "Dated update",
+      "release_note_url": "https://developers.openai.com/api/docs/changelog",
+      "documentation_url": "https://developers.openai.com/api/docs/models/chat-latest",
+      "channels": [
+        "API",
+        "ChatGPT"
+      ],
+      "notes": "No pinned snapshot ID is published for this rolling update.",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-05-28",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API",
+            "ChatGPT"
+          ],
+          "is_first_availability": null,
+          "id": "gpt-5-5-instant-may-update-announcement-1",
+          "display_date": "2026-05-28",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-05-28",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API",
+            "ChatGPT"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-5-5-instant-may-update-availability-2",
+          "display_date": "2026-05-28",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-5-instant-chat-latest",
+      "company": "OpenAI",
+      "name": "GPT-5.5 Instant / chat-latest",
+      "slug": "chat-latest",
+      "snapshot_ids": [],
+      "description": "Rolling API model for the latest ChatGPT Instant experience.",
+      "release_kind": "Dated update",
+      "release_note_url": "https://developers.openai.com/api/docs/changelog",
+      "documentation_url": "https://developers.openai.com/api/docs/models/chat-latest",
+      "channels": [
+        "API",
+        "ChatGPT"
+      ],
+      "notes": "No pinned snapshot ID is published for this rolling update.",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-05-05",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API",
+            "ChatGPT"
+          ],
+          "is_first_availability": null,
+          "id": "gpt-5-5-instant-chat-latest-announcement-1",
+          "display_date": "2026-05-05",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-05-05",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API",
+            "ChatGPT"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-5-5-instant-chat-latest-availability-2",
+          "display_date": "2026-05-05",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-5",
+      "company": "OpenAI",
+      "name": "GPT-5.5",
+      "slug": "gpt-5.5",
+      "snapshot_ids": [
+        "gpt-5.5-2026-04-23"
+      ],
+      "description": "Model for complex work spanning coding, research, documents, and tools.",
+      "release_kind": "Model release",
+      "release_note_url": "https://openai.com/index/introducing-gpt-5-5/",
+      "documentation_url": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "channels": [
+        "ChatGPT",
+        "Codex"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-04-23",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-gpt-5-5/",
+          "channels": [
+            "ChatGPT",
+            "Codex"
+          ],
+          "is_first_availability": null,
+          "rss_reported_pubdate": "Thu, 23 Apr 2026 11:00:00 GMT",
+          "rss_note": "Raw publisher feed metadata only. Not used for event timing: feed times can conflict with contemporaneous announcement evidence.",
+          "id": "gpt-5-5-announcement-1",
+          "display_date": "2026-04-23",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-04-23",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-gpt-5-5/",
+          "channels": [
+            "ChatGPT",
+            "Codex"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-5-5-availability-2",
+          "display_date": "2026-04-23",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-04-24",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": false,
+          "id": "gpt-5-5-availability-3",
+          "display_date": "2026-04-24",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-5-pro",
+      "company": "OpenAI",
+      "name": "GPT-5.5-pro",
+      "slug": "gpt-5.5-pro",
+      "snapshot_ids": [
+        "gpt-5.5-pro-2026-04-23"
+      ],
+      "description": "Higher-compute GPT-5.5 option for difficult work.",
+      "release_kind": "Model release",
+      "release_note_url": "https://openai.com/index/introducing-gpt-5-5/",
+      "documentation_url": "https://developers.openai.com/api/docs/models/gpt-5.5-pro",
+      "channels": [
+        "ChatGPT Pro"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-04-23",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-gpt-5-5/",
+          "channels": [
+            "ChatGPT Pro"
+          ],
+          "is_first_availability": null,
+          "rss_reported_pubdate": "Thu, 23 Apr 2026 11:00:00 GMT",
+          "rss_note": "Raw publisher feed metadata only. Not used for event timing: feed times can conflict with contemporaneous announcement evidence.",
+          "id": "gpt-5-5-pro-announcement-1",
+          "display_date": "2026-04-23",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-04-23",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-gpt-5-5/",
+          "channels": [
+            "ChatGPT Pro"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-5-5-pro-availability-2",
+          "display_date": "2026-04-23",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-04-24",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": false,
+          "id": "gpt-5-5-pro-availability-3",
+          "display_date": "2026-04-24",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-rosalind",
+      "company": "OpenAI",
+      "name": "GPT-Rosalind",
+      "slug": "gpt-rosalind-research",
+      "snapshot_ids": [],
+      "description": "Specialized reasoning model for life sciences research.",
+      "release_kind": "Model release",
+      "release_note_url": "https://openai.com/index/introducing-gpt-rosalind/",
+      "documentation_url": null,
+      "channels": [
+        "Trusted-access API",
+        "ChatGPT",
+        "Codex"
+      ],
+      "notes": "External access requires approval. GA milestone differs between API changelog (September 8) and blog update (September 11); initial April preview date is used.",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-04-16",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-gpt-rosalind/",
+          "channels": [
+            "Trusted-access API",
+            "ChatGPT",
+            "Codex"
+          ],
+          "is_first_availability": null,
+          "rss_reported_pubdate": "Thu, 16 Apr 2026 01:00:00 GMT",
+          "rss_note": "Raw publisher feed metadata only. Not used for event timing: feed times can conflict with contemporaneous announcement evidence.",
+          "id": "gpt-rosalind-announcement-1",
+          "display_date": "2026-04-16",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-04-16",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-gpt-rosalind/",
+          "channels": [
+            "Trusted-access API",
+            "ChatGPT",
+            "Codex"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-rosalind-availability-2",
+          "display_date": "2026-04-16",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-4-mini",
+      "company": "OpenAI",
+      "name": "GPT-5.4-mini",
+      "slug": "gpt-5.4-mini",
+      "snapshot_ids": [
+        "gpt-5.4-mini-2026-03-17"
+      ],
+      "description": "Efficient model supporting coding, computer use, and tool search.",
+      "release_kind": "Model release",
+      "release_note_url": "https://developers.openai.com/api/docs/changelog",
+      "documentation_url": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+      "channels": [
+        "API"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-03-17",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": null,
+          "id": "gpt-5-4-mini-announcement-1",
+          "display_date": "2026-03-17",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-03-17",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-5-4-mini-availability-2",
+          "display_date": "2026-03-17",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-4-nano",
+      "company": "OpenAI",
+      "name": "GPT-5.4-nano",
+      "slug": "gpt-5.4-nano",
+      "snapshot_ids": [
+        "gpt-5.4-nano-2026-03-17"
+      ],
+      "description": "Small model for simple high-volume tasks.",
+      "release_kind": "Model release",
+      "release_note_url": "https://developers.openai.com/api/docs/changelog",
+      "documentation_url": "https://developers.openai.com/api/docs/models/gpt-5.4-nano",
+      "channels": [
+        "API"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-03-17",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": null,
+          "id": "gpt-5-4-nano-announcement-1",
+          "display_date": "2026-03-17",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-03-17",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-5-4-nano-availability-2",
+          "display_date": "2026-03-17",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-3-instant-march-update",
+      "company": "OpenAI",
+      "name": "GPT-5.3 Instant (March update)",
+      "slug": "gpt-5.3-chat-latest",
+      "snapshot_ids": [],
+      "description": "Less teaser-like follow-up phrasing.",
+      "release_kind": "Dated update",
+      "release_note_url": "https://help.openai.com/en/articles/9624314-model-release-notes",
+      "documentation_url": "https://developers.openai.com/api/docs/models/gpt-5.3-chat-latest",
+      "channels": [
+        "ChatGPT"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-03-16",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://help.openai.com/en/articles/9624314-model-release-notes",
+          "channels": [
+            "ChatGPT"
+          ],
+          "is_first_availability": null,
+          "id": "gpt-5-3-instant-march-update-announcement-1",
+          "display_date": "2026-03-16",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-03-16",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://help.openai.com/en/articles/9624314-model-release-notes",
+          "channels": [
+            "ChatGPT"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-5-3-instant-march-update-availability-2",
+          "display_date": "2026-03-16",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-4",
+      "company": "OpenAI",
+      "name": "GPT-5.4",
+      "slug": "gpt-5.4",
+      "snapshot_ids": [
+        "gpt-5.4-2026-03-05"
+      ],
+      "description": "Unified reasoning and coding model for professional tasks and computer use.",
+      "release_kind": "Model release",
+      "release_note_url": "https://openai.com/index/introducing-gpt-5-4/",
+      "documentation_url": "https://developers.openai.com/api/docs/models/gpt-5.4",
+      "channels": [
+        "API",
+        "ChatGPT",
+        "Codex"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-03-05",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-gpt-5-4/",
+          "channels": [
+            "API",
+            "ChatGPT",
+            "Codex"
+          ],
+          "is_first_availability": null,
+          "rss_reported_pubdate": "Thu, 05 Mar 2026 10:00:00 GMT",
+          "rss_note": "Raw publisher feed metadata only. Not used for event timing: feed times can conflict with contemporaneous announcement evidence.",
+          "id": "gpt-5-4-announcement-1",
+          "display_date": "2026-03-05",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-03-05",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-gpt-5-4/",
+          "channels": [
+            "API",
+            "ChatGPT",
+            "Codex"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-5-4-availability-2",
+          "display_date": "2026-03-05",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-4-pro",
+      "company": "OpenAI",
+      "name": "GPT-5.4-pro",
+      "slug": "gpt-5.4-pro",
+      "snapshot_ids": [
+        "gpt-5.4-pro-2026-03-05"
+      ],
+      "description": "Higher-compute GPT-5.4 variant for harder tasks.",
+      "release_kind": "Model release",
+      "release_note_url": "https://openai.com/index/introducing-gpt-5-4/",
+      "documentation_url": "https://developers.openai.com/api/docs/models/gpt-5.4-pro",
+      "channels": [
+        "API",
+        "ChatGPT Pro"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-03-05",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-gpt-5-4/",
+          "channels": [
+            "API",
+            "ChatGPT Pro"
+          ],
+          "is_first_availability": null,
+          "rss_reported_pubdate": "Thu, 05 Mar 2026 10:00:00 GMT",
+          "rss_note": "Raw publisher feed metadata only. Not used for event timing: feed times can conflict with contemporaneous announcement evidence.",
+          "id": "gpt-5-4-pro-announcement-1",
+          "display_date": "2026-03-05",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-03-05",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-gpt-5-4/",
+          "channels": [
+            "API",
+            "ChatGPT Pro"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-5-4-pro-availability-2",
+          "display_date": "2026-03-05",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-3-instant",
+      "company": "OpenAI",
+      "name": "GPT-5.3 Instant",
+      "slug": "gpt-5.3-chat-latest",
+      "snapshot_ids": [],
+      "description": "Conversational update emphasizing relevance, factuality, and smoother responses.",
+      "release_kind": "Model release",
+      "release_note_url": "https://developers.openai.com/api/docs/changelog",
+      "documentation_url": "https://developers.openai.com/api/docs/models/gpt-5.3-chat-latest",
+      "channels": [
+        "API",
+        "ChatGPT"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-03-03",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API",
+            "ChatGPT"
+          ],
+          "is_first_availability": null,
+          "id": "gpt-5-3-instant-announcement-1",
+          "display_date": "2026-03-03",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-03-03",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API",
+            "ChatGPT"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-5-3-instant-availability-2",
+          "display_date": "2026-03-03",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-3-codex-spark",
+      "company": "OpenAI",
+      "name": "GPT-5.3 Codex Spark",
+      "slug": "not published",
+      "snapshot_ids": [],
+      "description": "Low-latency, text-only coding research preview on Cerebras hardware.",
+      "release_kind": "Model release",
+      "release_note_url": "https://openai.com/index/introducing-gpt-5-3-codex-spark/",
+      "documentation_url": null,
+      "channels": [
+        "Codex Pro research preview"
+      ],
+      "notes": "Codex selector: gpt-5.3-codex-spark. The blog mentions API design partners, but no public API slug was established.",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-02-12",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-gpt-5-3-codex-spark/",
+          "channels": [
+            "Codex Pro research preview"
+          ],
+          "is_first_availability": null,
+          "rss_reported_pubdate": "Thu, 12 Feb 2026 10:00:00 GMT",
+          "rss_note": "Raw publisher feed metadata only. Not used for event timing: feed times can conflict with contemporaneous announcement evidence.",
+          "id": "gpt-5-3-codex-spark-announcement-1",
+          "display_date": "2026-02-12",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-02-12",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-gpt-5-3-codex-spark/",
+          "channels": [
+            "Codex Pro research preview"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-5-3-codex-spark-availability-2",
+          "display_date": "2026-02-12",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-2-instant-february-update",
+      "company": "OpenAI",
+      "name": "GPT-5.2 Instant (February update)",
+      "slug": "gpt-5.2-chat-latest",
+      "snapshot_ids": [],
+      "description": "Clearer and more grounded answers.",
+      "release_kind": "Dated update",
+      "release_note_url": "https://help.openai.com/en/articles/9624314-model-release-notes",
+      "documentation_url": "https://developers.openai.com/api/docs/models/gpt-5.2-chat-latest",
+      "channels": [
+        "ChatGPT",
+        "API"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-02-10",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://help.openai.com/en/articles/9624314-model-release-notes",
+          "channels": [
+            "ChatGPT",
+            "API"
+          ],
+          "is_first_availability": null,
+          "id": "gpt-5-2-instant-february-update-announcement-1",
+          "display_date": "2026-02-10",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-02-10",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://help.openai.com/en/articles/9624314-model-release-notes",
+          "channels": [
+            "ChatGPT",
+            "API"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-5-2-instant-february-update-availability-2",
+          "display_date": "2026-02-10",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-3-codex",
+      "company": "OpenAI",
+      "name": "GPT-5.3 Codex",
+      "slug": "gpt-5.3-codex",
+      "snapshot_ids": [],
+      "description": "Unified coding and reasoning model for steerable software engineering.",
+      "release_kind": "Model release",
+      "release_note_url": "https://learn.chatgpt.com/docs/changelog",
+      "documentation_url": "https://developers.openai.com/api/docs/models/gpt-5.3-codex",
+      "channels": [
+        "Codex"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-02-05",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://learn.chatgpt.com/docs/changelog",
+          "channels": [
+            "Codex"
+          ],
+          "is_first_availability": null,
+          "id": "gpt-5-3-codex-announcement-1",
+          "display_date": "2026-02-05",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-02-05",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://learn.chatgpt.com/docs/changelog",
+          "channels": [
+            "Codex"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-5-3-codex-availability-2",
+          "display_date": "2026-02-05",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-02-24",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": false,
+          "id": "gpt-5-3-codex-availability-3",
+          "display_date": "2026-02-24",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-2-codex",
+      "company": "OpenAI",
+      "name": "GPT-5.2 Codex",
+      "slug": "gpt-5.2-codex",
+      "snapshot_ids": [],
+      "description": "Coding model improving large changes, compaction, and Windows work.",
+      "release_kind": "Model release",
+      "release_note_url": "https://learn.chatgpt.com/docs/changelog",
+      "documentation_url": "https://developers.openai.com/api/docs/models/gpt-5.2-codex",
+      "channels": [
+        "Codex"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-12-18",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://learn.chatgpt.com/docs/changelog",
+          "channels": [
+            "Codex"
+          ],
+          "is_first_availability": null,
+          "id": "gpt-5-2-codex-announcement-1",
+          "display_date": "2025-12-18",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-12-18",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://learn.chatgpt.com/docs/changelog",
+          "channels": [
+            "Codex"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-5-2-codex-availability-2",
+          "display_date": "2025-12-18",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-01-14",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": false,
+          "id": "gpt-5-2-codex-availability-3",
+          "display_date": "2026-01-14",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-2-instant",
+      "company": "OpenAI",
+      "name": "GPT-5.2 Instant",
+      "slug": "gpt-5.2-chat-latest",
+      "snapshot_ids": [],
+      "description": "Fast conversational model for everyday tasks.",
+      "release_kind": "Model release",
+      "release_note_url": "https://openai.com/index/introducing-gpt-5-2/",
+      "documentation_url": "https://developers.openai.com/api/docs/models/gpt-5.2-chat-latest",
+      "channels": [
+        "API",
+        "ChatGPT"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-12-11",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-gpt-5-2/",
+          "channels": [
+            "API",
+            "ChatGPT"
+          ],
+          "is_first_availability": null,
+          "rss_reported_pubdate": "Thu, 11 Dec 2025 00:00:00 GMT",
+          "rss_note": "Raw publisher feed metadata only. Not used for event timing: feed times can conflict with contemporaneous announcement evidence.",
+          "id": "gpt-5-2-instant-announcement-1",
+          "display_date": "2025-12-11",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-12-11",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-gpt-5-2/",
+          "channels": [
+            "API",
+            "ChatGPT"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-5-2-instant-availability-2",
+          "display_date": "2025-12-11",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-2-pro",
+      "company": "OpenAI",
+      "name": "GPT-5.2 Pro",
+      "slug": "gpt-5.2-pro",
+      "snapshot_ids": [
+        "gpt-5.2-pro-2025-12-11"
+      ],
+      "description": "Higher-compute option for difficult professional questions.",
+      "release_kind": "Model release",
+      "release_note_url": "https://openai.com/index/introducing-gpt-5-2/",
+      "documentation_url": "https://developers.openai.com/api/docs/models/gpt-5.2-pro",
+      "channels": [
+        "API",
+        "ChatGPT"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-12-11",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-gpt-5-2/",
+          "channels": [
+            "API",
+            "ChatGPT"
+          ],
+          "is_first_availability": null,
+          "rss_reported_pubdate": "Thu, 11 Dec 2025 00:00:00 GMT",
+          "rss_note": "Raw publisher feed metadata only. Not used for event timing: feed times can conflict with contemporaneous announcement evidence.",
+          "id": "gpt-5-2-pro-announcement-1",
+          "display_date": "2025-12-11",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-12-11",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-gpt-5-2/",
+          "channels": [
+            "API",
+            "ChatGPT"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-5-2-pro-availability-2",
+          "display_date": "2025-12-11",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-2-thinking",
+      "company": "OpenAI",
+      "name": "GPT-5.2 Thinking",
+      "slug": "gpt-5.2",
+      "snapshot_ids": [
+        "gpt-5.2-2025-12-11"
+      ],
+      "description": "Reasoning model for professional work, coding, and long contexts.",
+      "release_kind": "Model release",
+      "release_note_url": "https://openai.com/index/introducing-gpt-5-2/",
+      "documentation_url": "https://developers.openai.com/api/docs/models/gpt-5.2",
+      "channels": [
+        "API",
+        "ChatGPT"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-12-11",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-gpt-5-2/",
+          "channels": [
+            "API",
+            "ChatGPT"
+          ],
+          "is_first_availability": null,
+          "rss_reported_pubdate": "Thu, 11 Dec 2025 00:00:00 GMT",
+          "rss_note": "Raw publisher feed metadata only. Not used for event timing: feed times can conflict with contemporaneous announcement evidence.",
+          "id": "gpt-5-2-thinking-announcement-1",
+          "display_date": "2025-12-11",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-12-11",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-gpt-5-2/",
+          "channels": [
+            "API",
+            "ChatGPT"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-5-2-thinking-availability-2",
+          "display_date": "2025-12-11",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-1-codex-max",
+      "company": "OpenAI",
+      "name": "GPT-5.1 Codex Max",
+      "slug": "gpt-5.1-codex-max",
+      "snapshot_ids": [],
+      "description": "Coding model trained to work across context windows using compaction.",
+      "release_kind": "Model release",
+      "release_note_url": "https://learn.chatgpt.com/docs/changelog",
+      "documentation_url": "https://developers.openai.com/api/docs/models/gpt-5.1-codex-max",
+      "channels": [
+        "Codex"
+      ],
+      "notes": "Official Codex changelog dates launch November 18; the announcement blog and model release notes say November 19. The earlier documented date is retained with this conflict disclosed. Blog: https://openai.com/index/gpt-5-1-codex-max/",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-11-19",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/gpt-5-1-codex-max/",
+          "channels": [
+            "Codex"
+          ],
+          "is_first_availability": null,
+          "id": "gpt-5-1-codex-max-announcement-1",
+          "display_date": "2025-11-19",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-11-18",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://learn.chatgpt.com/docs/changelog",
+          "channels": [
+            "Codex"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-5-1-codex-max-availability-2",
+          "display_date": "2025-11-18",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-12-04",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": false,
+          "id": "gpt-5-1-codex-max-availability-3",
+          "display_date": "2025-12-04",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-1-pro",
+      "company": "OpenAI",
+      "name": "GPT-5.1 Pro",
+      "slug": "not published",
+      "snapshot_ids": [],
+      "description": "ChatGPT Pro option with improved clarity on complex work.",
+      "release_kind": "Model release",
+      "release_note_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "documentation_url": null,
+      "channels": [
+        "ChatGPT Pro"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-11-19",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+          "channels": [
+            "ChatGPT Pro"
+          ],
+          "is_first_availability": null,
+          "id": "gpt-5-1-pro-announcement-1",
+          "display_date": "2025-11-19",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-11-19",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+          "channels": [
+            "ChatGPT Pro"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-5-1-pro-availability-2",
+          "display_date": "2025-11-19",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-1-codex",
+      "company": "OpenAI",
+      "name": "GPT-5.1 Codex",
+      "slug": "gpt-5.1-codex",
+      "snapshot_ids": [],
+      "description": "Coding variant for agent harnesses.",
+      "release_kind": "Model release",
+      "release_note_url": "https://learn.chatgpt.com/docs/changelog",
+      "documentation_url": "https://developers.openai.com/api/docs/models/gpt-5.1-codex",
+      "channels": [
+        "Codex",
+        "API"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-11-13",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://learn.chatgpt.com/docs/changelog",
+          "channels": [
+            "Codex",
+            "API"
+          ],
+          "is_first_availability": null,
+          "id": "gpt-5-1-codex-announcement-1",
+          "display_date": "2025-11-13",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-11-13",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://learn.chatgpt.com/docs/changelog",
+          "channels": [
+            "Codex",
+            "API"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-5-1-codex-availability-2",
+          "display_date": "2025-11-13",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-1-codex-mini",
+      "company": "OpenAI",
+      "name": "GPT-5.1 Codex mini",
+      "slug": "gpt-5.1-codex-mini",
+      "snapshot_ids": [],
+      "description": "Compact coding variant for economical agent work.",
+      "release_kind": "Model release",
+      "release_note_url": "https://learn.chatgpt.com/docs/changelog",
+      "documentation_url": "https://developers.openai.com/api/docs/models/gpt-5.1-codex-mini",
+      "channels": [
+        "Codex",
+        "API"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-11-13",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://learn.chatgpt.com/docs/changelog",
+          "channels": [
+            "Codex",
+            "API"
+          ],
+          "is_first_availability": null,
+          "id": "gpt-5-1-codex-mini-announcement-1",
+          "display_date": "2025-11-13",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-11-13",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://learn.chatgpt.com/docs/changelog",
+          "channels": [
+            "Codex",
+            "API"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-5-1-codex-mini-availability-2",
+          "display_date": "2025-11-13",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-1-instant",
+      "company": "OpenAI",
+      "name": "GPT-5.1 Instant",
+      "slug": "gpt-5.1-chat-latest",
+      "snapshot_ids": [],
+      "description": "Conversational model with light adaptive reasoning.",
+      "release_kind": "Model release",
+      "release_note_url": "https://openai.com/index/gpt-5-1/",
+      "documentation_url": "https://developers.openai.com/api/docs/models/gpt-5.1-chat-latest",
+      "channels": [
+        "ChatGPT"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-11-12",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/gpt-5-1/",
+          "channels": [
+            "ChatGPT"
+          ],
+          "is_first_availability": null,
+          "rss_reported_pubdate": "Wed, 12 Nov 2025 00:00:00 GMT",
+          "rss_note": "Raw publisher feed metadata only. Not used for event timing: feed times can conflict with contemporaneous announcement evidence.",
+          "id": "gpt-5-1-instant-announcement-1",
+          "display_date": "2025-11-12",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-11-12",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/gpt-5-1/",
+          "channels": [
+            "ChatGPT"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-5-1-instant-availability-2",
+          "display_date": "2025-11-12",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-11-13",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": false,
+          "id": "gpt-5-1-instant-availability-3",
+          "display_date": "2025-11-13",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-1-thinking",
+      "company": "OpenAI",
+      "name": "GPT-5.1 Thinking",
+      "slug": "gpt-5.1",
+      "snapshot_ids": [
+        "gpt-5.1-2025-11-13"
+      ],
+      "description": "Adaptive reasoning model with stronger coding and instruction following.",
+      "release_kind": "Model release",
+      "release_note_url": "https://openai.com/index/gpt-5-1/",
+      "documentation_url": "https://developers.openai.com/api/docs/models/gpt-5.1",
+      "channels": [
+        "ChatGPT"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-11-12",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/gpt-5-1/",
+          "channels": [
+            "ChatGPT"
+          ],
+          "is_first_availability": null,
+          "rss_reported_pubdate": "Wed, 12 Nov 2025 00:00:00 GMT",
+          "rss_note": "Raw publisher feed metadata only. Not used for event timing: feed times can conflict with contemporaneous announcement evidence.",
+          "id": "gpt-5-1-thinking-announcement-1",
+          "display_date": "2025-11-12",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-11-12",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/gpt-5-1/",
+          "channels": [
+            "ChatGPT"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-5-1-thinking-availability-2",
+          "display_date": "2025-11-12",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-11-13",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": false,
+          "id": "gpt-5-1-thinking-availability-3",
+          "display_date": "2025-11-13",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-codex-mini",
+      "company": "OpenAI",
+      "name": "GPT-5 Codex mini",
+      "slug": "not published",
+      "snapshot_ids": [],
+      "description": "Smaller Codex model providing more subscription usage per task.",
+      "release_kind": "Model release",
+      "release_note_url": "https://learn.chatgpt.com/docs/changelog",
+      "documentation_url": null,
+      "channels": [
+        "Codex"
+      ],
+      "notes": "Codex selector: gpt-5-codex-mini. A public API slug was not established.",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-11-07",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://learn.chatgpt.com/docs/changelog",
+          "channels": [
+            "Codex"
+          ],
+          "is_first_availability": null,
+          "id": "gpt-5-codex-mini-announcement-1",
+          "display_date": "2025-11-07",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-11-07",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://learn.chatgpt.com/docs/changelog",
+          "channels": [
+            "Codex"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-5-codex-mini-availability-2",
+          "display_date": "2025-11-07",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-instant-october-update",
+      "company": "OpenAI",
+      "name": "GPT-5 Instant (October update)",
+      "slug": "not published",
+      "snapshot_ids": [],
+      "description": "Improved responses to sensitive conversations.",
+      "release_kind": "Dated update",
+      "release_note_url": "https://help.openai.com/en/articles/9624314-model-release-notes",
+      "documentation_url": null,
+      "channels": [
+        "ChatGPT"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-10-03",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://help.openai.com/en/articles/9624314-model-release-notes",
+          "channels": [
+            "ChatGPT"
+          ],
+          "is_first_availability": null,
+          "id": "gpt-5-instant-october-update-announcement-1",
+          "display_date": "2025-10-03",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-10-03",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://help.openai.com/en/articles/9624314-model-release-notes",
+          "channels": [
+            "ChatGPT"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-5-instant-october-update-availability-2",
+          "display_date": "2025-10-03",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-codex",
+      "company": "OpenAI",
+      "name": "GPT-5 Codex",
+      "slug": "gpt-5-codex",
+      "snapshot_ids": [],
+      "description": "GPT-5 variant tuned for autonomous software engineering.",
+      "release_kind": "Model release",
+      "release_note_url": "https://learn.chatgpt.com/docs/changelog",
+      "documentation_url": "https://developers.openai.com/api/docs/models/gpt-5-codex",
+      "channels": [
+        "Codex"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-09-15",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://learn.chatgpt.com/docs/changelog",
+          "channels": [
+            "Codex"
+          ],
+          "is_first_availability": null,
+          "id": "gpt-5-codex-announcement-1",
+          "display_date": "2025-09-15",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-09-15",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://learn.chatgpt.com/docs/changelog",
+          "channels": [
+            "Codex"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-5-codex-availability-2",
+          "display_date": "2025-09-15",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-09-23",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": false,
+          "id": "gpt-5-codex-availability-3",
+          "display_date": "2025-09-23",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5",
+      "company": "OpenAI",
+      "name": "GPT-5",
+      "slug": "gpt-5",
+      "snapshot_ids": [
+        "gpt-5-2025-08-07"
+      ],
+      "description": "General reasoning model for coding, knowledge work, and agents.",
+      "release_kind": "Model release",
+      "release_note_url": "https://openai.com/index/introducing-gpt-5-for-developers/",
+      "documentation_url": "https://developers.openai.com/api/docs/models/gpt-5",
+      "channels": [
+        "API",
+        "ChatGPT"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-08-07",
+          "source_timezone": "UTC",
+          "datetime_utc": "2025-08-07T17:11:47+00:00",
+          "datetime_utc8": "2025-08-08T01:11:47+08:00",
+          "weekday_utc8": "Friday",
+          "precision": "second",
+          "timestamp_basis": "Publication time of the cited official announcement post; not a claim of the earliest spoken announcement or first successful request.",
+          "source_url": "https://x.com/OpenAI/status/1953504357821165774",
+          "channels": [
+            "API",
+            "ChatGPT"
+          ],
+          "is_first_availability": null,
+          "timestamp_evidence_url": "https://cdn.syndication.twimg.com/tweet-result?id=1953504357821165774&token=0",
+          "rss_reported_pubdate": "Thu, 07 Aug 2025 10:00:00 GMT",
+          "rss_note": "Raw publisher feed metadata only. Not used for event timing: feed times can conflict with contemporaneous announcement evidence.",
+          "id": "gpt-5-announcement-1",
+          "display_date": "2025-08-08",
+          "date_basis": "UTC+8"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-08-07",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-gpt-5-for-developers/",
+          "channels": [
+            "API",
+            "ChatGPT"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-5-availability-2",
+          "display_date": "2025-08-07",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-instant",
+      "company": "OpenAI",
+      "name": "GPT-5 Instant",
+      "slug": "gpt-5-chat-latest",
+      "snapshot_ids": [],
+      "description": "Non-reasoning GPT-5 chat model exposed through a rolling API alias.",
+      "release_kind": "Model release",
+      "release_note_url": "https://openai.com/index/introducing-gpt-5/",
+      "documentation_url": "https://developers.openai.com/api/docs/models/gpt-5-chat-latest",
+      "channels": [
+        "ChatGPT",
+        "API"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-08-07",
+          "source_timezone": "UTC",
+          "datetime_utc": "2025-08-07T17:11:47+00:00",
+          "datetime_utc8": "2025-08-08T01:11:47+08:00",
+          "weekday_utc8": "Friday",
+          "precision": "second",
+          "timestamp_basis": "Publication time of the cited official announcement post; not a claim of the earliest spoken announcement or first successful request.",
+          "source_url": "https://x.com/OpenAI/status/1953504357821165774",
+          "channels": [
+            "ChatGPT",
+            "API"
+          ],
+          "is_first_availability": null,
+          "timestamp_evidence_url": "https://cdn.syndication.twimg.com/tweet-result?id=1953504357821165774&token=0",
+          "rss_reported_pubdate": "Thu, 07 Aug 2025 00:00:00 GMT",
+          "rss_note": "Raw publisher feed metadata only. Not used for event timing: feed times can conflict with contemporaneous announcement evidence.",
+          "id": "gpt-5-instant-announcement-1",
+          "display_date": "2025-08-08",
+          "date_basis": "UTC+8"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-08-07",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-gpt-5/",
+          "channels": [
+            "ChatGPT",
+            "API"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-5-instant-availability-2",
+          "display_date": "2025-08-07",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-pro",
+      "company": "OpenAI",
+      "name": "GPT-5 Pro",
+      "slug": "gpt-5-pro",
+      "snapshot_ids": [
+        "gpt-5-pro-2025-10-06"
+      ],
+      "description": "Higher-compute GPT-5 option for demanding questions.",
+      "release_kind": "Model release",
+      "release_note_url": "https://openai.com/index/introducing-gpt-5/",
+      "documentation_url": "https://developers.openai.com/api/docs/models/gpt-5-pro",
+      "channels": [
+        "ChatGPT Pro"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-08-07",
+          "source_timezone": "UTC",
+          "datetime_utc": "2025-08-07T17:11:47+00:00",
+          "datetime_utc8": "2025-08-08T01:11:47+08:00",
+          "weekday_utc8": "Friday",
+          "precision": "second",
+          "timestamp_basis": "Publication time of the cited official announcement post; not a claim of the earliest spoken announcement or first successful request.",
+          "source_url": "https://x.com/OpenAI/status/1953504357821165774",
+          "channels": [
+            "ChatGPT Pro"
+          ],
+          "is_first_availability": null,
+          "timestamp_evidence_url": "https://cdn.syndication.twimg.com/tweet-result?id=1953504357821165774&token=0",
+          "rss_reported_pubdate": "Thu, 07 Aug 2025 00:00:00 GMT",
+          "rss_note": "Raw publisher feed metadata only. Not used for event timing: feed times can conflict with contemporaneous announcement evidence.",
+          "id": "gpt-5-pro-announcement-1",
+          "display_date": "2025-08-08",
+          "date_basis": "UTC+8"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-08-07",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-gpt-5/",
+          "channels": [
+            "ChatGPT Pro"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-5-pro-availability-2",
+          "display_date": "2025-08-07",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-10-06",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": false,
+          "id": "gpt-5-pro-availability-3",
+          "display_date": "2025-10-06",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-mini",
+      "company": "OpenAI",
+      "name": "GPT-5-mini",
+      "slug": "gpt-5-mini",
+      "snapshot_ids": [
+        "gpt-5-mini-2025-08-07"
+      ],
+      "description": "Smaller GPT-5 reasoning model balancing cost and capability.",
+      "release_kind": "Model release",
+      "release_note_url": "https://openai.com/index/introducing-gpt-5-for-developers/",
+      "documentation_url": "https://developers.openai.com/api/docs/models/gpt-5-mini",
+      "channels": [
+        "API"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-08-07",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-gpt-5-for-developers/",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": null,
+          "rss_reported_pubdate": "Thu, 07 Aug 2025 10:00:00 GMT",
+          "rss_note": "Raw publisher feed metadata only. Not used for event timing: feed times can conflict with contemporaneous announcement evidence.",
+          "id": "gpt-5-mini-announcement-1",
+          "display_date": "2025-08-07",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-08-07",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-gpt-5-for-developers/",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-5-mini-availability-2",
+          "display_date": "2025-08-07",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-nano",
+      "company": "OpenAI",
+      "name": "GPT-5-nano",
+      "slug": "gpt-5-nano",
+      "snapshot_ids": [
+        "gpt-5-nano-2025-08-07"
+      ],
+      "description": "Fast, economical GPT-5 reasoning model for focused tasks.",
+      "release_kind": "Model release",
+      "release_note_url": "https://openai.com/index/introducing-gpt-5-for-developers/",
+      "documentation_url": "https://developers.openai.com/api/docs/models/gpt-5-nano",
+      "channels": [
+        "API"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-08-07",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-gpt-5-for-developers/",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": null,
+          "rss_reported_pubdate": "Thu, 07 Aug 2025 10:00:00 GMT",
+          "rss_note": "Raw publisher feed metadata only. Not used for event timing: feed times can conflict with contemporaneous announcement evidence.",
+          "id": "gpt-5-nano-announcement-1",
+          "display_date": "2025-08-07",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-08-07",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-gpt-5-for-developers/",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-5-nano-availability-2",
+          "display_date": "2025-08-07",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-oss-120b",
+      "company": "OpenAI",
+      "name": "gpt-oss-120b",
+      "slug": "gpt-oss-120b",
+      "snapshot_ids": [],
+      "description": "Larger open-weight reasoning model for local or hosted deployment.",
+      "release_kind": "Model release",
+      "release_note_url": "https://openai.com/index/introducing-gpt-oss/",
+      "documentation_url": "https://developers.openai.com/api/docs/models/gpt-oss-120b",
+      "channels": [
+        "Open weights",
+        "Third-party hosting"
+      ],
+      "notes": "Official model identifier; not an OpenAI-hosted API endpoint.",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-08-05",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-gpt-oss/",
+          "channels": [
+            "Open weights",
+            "Third-party hosting"
+          ],
+          "is_first_availability": null,
+          "rss_reported_pubdate": "Tue, 05 Aug 2025 00:00:00 GMT",
+          "rss_note": "Raw publisher feed metadata only. Not used for event timing: feed times can conflict with contemporaneous announcement evidence.",
+          "id": "gpt-oss-120b-announcement-1",
+          "display_date": "2025-08-05",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-08-05",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-gpt-oss/",
+          "channels": [
+            "Open weights",
+            "Third-party hosting"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-oss-120b-availability-2",
+          "display_date": "2025-08-05",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-oss-20b",
+      "company": "OpenAI",
+      "name": "gpt-oss-20b",
+      "slug": "gpt-oss-20b",
+      "snapshot_ids": [],
+      "description": "Smaller open-weight reasoning model for local or hosted deployment.",
+      "release_kind": "Model release",
+      "release_note_url": "https://openai.com/index/introducing-gpt-oss/",
+      "documentation_url": "https://developers.openai.com/api/docs/models/gpt-oss-20b",
+      "channels": [
+        "Open weights",
+        "Third-party hosting"
+      ],
+      "notes": "Official model identifier; not an OpenAI-hosted API endpoint.",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-08-05",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-gpt-oss/",
+          "channels": [
+            "Open weights",
+            "Third-party hosting"
+          ],
+          "is_first_availability": null,
+          "rss_reported_pubdate": "Tue, 05 Aug 2025 00:00:00 GMT",
+          "rss_note": "Raw publisher feed metadata only. Not used for event timing: feed times can conflict with contemporaneous announcement evidence.",
+          "id": "gpt-oss-20b-announcement-1",
+          "display_date": "2025-08-05",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-08-05",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-gpt-oss/",
+          "channels": [
+            "Open weights",
+            "Third-party hosting"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-oss-20b-availability-2",
+          "display_date": "2025-08-05",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "o3-deep-research",
+      "company": "OpenAI",
+      "name": "o3 deep research",
+      "slug": "o3-deep-research",
+      "snapshot_ids": [
+        "o3-deep-research-2025-06-26"
+      ],
+      "description": "Research model for multi-step investigation and synthesis.",
+      "release_kind": "Model release",
+      "release_note_url": "https://developers.openai.com/api/docs/changelog",
+      "documentation_url": "https://developers.openai.com/api/docs/models/o3-deep-research",
+      "channels": [
+        "API"
+      ],
+      "notes": "API changelog says June 24 although the snapshot suffix is June 26. Earlier ChatGPT deep-research products are not assumed to be identical API snapshots.",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-06-24",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": null,
+          "id": "o3-deep-research-announcement-1",
+          "display_date": "2025-06-24",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-06-24",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": true,
+          "id": "o3-deep-research-availability-2",
+          "display_date": "2025-06-24",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "o4-mini-deep-research",
+      "company": "OpenAI",
+      "name": "o4-mini deep research",
+      "slug": "o4-mini-deep-research",
+      "snapshot_ids": [
+        "o4-mini-deep-research-2025-06-26"
+      ],
+      "description": "Smaller research model for faster, lower-cost investigation.",
+      "release_kind": "Model release",
+      "release_note_url": "https://developers.openai.com/api/docs/changelog",
+      "documentation_url": "https://developers.openai.com/api/docs/models/o4-mini-deep-research",
+      "channels": [
+        "API"
+      ],
+      "notes": "API changelog says June 24 although the snapshot suffix is June 26. Earlier ChatGPT deep-research products are not assumed to be identical API snapshots.",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-06-24",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": null,
+          "id": "o4-mini-deep-research-announcement-1",
+          "display_date": "2025-06-24",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-06-24",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": true,
+          "id": "o4-mini-deep-research-availability-2",
+          "display_date": "2025-06-24",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "o3-pro",
+      "company": "OpenAI",
+      "name": "o3-pro",
+      "slug": "o3-pro",
+      "snapshot_ids": [
+        "o3-pro-2025-06-10"
+      ],
+      "description": "Higher-compute o3 option for more reliable difficult answers.",
+      "release_kind": "Model release",
+      "release_note_url": "https://developers.openai.com/api/docs/changelog",
+      "documentation_url": "https://developers.openai.com/api/docs/models/o3-pro",
+      "channels": [
+        "API",
+        "ChatGPT Pro"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-06-10",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API",
+            "ChatGPT Pro"
+          ],
+          "is_first_availability": null,
+          "id": "o3-pro-announcement-1",
+          "display_date": "2025-06-10",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-06-10",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API",
+            "ChatGPT Pro"
+          ],
+          "is_first_availability": true,
+          "id": "o3-pro-availability-2",
+          "display_date": "2025-06-10",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "codex-mini",
+      "company": "OpenAI",
+      "name": "Codex mini",
+      "slug": "codex-mini-latest",
+      "snapshot_ids": [],
+      "description": "Compact reasoning model tuned for the Codex CLI.",
+      "release_kind": "Model release",
+      "release_note_url": "https://developers.openai.com/api/docs/changelog",
+      "documentation_url": "https://developers.openai.com/api/docs/models/codex-mini-latest",
+      "channels": [
+        "API"
+      ],
+      "notes": "API changelog dates this May 15; the Codex announcement followed May 16. Date-only evidence is retained.",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-05-16",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-codex/",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": null,
+          "id": "codex-mini-announcement-1",
+          "display_date": "2025-05-16",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-05-15",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": true,
+          "id": "codex-mini-availability-2",
+          "display_date": "2025-05-15",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "codex-1",
+      "company": "OpenAI",
+      "name": "codex-1",
+      "slug": "not published",
+      "snapshot_ids": [],
+      "description": "o3-based model tuned for software engineering in the Codex cloud agent.",
+      "release_kind": "Model release",
+      "release_note_url": "https://openai.com/index/introducing-codex/",
+      "documentation_url": null,
+      "channels": [
+        "Codex research preview"
+      ],
+      "notes": "codex-1 is the published model name, not a publicly documented API model ID.",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-05-16",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-codex/",
+          "channels": [
+            "Codex research preview"
+          ],
+          "is_first_availability": null,
+          "rss_reported_pubdate": "Fri, 16 May 2025 08:00:00 GMT",
+          "rss_note": "Raw publisher feed metadata only. Not used for event timing: feed times can conflict with contemporaneous announcement evidence.",
+          "id": "codex-1-announcement-1",
+          "display_date": "2025-05-16",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-05-16",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-codex/",
+          "channels": [
+            "Codex research preview"
+          ],
+          "is_first_availability": true,
+          "id": "codex-1-availability-2",
+          "display_date": "2025-05-16",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-4o-april-update-reverted",
+      "company": "OpenAI",
+      "name": "GPT-4o (April update; reverted)",
+      "slug": "not published",
+      "snapshot_ids": [],
+      "description": "STEM and response-behavior update later reverted for excessive agreement.",
+      "release_kind": "Dated update",
+      "release_note_url": "https://help.openai.com/en/articles/9624314-model-release-notes",
+      "documentation_url": null,
+      "channels": [
+        "ChatGPT"
+      ],
+      "notes": "OpenAI records a rollback on April 29, 2025. A rollback is not counted as a new model release.",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-04-25",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://help.openai.com/en/articles/9624314-model-release-notes",
+          "channels": [
+            "ChatGPT"
+          ],
+          "is_first_availability": null,
+          "id": "gpt-4o-april-update-reverted-announcement-1",
+          "display_date": "2025-04-25",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-04-25",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://help.openai.com/en/articles/9624314-model-release-notes",
+          "channels": [
+            "ChatGPT"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-4o-april-update-reverted-availability-2",
+          "display_date": "2025-04-25",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "o4-mini",
+      "company": "OpenAI",
+      "name": "o4-mini",
+      "slug": "o4-mini",
+      "snapshot_ids": [
+        "o4-mini-2025-04-16"
+      ],
+      "description": "Efficient reasoning model supporting visual problem solving and tools.",
+      "release_kind": "Model release",
+      "release_note_url": "https://openai.com/index/introducing-o3-and-o4-mini/",
+      "documentation_url": "https://developers.openai.com/api/docs/models/o4-mini",
+      "channels": [
+        "API",
+        "ChatGPT"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-04-16",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-o3-and-o4-mini/",
+          "channels": [
+            "API",
+            "ChatGPT"
+          ],
+          "is_first_availability": null,
+          "rss_reported_pubdate": "Wed, 16 Apr 2025 10:00:00 GMT",
+          "rss_note": "Raw publisher feed metadata only. Not used for event timing: feed times can conflict with contemporaneous announcement evidence.",
+          "id": "o4-mini-announcement-1",
+          "display_date": "2025-04-16",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-04-16",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-o3-and-o4-mini/",
+          "channels": [
+            "API",
+            "ChatGPT"
+          ],
+          "is_first_availability": true,
+          "id": "o4-mini-availability-2",
+          "display_date": "2025-04-16",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-4-1",
+      "company": "OpenAI",
+      "name": "GPT-4.1",
+      "slug": "gpt-4.1",
+      "snapshot_ids": [
+        "gpt-4.1-2025-04-14"
+      ],
+      "description": "Flagship focused on coding, instruction following, and a million-token context.",
+      "release_kind": "Model release",
+      "release_note_url": "https://openai.com/index/gpt-4-1/",
+      "documentation_url": "https://developers.openai.com/api/docs/models/gpt-4.1",
+      "channels": [
+        "API"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-04-14",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/gpt-4-1/",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": null,
+          "rss_reported_pubdate": "Mon, 14 Apr 2025 10:00:00 GMT",
+          "rss_note": "Raw publisher feed metadata only. Not used for event timing: feed times can conflict with contemporaneous announcement evidence.",
+          "id": "gpt-4-1-announcement-1",
+          "display_date": "2025-04-14",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-04-14",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/gpt-4-1/",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-4-1-availability-2",
+          "display_date": "2025-04-14",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-4-1-mini",
+      "company": "OpenAI",
+      "name": "GPT-4.1-mini",
+      "slug": "gpt-4.1-mini",
+      "snapshot_ids": [
+        "gpt-4.1-mini-2025-04-14"
+      ],
+      "description": "Smaller GPT-4.1 with a balance of capability, latency, and price.",
+      "release_kind": "Model release",
+      "release_note_url": "https://openai.com/index/gpt-4-1/",
+      "documentation_url": "https://developers.openai.com/api/docs/models/gpt-4.1-mini",
+      "channels": [
+        "API"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-04-14",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/gpt-4-1/",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": null,
+          "rss_reported_pubdate": "Mon, 14 Apr 2025 10:00:00 GMT",
+          "rss_note": "Raw publisher feed metadata only. Not used for event timing: feed times can conflict with contemporaneous announcement evidence.",
+          "id": "gpt-4-1-mini-announcement-1",
+          "display_date": "2025-04-14",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-04-14",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/gpt-4-1/",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-4-1-mini-availability-2",
+          "display_date": "2025-04-14",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-4-1-nano",
+      "company": "OpenAI",
+      "name": "GPT-4.1-nano",
+      "slug": "gpt-4.1-nano",
+      "snapshot_ids": [
+        "gpt-4.1-nano-2025-04-14"
+      ],
+      "description": "Lowest-cost GPT-4.1 variant for simple high-volume workloads.",
+      "release_kind": "Model release",
+      "release_note_url": "https://openai.com/index/gpt-4-1/",
+      "documentation_url": "https://developers.openai.com/api/docs/models/gpt-4.1-nano",
+      "channels": [
+        "API"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-04-14",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/gpt-4-1/",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": null,
+          "rss_reported_pubdate": "Mon, 14 Apr 2025 10:00:00 GMT",
+          "rss_note": "Raw publisher feed metadata only. Not used for event timing: feed times can conflict with contemporaneous announcement evidence.",
+          "id": "gpt-4-1-nano-announcement-1",
+          "display_date": "2025-04-14",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-04-14",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/gpt-4-1/",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-4-1-nano-availability-2",
+          "display_date": "2025-04-14",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-4o-march-update",
+      "company": "OpenAI",
+      "name": "GPT-4o (March update)",
+      "slug": "chatgpt-4o-latest",
+      "snapshot_ids": [],
+      "description": "Better instruction following, coding, and creative collaboration.",
+      "release_kind": "Dated update",
+      "release_note_url": "https://help.openai.com/en/articles/9624314-model-release-notes",
+      "documentation_url": null,
+      "channels": [
+        "API",
+        "ChatGPT"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-03-27",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://help.openai.com/en/articles/9624314-model-release-notes",
+          "channels": [
+            "API",
+            "ChatGPT"
+          ],
+          "is_first_availability": null,
+          "id": "gpt-4o-march-update-announcement-1",
+          "display_date": "2025-03-27",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-03-27",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://help.openai.com/en/articles/9624314-model-release-notes",
+          "channels": [
+            "API",
+            "ChatGPT"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-4o-march-update-availability-2",
+          "display_date": "2025-03-27",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "computer-use-preview",
+      "company": "OpenAI",
+      "name": "Computer use preview",
+      "slug": "computer-use-preview",
+      "snapshot_ids": [
+        "computer-use-preview-2025-03-11"
+      ],
+      "description": "Model for interpreting screenshots and operating computer interfaces.",
+      "release_kind": "Model release",
+      "release_note_url": "https://developers.openai.com/api/docs/changelog",
+      "documentation_url": "https://developers.openai.com/api/docs/models/computer-use-preview",
+      "channels": [
+        "API"
+      ],
+      "notes": "This entry records the API model. Operator was an earlier product preview; an identical underlying snapshot is not assumed.",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-03-11",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": null,
+          "id": "computer-use-preview-announcement-1",
+          "display_date": "2025-03-11",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-03-11",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": true,
+          "id": "computer-use-preview-availability-2",
+          "display_date": "2025-03-11",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-4o-mini-search-preview",
+      "company": "OpenAI",
+      "name": "GPT-4o mini search preview",
+      "slug": "gpt-4o-mini-search-preview",
+      "snapshot_ids": [
+        "gpt-4o-mini-search-preview-2025-03-11"
+      ],
+      "description": "Smaller model integrating web search.",
+      "release_kind": "Model release",
+      "release_note_url": "https://developers.openai.com/api/docs/changelog",
+      "documentation_url": "https://developers.openai.com/api/docs/models/gpt-4o-mini-search-preview",
+      "channels": [
+        "API"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-03-11",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": null,
+          "id": "gpt-4o-mini-search-preview-announcement-1",
+          "display_date": "2025-03-11",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-03-11",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-4o-mini-search-preview-availability-2",
+          "display_date": "2025-03-11",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-4o-search-preview",
+      "company": "OpenAI",
+      "name": "GPT-4o search preview",
+      "slug": "gpt-4o-search-preview",
+      "snapshot_ids": [
+        "gpt-4o-search-preview-2025-03-11"
+      ],
+      "description": "GPT-4o variant integrating web search.",
+      "release_kind": "Model release",
+      "release_note_url": "https://developers.openai.com/api/docs/changelog",
+      "documentation_url": "https://developers.openai.com/api/docs/models/gpt-4o-search-preview",
+      "channels": [
+        "API"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-03-11",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": null,
+          "id": "gpt-4o-search-preview-announcement-1",
+          "display_date": "2025-03-11",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-03-11",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-4o-search-preview-availability-2",
+          "display_date": "2025-03-11",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-4-5-preview",
+      "company": "OpenAI",
+      "name": "GPT-4.5 preview",
+      "slug": "gpt-4.5-preview",
+      "snapshot_ids": [
+        "gpt-4.5-preview-2025-02-27"
+      ],
+      "description": "Large non-reasoning research preview emphasizing natural conversation and broad knowledge.",
+      "release_kind": "Model release",
+      "release_note_url": "https://openai.com/index/introducing-gpt-4-5/",
+      "documentation_url": "https://developers.openai.com/api/docs/models/gpt-4.5-preview",
+      "channels": [
+        "API",
+        "ChatGPT Pro"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-02-27",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-gpt-4-5/",
+          "channels": [
+            "API",
+            "ChatGPT Pro"
+          ],
+          "is_first_availability": null,
+          "id": "gpt-4-5-preview-announcement-1",
+          "display_date": "2025-02-27",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-02-27",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-gpt-4-5/",
+          "channels": [
+            "API",
+            "ChatGPT Pro"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-4-5-preview-availability-2",
+          "display_date": "2025-02-27",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-4o-january-chatgpt-update",
+      "company": "OpenAI",
+      "name": "GPT-4o (January ChatGPT update)",
+      "slug": "not published",
+      "snapshot_ids": [],
+      "description": "Refreshed knowledge and better vision and STEM performance.",
+      "release_kind": "Dated update",
+      "release_note_url": "https://help.openai.com/en/articles/9624314-model-release-notes",
+      "documentation_url": null,
+      "channels": [
+        "ChatGPT"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-01-29",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://help.openai.com/en/articles/9624314-model-release-notes",
+          "channels": [
+            "ChatGPT"
+          ],
+          "is_first_availability": null,
+          "id": "gpt-4o-january-chatgpt-update-announcement-1",
+          "display_date": "2025-01-29",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-01-29",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://help.openai.com/en/articles/9624314-model-release-notes",
+          "channels": [
+            "ChatGPT"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-4o-january-chatgpt-update-availability-2",
+          "display_date": "2025-01-29",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "o3",
+      "company": "OpenAI",
+      "name": "o3",
+      "slug": "o3",
+      "snapshot_ids": [
+        "o3-2025-04-16"
+      ],
+      "description": "Reasoning model with strong visual analysis and tool use.",
+      "release_kind": "Model release",
+      "release_note_url": "https://openai.com/index/introducing-o3-and-o4-mini/",
+      "documentation_url": "https://developers.openai.com/api/docs/models/o3",
+      "channels": [
+        "API",
+        "ChatGPT"
+      ],
+      "notes": "Announced alongside o3-mini in December; public access began in April.",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2024-12-20",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://www.youtube.com/watch?v=SKBG1sqdyIU",
+          "channels": [
+            "API",
+            "ChatGPT"
+          ],
+          "is_first_availability": null,
+          "rss_reported_pubdate": "Wed, 16 Apr 2025 10:00:00 GMT",
+          "rss_note": "Raw publisher feed metadata only. Not used for event timing: feed times can conflict with contemporaneous announcement evidence.",
+          "id": "o3-announcement-1",
+          "display_date": "2024-12-20",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-04-16",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-o3-and-o4-mini/",
+          "channels": [
+            "API",
+            "ChatGPT"
+          ],
+          "is_first_availability": true,
+          "id": "o3-availability-2",
+          "display_date": "2025-04-16",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "o3-mini",
+      "company": "OpenAI",
+      "name": "o3-mini",
+      "slug": "o3-mini",
+      "snapshot_ids": [
+        "o3-mini-2025-01-31"
+      ],
+      "description": "Compact reasoning model for science, mathematics, and code.",
+      "release_kind": "Model release",
+      "release_note_url": "https://openai.com/index/openai-o3-mini/",
+      "documentation_url": "https://developers.openai.com/api/docs/models/o3-mini",
+      "channels": [
+        "API",
+        "ChatGPT"
+      ],
+      "notes": "Announced in December 2024; safety testing applications were not public model access.",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2024-12-20",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://www.youtube.com/watch?v=SKBG1sqdyIU",
+          "channels": [
+            "API",
+            "ChatGPT"
+          ],
+          "is_first_availability": null,
+          "rss_reported_pubdate": "Fri, 31 Jan 2025 11:00:00 GMT",
+          "rss_note": "Raw publisher feed metadata only. Not used for event timing: feed times can conflict with contemporaneous announcement evidence.",
+          "id": "o3-mini-announcement-1",
+          "display_date": "2024-12-20",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-01-31",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/openai-o3-mini/",
+          "channels": [
+            "API",
+            "ChatGPT"
+          ],
+          "is_first_availability": true,
+          "id": "o3-mini-availability-2",
+          "display_date": "2025-01-31",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "o1",
+      "company": "OpenAI",
+      "name": "o1",
+      "slug": "o1",
+      "snapshot_ids": [
+        "o1-2024-12-17"
+      ],
+      "description": "Full reasoning release following o1-preview.",
+      "release_kind": "Model release",
+      "release_note_url": "https://openai.com/index/introducing-chatgpt-pro/",
+      "documentation_url": "https://developers.openai.com/api/docs/models/o1",
+      "channels": [
+        "ChatGPT"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2024-12-05",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-chatgpt-pro/",
+          "channels": [
+            "ChatGPT"
+          ],
+          "is_first_availability": null,
+          "rss_reported_pubdate": "Thu, 05 Dec 2024 10:30:00 GMT",
+          "rss_note": "Raw publisher feed metadata only. Not used for event timing: feed times can conflict with contemporaneous announcement evidence.",
+          "id": "o1-announcement-1",
+          "display_date": "2024-12-05",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2024-12-05",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-chatgpt-pro/",
+          "channels": [
+            "ChatGPT"
+          ],
+          "is_first_availability": true,
+          "id": "o1-availability-2",
+          "display_date": "2024-12-05",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2024-12-17",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": false,
+          "id": "o1-availability-3",
+          "display_date": "2024-12-17",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "o1-pro",
+      "company": "OpenAI",
+      "name": "o1 pro",
+      "slug": "o1-pro",
+      "snapshot_ids": [
+        "o1-pro-2025-03-19"
+      ],
+      "description": "Higher-compute o1 option for difficult reasoning tasks.",
+      "release_kind": "Model release",
+      "release_note_url": "https://openai.com/index/introducing-chatgpt-pro/",
+      "documentation_url": "https://developers.openai.com/api/docs/models/o1-pro",
+      "channels": [
+        "ChatGPT Pro"
+      ],
+      "notes": "Launched as o1 pro mode in ChatGPT; the API identifier and pinned snapshot arrived later.",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2024-12-05",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-chatgpt-pro/",
+          "channels": [
+            "ChatGPT Pro"
+          ],
+          "is_first_availability": null,
+          "rss_reported_pubdate": "Thu, 05 Dec 2024 10:30:00 GMT",
+          "rss_note": "Raw publisher feed metadata only. Not used for event timing: feed times can conflict with contemporaneous announcement evidence.",
+          "id": "o1-pro-announcement-1",
+          "display_date": "2024-12-05",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2024-12-05",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-chatgpt-pro/",
+          "channels": [
+            "ChatGPT Pro"
+          ],
+          "is_first_availability": true,
+          "id": "o1-pro-availability-2",
+          "display_date": "2024-12-05",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-03-19",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": false,
+          "id": "o1-pro-availability-3",
+          "display_date": "2025-03-19",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-4o-november-snapshot",
+      "company": "OpenAI",
+      "name": "GPT-4o (November snapshot)",
+      "slug": "gpt-4o",
+      "snapshot_ids": [
+        "gpt-4o-2024-11-20"
+      ],
+      "description": "Updated GPT-4o snapshot with stronger writing and file understanding.",
+      "release_kind": "Dated update",
+      "release_note_url": "https://developers.openai.com/api/docs/changelog",
+      "documentation_url": "https://developers.openai.com/api/docs/models/gpt-4o",
+      "channels": [
+        "API",
+        "ChatGPT"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2024-11-20",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API",
+            "ChatGPT"
+          ],
+          "is_first_availability": null,
+          "id": "gpt-4o-november-snapshot-announcement-1",
+          "display_date": "2024-11-20",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2024-11-20",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API",
+            "ChatGPT"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-4o-november-snapshot-availability-2",
+          "display_date": "2024-11-20",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-4o-mini-november-chatgpt-update",
+      "company": "OpenAI",
+      "name": "GPT-4o mini (November ChatGPT update)",
+      "slug": "not published",
+      "snapshot_ids": [],
+      "description": "Updated ChatGPT small model; detailed capability changes were not specified.",
+      "release_kind": "Dated update",
+      "release_note_url": "https://help.openai.com/en/articles/9624314-model-release-notes",
+      "documentation_url": null,
+      "channels": [
+        "ChatGPT"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2024-11-05",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://help.openai.com/en/articles/9624314-model-release-notes",
+          "channels": [
+            "ChatGPT"
+          ],
+          "is_first_availability": null,
+          "id": "gpt-4o-mini-november-chatgpt-update-announcement-1",
+          "display_date": "2024-11-05",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2024-11-05",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://help.openai.com/en/articles/9624314-model-release-notes",
+          "channels": [
+            "ChatGPT"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-4o-mini-november-chatgpt-update-availability-2",
+          "display_date": "2024-11-05",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-4o-with-canvas",
+      "company": "OpenAI",
+      "name": "GPT-4o with canvas",
+      "slug": "not published",
+      "snapshot_ids": [],
+      "description": "GPT-4o variant trained for collaborative writing and code edits.",
+      "release_kind": "Model release",
+      "release_note_url": "https://openai.com/index/introducing-canvas/",
+      "documentation_url": null,
+      "channels": [
+        "ChatGPT beta"
+      ],
+      "notes": "Included because OpenAI describes model training for canvas; no public API identifier for this variant was published.",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2024-10-03",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-canvas/",
+          "channels": [
+            "ChatGPT beta"
+          ],
+          "is_first_availability": null,
+          "rss_reported_pubdate": "Thu, 03 Oct 2024 10:00:00 GMT",
+          "rss_note": "Raw publisher feed metadata only. Not used for event timing: feed times can conflict with contemporaneous announcement evidence.",
+          "id": "gpt-4o-with-canvas-announcement-1",
+          "display_date": "2024-10-03",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2024-10-03",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-canvas/",
+          "channels": [
+            "ChatGPT beta"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-4o-with-canvas-availability-2",
+          "display_date": "2024-10-03",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "o1-mini",
+      "company": "OpenAI",
+      "name": "o1-mini",
+      "slug": "o1-mini",
+      "snapshot_ids": [
+        "o1-mini-2024-09-12"
+      ],
+      "description": "Smaller reasoning model focused on economical STEM and coding tasks.",
+      "release_kind": "Model release",
+      "release_note_url": "https://openai.com/index/introducing-openai-o1-preview/",
+      "documentation_url": "https://developers.openai.com/api/docs/models/o1-mini",
+      "channels": [
+        "API",
+        "ChatGPT"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2024-09-12",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-openai-o1-preview/",
+          "channels": [
+            "API",
+            "ChatGPT"
+          ],
+          "is_first_availability": null,
+          "rss_reported_pubdate": "Thu, 12 Sep 2024 10:03:00 GMT",
+          "rss_note": "Raw publisher feed metadata only. Not used for event timing: feed times can conflict with contemporaneous announcement evidence.",
+          "id": "o1-mini-announcement-1",
+          "display_date": "2024-09-12",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2024-09-12",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-openai-o1-preview/",
+          "channels": [
+            "API",
+            "ChatGPT"
+          ],
+          "is_first_availability": true,
+          "id": "o1-mini-availability-2",
+          "display_date": "2024-09-12",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "o1-preview",
+      "company": "OpenAI",
+      "name": "o1-preview",
+      "slug": "o1-preview",
+      "snapshot_ids": [
+        "o1-preview-2024-09-12"
+      ],
+      "description": "Early reasoning model that spends additional computation before answering.",
+      "release_kind": "Model release",
+      "release_note_url": "https://openai.com/index/introducing-openai-o1-preview/",
+      "documentation_url": "https://developers.openai.com/api/docs/models/o1-preview",
+      "channels": [
+        "API",
+        "ChatGPT"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2024-09-12",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-openai-o1-preview/",
+          "channels": [
+            "API",
+            "ChatGPT"
+          ],
+          "is_first_availability": null,
+          "rss_reported_pubdate": "Thu, 12 Sep 2024 10:03:00 GMT",
+          "rss_note": "Raw publisher feed metadata only. Not used for event timing: feed times can conflict with contemporaneous announcement evidence.",
+          "id": "o1-preview-announcement-1",
+          "display_date": "2024-09-12",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2024-09-12",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-openai-o1-preview/",
+          "channels": [
+            "API",
+            "ChatGPT"
+          ],
+          "is_first_availability": true,
+          "id": "o1-preview-availability-2",
+          "display_date": "2024-09-12",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-4o-september-chatgpt-update",
+      "company": "OpenAI",
+      "name": "GPT-4o (September ChatGPT update)",
+      "slug": "not published",
+      "snapshot_ids": [],
+      "description": "Improved use of uploaded files and conversational memory.",
+      "release_kind": "Dated update",
+      "release_note_url": "https://help.openai.com/en/articles/9624314-model-release-notes",
+      "documentation_url": null,
+      "channels": [
+        "ChatGPT"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2024-09-03",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://help.openai.com/en/articles/9624314-model-release-notes",
+          "channels": [
+            "ChatGPT"
+          ],
+          "is_first_availability": null,
+          "id": "gpt-4o-september-chatgpt-update-announcement-1",
+          "display_date": "2024-09-03",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2024-09-03",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://help.openai.com/en/articles/9624314-model-release-notes",
+          "channels": [
+            "ChatGPT"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-4o-september-chatgpt-update-availability-2",
+          "display_date": "2024-09-03",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-4o-latest",
+      "company": "OpenAI",
+      "name": "ChatGPT-4o latest",
+      "slug": "chatgpt-4o-latest",
+      "snapshot_ids": [],
+      "description": "Rolling API alias exposing the GPT-4o version used in ChatGPT.",
+      "release_kind": "Rolling alias launch",
+      "release_note_url": "https://developers.openai.com/api/docs/changelog",
+      "documentation_url": null,
+      "channels": [
+        "API"
+      ],
+      "notes": "A rolling alias, not an additional foundational model. It is not equated with the August 6 pinned API snapshot.",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2024-08-15",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": null,
+          "id": "chatgpt-4o-latest-announcement-1",
+          "display_date": "2024-08-15",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2024-08-15",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": true,
+          "id": "chatgpt-4o-latest-availability-2",
+          "display_date": "2024-08-15",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-4o-august-chatgpt-update",
+      "company": "OpenAI",
+      "name": "GPT-4o (August ChatGPT update)",
+      "slug": "not published",
+      "snapshot_ids": [],
+      "description": "ChatGPT model refinement preferred in user evaluations.",
+      "release_kind": "Dated update",
+      "release_note_url": "https://help.openai.com/en/articles/9624314-model-release-notes",
+      "documentation_url": null,
+      "channels": [
+        "ChatGPT"
+      ],
+      "notes": "No new pinned API snapshot was identified for this ChatGPT update.",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2024-08-12",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://help.openai.com/en/articles/9624314-model-release-notes",
+          "channels": [
+            "ChatGPT"
+          ],
+          "is_first_availability": null,
+          "id": "gpt-4o-august-chatgpt-update-announcement-1",
+          "display_date": "2024-08-12",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2024-08-12",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://help.openai.com/en/articles/9624314-model-release-notes",
+          "channels": [
+            "ChatGPT"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-4o-august-chatgpt-update-availability-2",
+          "display_date": "2024-08-12",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-4o-august-api-snapshot",
+      "company": "OpenAI",
+      "name": "GPT-4o (August API snapshot)",
+      "slug": "gpt-4o",
+      "snapshot_ids": [
+        "gpt-4o-2024-08-06"
+      ],
+      "description": "API snapshot adding reliable JSON-schema output and lower token prices.",
+      "release_kind": "Dated update",
+      "release_note_url": "https://openai.com/index/introducing-structured-outputs-in-the-api/",
+      "documentation_url": "https://developers.openai.com/api/docs/models/gpt-4o",
+      "channels": [
+        "API"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2024-08-06",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-structured-outputs-in-the-api/",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": null,
+          "rss_reported_pubdate": "Tue, 06 Aug 2024 10:00:00 GMT",
+          "rss_note": "Raw publisher feed metadata only. Not used for event timing: feed times can conflict with contemporaneous announcement evidence.",
+          "id": "gpt-4o-august-api-snapshot-announcement-1",
+          "display_date": "2024-08-06",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2024-08-06",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/introducing-structured-outputs-in-the-api/",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-4o-august-api-snapshot-availability-2",
+          "display_date": "2024-08-06",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-4o-mini",
+      "company": "OpenAI",
+      "name": "GPT-4o mini",
+      "slug": "gpt-4o-mini",
+      "snapshot_ids": [
+        "gpt-4o-mini-2024-07-18"
+      ],
+      "description": "Small text-and-vision model designed for economical, high-volume work.",
+      "release_kind": "Model release",
+      "release_note_url": "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/",
+      "documentation_url": "https://developers.openai.com/api/docs/models/gpt-4o-mini",
+      "channels": [
+        "API",
+        "ChatGPT"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2024-07-18",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/",
+          "channels": [
+            "API",
+            "ChatGPT"
+          ],
+          "is_first_availability": null,
+          "rss_reported_pubdate": "Thu, 18 Jul 2024 10:00:00 GMT",
+          "rss_note": "Raw publisher feed metadata only. Not used for event timing: feed times can conflict with contemporaneous announcement evidence.",
+          "id": "gpt-4o-mini-announcement-1",
+          "display_date": "2024-07-18",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2024-07-18",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/",
+          "channels": [
+            "API",
+            "ChatGPT"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-4o-mini-availability-2",
+          "display_date": "2024-07-18",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-4o",
+      "company": "OpenAI",
+      "name": "GPT-4o",
+      "slug": "gpt-4o",
+      "snapshot_ids": [
+        "gpt-4o-2024-05-13"
+      ],
+      "description": "Omni flagship with text and vision access at launch; native audio capabilities followed.",
+      "release_kind": "Model release",
+      "release_note_url": "https://openai.com/index/hello-gpt-4o/",
+      "documentation_url": "https://developers.openai.com/api/docs/models/gpt-4o",
+      "channels": [
+        "API",
+        "ChatGPT"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2024-05-13",
+          "source_timezone": "UTC",
+          "datetime_utc": "2024-05-13T17:30:38+00:00",
+          "datetime_utc8": "2024-05-14T01:30:38+08:00",
+          "weekday_utc8": "Tuesday",
+          "precision": "second",
+          "timestamp_basis": "Publication time of the cited official announcement post; not a claim of the earliest spoken announcement or first successful request.",
+          "source_url": "https://x.com/OpenAI/status/1790072174117613963",
+          "channels": [
+            "API",
+            "ChatGPT"
+          ],
+          "is_first_availability": null,
+          "timestamp_evidence_url": "https://cdn.syndication.twimg.com/tweet-result?id=1790072174117613963&token=0",
+          "rss_reported_pubdate": "Mon, 13 May 2024 10:05:00 GMT",
+          "rss_note": "Raw publisher feed metadata only. Not used for event timing: feed times can conflict with contemporaneous announcement evidence.",
+          "id": "gpt-4o-announcement-1",
+          "display_date": "2024-05-14",
+          "date_basis": "UTC+8"
+        },
+        {
+          "type": "availability",
+          "source_date": "2024-05-13",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/hello-gpt-4o/",
+          "channels": [
+            "API",
+            "ChatGPT"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-4o-availability-2",
+          "display_date": "2024-05-13",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-4-turbo-with-vision",
+      "company": "OpenAI",
+      "name": "GPT-4 Turbo with Vision",
+      "slug": "gpt-4-turbo",
+      "snapshot_ids": [
+        "gpt-4-turbo-2024-04-09"
+      ],
+      "description": "General-availability GPT-4 Turbo combining text and image understanding.",
+      "release_kind": "Model release",
+      "release_note_url": "https://developers.openai.com/api/docs/changelog",
+      "documentation_url": "https://developers.openai.com/api/docs/models/gpt-4-turbo",
+      "channels": [
+        "API"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2024-04-09",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": null,
+          "id": "gpt-4-turbo-with-vision-announcement-1",
+          "display_date": "2024-04-09",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2024-04-09",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-4-turbo-with-vision-availability-2",
+          "display_date": "2024-04-09",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-3-5-turbo-0125",
+      "company": "OpenAI",
+      "name": "GPT-3.5 Turbo (0125)",
+      "slug": "gpt-3.5-turbo",
+      "snapshot_ids": [
+        "gpt-3.5-turbo-0125"
+      ],
+      "description": "Lower-cost update with better format following and a fix for non-English function calls.",
+      "release_kind": "Dated update",
+      "release_note_url": "https://developers.openai.com/api/docs/changelog",
+      "documentation_url": "https://developers.openai.com/api/docs/models/gpt-3.5-turbo",
+      "channels": [
+        "API"
+      ],
+      "notes": "The January 25 announcement says next week; the API changelog records release on February 1. The snapshot suffix is not the release date.",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2024-01-25",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/new-embedding-models-and-api-updates/",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": null,
+          "id": "gpt-3-5-turbo-0125-announcement-1",
+          "display_date": "2024-01-25",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2024-02-01",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-3-5-turbo-0125-availability-2",
+          "display_date": "2024-02-01",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-4-turbo-preview-january-update",
+      "company": "OpenAI",
+      "name": "GPT-4 Turbo preview (January update)",
+      "slug": "gpt-4-turbo-preview",
+      "snapshot_ids": [
+        "gpt-4-0125-preview"
+      ],
+      "description": "Updated preview intended to finish coding tasks more fully and fix non-English text encoding.",
+      "release_kind": "Dated update",
+      "release_note_url": "https://openai.com/index/new-embedding-models-and-api-updates/",
+      "documentation_url": null,
+      "channels": [
+        "API"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2024-01-25",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/new-embedding-models-and-api-updates/",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": null,
+          "rss_reported_pubdate": "Thu, 25 Jan 2024 08:00:00 GMT",
+          "rss_note": "Raw publisher feed metadata only. Not used for event timing: feed times can conflict with contemporaneous announcement evidence.",
+          "id": "gpt-4-turbo-preview-january-update-announcement-1",
+          "display_date": "2024-01-25",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2024-01-25",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://openai.com/index/new-embedding-models-and-api-updates/",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-4-turbo-preview-january-update-availability-2",
+          "display_date": "2024-01-25",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    }
+  ]
+}

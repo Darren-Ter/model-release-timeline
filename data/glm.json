@@ -1,0 +1,390 @@
+{
+  "title": "Z.ai GLM model releases",
+  "researched_on": "2026-09-25",
+  "timezone": "UTC+08:00",
+  "models": [
+    {
+      "id": "glm-4",
+      "company": "Z.ai",
+      "name": "GLM-4",
+      "description": "Fourth-generation GLM foundation model.",
+      "release_note_url": "https://www.zhipuai.cn/zh/news/8",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2024-01-16",
+          "source_url": "https://www.zhipuai.cn/zh/news/8"
+        }
+      ],
+      "notes": "The official DevDay report identifies January 16, 2024 as the launch event. Its April publication date and the company timeline are not used as the launch date."
+    },
+    {
+      "id": "glm-4-9b",
+      "company": "Z.ai",
+      "name": "GLM-4-9B",
+      "description": "Open-weight 9B language model.",
+      "release_note_url": "https://github.com/zai-org/GLM-4#project-updates",
+      "channels": [
+        "Open weights"
+      ],
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2024-06-05",
+          "source_url": "https://github.com/zai-org/GLM-4#project-updates"
+        },
+        {
+          "type": "availability",
+          "source_date": "2024-06-05",
+          "source_url": "https://github.com/zai-org/GLM-4#project-updates",
+          "channels": [
+            "Open weights"
+          ],
+          "is_first_availability": true
+        }
+      ],
+      "notes": "The official repository dates the model release to June 5. June 18 is the technical-report publication date."
+    },
+    {
+      "id": "glm-4-plus",
+      "company": "Z.ai",
+      "name": "GLM-4-Plus",
+      "description": "Upgraded GLM-4 foundation model.",
+      "release_note_url": "https://z.ai/company",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2024-08-12",
+          "source_url": "https://z.ai/company"
+        }
+      ],
+      "date_disputed": true,
+      "documentation_url": "https://www.zhipuai.cn/zh/news/69",
+      "notes": "Date uncertain: the company timeline lists August 12, 2024, but the separate launch report describes the later KDD launch and carries a September 12 publication date. The timeline date is retained pending a contemporaneous dated launch source; it is not a verified first-access date."
+    },
+    {
+      "id": "glm-zero-preview",
+      "company": "Z.ai",
+      "name": "GLM-Zero-Preview",
+      "release_kind": "Model preview",
+      "description": "First-generation GLM reasoning model preview.",
+      "release_note_url": "https://z.ai/company",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2024-12-20",
+          "source_url": "https://z.ai/company"
+        }
+      ]
+    },
+    {
+      "id": "glm-4-32b-0414",
+      "company": "Z.ai",
+      "name": "GLM-4-32B-0414",
+      "description": "Open 32B language model for coding and agents.",
+      "release_note_url": "https://huggingface.co/zai-org/GLM-4-32B-0414",
+      "channels": [
+        "Open weights"
+      ],
+      "events": [
+        {
+          "type": "availability",
+          "source_date": "2025-04-14",
+          "source_url": "https://huggingface.co/zai-org/GLM-4-32B-0414/commits/main",
+          "channels": [
+            "Open weights"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "glm-z1-32b-0414",
+      "company": "Z.ai",
+      "name": "GLM-Z1-32B-0414",
+      "description": "Open 32B reasoning model.",
+      "release_note_url": "https://huggingface.co/zai-org/GLM-Z1-32B-0414",
+      "channels": [
+        "Open weights"
+      ],
+      "events": [
+        {
+          "type": "availability",
+          "source_date": "2025-04-14",
+          "source_url": "https://huggingface.co/zai-org/GLM-Z1-32B-0414/commits/main",
+          "channels": [
+            "Open weights"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "glm-4-5",
+      "company": "Z.ai",
+      "name": "GLM-4.5",
+      "description": "Hybrid reasoning model for coding and agentic tasks.",
+      "release_note_url": "https://z.ai/blog/glm-4.5",
+      "channels": [
+        "Z.ai",
+        "Z.ai API",
+        "Open weights"
+      ],
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-07-28",
+          "source_url": "https://z.ai/blog/glm-4.5"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-07-28",
+          "source_url": "https://z.ai/blog/glm-4.5",
+          "channels": [
+            "Z.ai",
+            "Z.ai API",
+            "Open weights"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "glm-4-5-air",
+      "company": "Z.ai",
+      "name": "GLM-4.5-Air",
+      "description": "Smaller hybrid reasoning and coding companion to GLM-4.5.",
+      "release_note_url": "https://z.ai/blog/glm-4.5",
+      "channels": [
+        "Z.ai",
+        "Z.ai API",
+        "Open weights"
+      ],
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-07-28",
+          "source_url": "https://z.ai/blog/glm-4.5"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-07-28",
+          "source_url": "https://z.ai/blog/glm-4.5",
+          "channels": [
+            "Z.ai",
+            "Z.ai API",
+            "Open weights"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "glm-4-6",
+      "company": "Z.ai",
+      "name": "GLM-4.6",
+      "description": "GLM-4 series coding and reasoning update.",
+      "release_note_url": "https://huggingface.co/zai-org/GLM-4.6",
+      "channels": [
+        "Open weights"
+      ],
+      "notes": "The official model repository is the source for open-weight availability; its initial release predates the October 2025 API coverage.",
+      "events": [
+        {
+          "type": "availability",
+          "source_date": "2025-09-30",
+          "source_url": "https://huggingface.co/zai-org/GLM-4.6/commits/main",
+          "channels": [
+            "Open weights"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "glm-4-7",
+      "company": "Z.ai",
+      "name": "GLM-4.7",
+      "description": "Coding and tool-use model with interleaved thinking.",
+      "release_note_url": "https://z.ai/blog/glm-4.7",
+      "channels": [
+        "Z.ai",
+        "Z.ai API",
+        "Open weights"
+      ],
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2025-12-22",
+          "source_url": "https://z.ai/blog/glm-4.7"
+        },
+        {
+          "type": "availability",
+          "source_date": "2025-12-22",
+          "source_url": "https://z.ai/blog/glm-4.7",
+          "channels": [
+            "Z.ai",
+            "Z.ai API",
+            "Open weights"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "glm-4-7-flash",
+      "company": "Z.ai",
+      "name": "GLM-4.7-Flash",
+      "description": "Efficient open GLM-4.7 coding and reasoning model.",
+      "release_note_url": "https://huggingface.co/zai-org/GLM-4.7-Flash",
+      "channels": [
+        "Open weights"
+      ],
+      "events": [
+        {
+          "type": "availability",
+          "source_date": "2026-01-19",
+          "source_url": "https://huggingface.co/zai-org/GLM-4.7-Flash/commits/main",
+          "channels": [
+            "Open weights"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "glm-5",
+      "company": "Z.ai",
+      "name": "GLM-5",
+      "description": "Flagship agentic coding model.",
+      "release_note_url": "https://huggingface.co/zai-org/GLM-5",
+      "channels": [
+        "Open weights"
+      ],
+      "notes": "The official model repository establishes the initial public weight release.",
+      "events": [
+        {
+          "type": "availability",
+          "source_date": "2026-02-11",
+          "source_url": "https://huggingface.co/zai-org/GLM-5/commits/main",
+          "channels": [
+            "Open weights"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "glm-5-1",
+      "company": "Z.ai",
+      "name": "GLM-5.1",
+      "description": "Agentic engineering and coding update to GLM-5.",
+      "release_note_url": "https://huggingface.co/zai-org/GLM-5.1",
+      "channels": [
+        "Z.ai API",
+        "Open weights"
+      ],
+      "events": [
+        {
+          "type": "availability",
+          "source_date": "2026-04-07",
+          "source_url": "https://huggingface.co/zai-org/GLM-5.1/commits/main",
+          "channels": [
+            "Open weights"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "glm-5-2",
+      "company": "Z.ai",
+      "name": "GLM-5.2",
+      "description": "Long-horizon coding model with 1M-token context.",
+      "release_note_url": "https://z.ai/blog/glm-5.2",
+      "channels": [
+        "Z.ai",
+        "Z.ai API",
+        "Open weights"
+      ],
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-06-16",
+          "source_url": "https://z.ai/blog/glm-5.2"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-06-16",
+          "source_url": "https://z.ai/blog/glm-5.2",
+          "channels": [
+            "Z.ai",
+            "Z.ai API",
+            "Open weights"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "glm-5-3",
+      "company": "Z.ai",
+      "name": "GLM-5.3",
+      "description": "Flagship GLM-5 generation with stronger coding and cyber capabilities.",
+      "release_note_url": "https://huggingface.co/zai-org/GLM-5.3",
+      "channels": [
+        "Z.ai",
+        "Z.ai API",
+        "Open weights"
+      ],
+      "notes": "The official research index dates the announcement to August 14. The API release notes document access on August 18; this is not asserted to be the first access on every channel. Open weights followed later in August.",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-08-14",
+          "source_url": "https://www.zhipuai.cn/zh/research"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-08-18",
+          "source_url": "https://docs.z.ai/release-notes/new-released",
+          "channels": [
+            "Z.ai API"
+          ],
+          "is_first_availability": false
+        }
+      ]
+    },
+    {
+      "id": "glm-5-3-flash",
+      "company": "Z.ai",
+      "name": "GLM-5.3-Flash",
+      "description": "Efficient multimodal GLM-5 model for reasoning and agentic workflows.",
+      "release_note_url": "https://z.ai/blog/glm-5.3-flash",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-08-26",
+          "source_url": "https://z.ai/blog/glm-5.3-flash"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-08-26",
+          "source_url": "https://z.ai/blog/glm-5.3-flash",
+          "channels": [
+            "Z.ai API",
+            "GLM Coding Plan",
+            "Open weights"
+          ],
+          "is_first_availability": true
+        }
+      ],
+      "channels": [
+        "Z.ai API",
+        "GLM Coding Plan",
+        "Open weights"
+      ],
+      "notes": "The original Z.ai launch article and release notes are dated August 26. The September 25 AutoClaw article is a later overview, not the model launch."
+    }
+  ]
+}

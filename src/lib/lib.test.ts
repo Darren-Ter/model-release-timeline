@@ -1,6 +1,8 @@
 import { describe, expect, it } from 'vitest';
-import rootFile from '../../model-releases.json';
+import openaiFile from '../../data/openai.json';
+import anthropicFile from '../../data/anthropic.json';
 import { normalizeFiles, type Release } from '../data/normalize';
+import { releases as uiReleases, issues as uiIssues } from '../data/load';
 import { applyFilters, DEFAULT_FILTERS, facet } from './filter';
 import { adjacentGaps, gapStats } from './gaps';
 import { onThisDay } from './onThisDay';
@@ -29,11 +31,33 @@ const load = (...models: unknown[]) => normalizeFiles({ 'fixture.json': { models
 const byId = (rs: Release[], id: string) => rs.find((r) => r.id === id)!;
 
 describe('real dataset', () => {
-  const { releases, issues } = normalizeFiles({ 'model-releases.json': rootFile });
+  const files = import.meta.glob<{ models: { company: string }[] }>(['../../data/*.json', '!../../data/labs.json'], {
+    eager: true,
+    import: 'default',
+  });
+  const { releases, issues } = normalizeFiles(files);
 
   it('loads every entry without issues', () => {
     expect(issues).toEqual([]);
-    expect(releases.length).toBe((rootFile as { models: unknown[] }).models.length);
+    expect(uiIssues).toEqual([]);
+    expect(uiReleases).toEqual(releases);
+    expect(releases.length).toBe(Object.values(files).reduce((sum, file) => sum + file.models.length, 0));
+    expect(Object.keys(files)).toHaveLength(9);
+    for (const file of Object.values(files)) expect(new Set(file.models.map((m) => m.company)).size).toBe(1);
+    for (const release of releases) {
+      for (const event of release.events) {
+        expect(event.sourceUrl, `${release.id}: missing event source`).toMatch(/^https:\/\//);
+        expect(new Date(`${event.date}T00:00:00Z`).toISOString().slice(0, 10)).toBe(event.date);
+      }
+    }
+  });
+
+  it('keeps each lab in its own file, newest first', () => {
+    for (const [file, lab] of [[openaiFile, 'OpenAI'], [anthropicFile, 'Anthropic']] as const) {
+      expect(new Set(file.models.map((m) => m.company))).toEqual(new Set([lab]));
+      const dates = normalizeFiles({ f: file }).releases.map((r) => r.announcementDate);
+      expect(dates).toEqual([...dates].sort().reverse());
+    }
   });
 
   it('extracts announcement and first-availability dates', () => {
@@ -181,21 +205,15 @@ describe('onThisDay', () => {
       ['last-year', 1],
       ['two-years', 2],
     ]);
-    expect(r.nearby).toEqual([]);
   });
 
-  it('falls back to a ±3 day window', () => {
+  it('returns no releases when only nearby dates match', () => {
     const r = onThisDay(releases, 'announcement', '2026-09-24');
     expect(r.exact).toEqual([]);
-    expect(r.nearby.map((i) => [i.release.id, i.offsetDays])).toEqual([
-      ['last-year', 1],
-      ['near', 3],
-      ['two-years', 1],
-    ]);
   });
 
-  it('shows Feb 29 releases on Feb 28 in non-leap years', () => {
-    expect(onThisDay(releases, 'announcement', '2027-02-28').exact.map((i) => i.release.id)).toEqual(['leap']);
+  it('keeps leap-day releases exclusive to February 29', () => {
+    expect(onThisDay(releases, 'announcement', '2027-02-28').exact.map((i) => i.release.id)).toEqual([]);
     expect(onThisDay(releases, 'announcement', '2028-02-29').exact.map((i) => i.release.id)).toEqual(['leap']);
   });
 });

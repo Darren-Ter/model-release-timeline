@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { releaseDate, type DateBasis, type Release } from '../data/normalize';
+import { releaseDate, releaseEvent, type DateBasis, type Release } from '../data/normalize';
 import { formatDate, fromDayNumber, toDayNumber } from '../lib/dates';
 import type { LabInfo } from '../lib/labColors';
 
@@ -119,10 +119,11 @@ export function Swimlane({ releases, labs, basis, from, to, today, onSelect }: P
   return (
     <section className="card chart" aria-labelledby="chart-heading">
       <div className="chart-head">
-        <h2 id="chart-heading">Release cadence by lab</h2>
+        <h2 id="chart-heading">Cadence by lab</h2>
         <p className="muted small">
-          Each dot is {basis === 'announcement' ? 'an announcement' : 'a first-availability'} date; larger dots mark several
+          Each dot is {basis === 'announcement' ? 'an announcement' : 'a recorded availability'} date; larger dots mark several
           releases on the same day.
+          {releases.some((r) => !releaseEvent(r, basis)) && ' When that date is unknown, the other recorded event is shown.'}
         </p>
       </div>
       <div className="chart-body" ref={ref}>
