@@ -5852,9 +5852,10 @@
       "channels": [
         "Limited organization rollout",
         "API",
-        "Codex"
+        "Codex",
+        "ChatGPT"
       ],
-      "notes": "September 3 began a limited organization rollout. Broader access followed; this is not a claim of universal availability at launch.",
+      "notes": "September 3 began a limited organization rollout. On September 4 OpenAI posted that it was available to Pro, Enterprise, and Business Premium users in ChatGPT and Codex, with Plus and Business users following over a few days; this is not a claim of universal availability at launch. Post: https://x.com/OpenAI/status/2095968413646737608",
       "events": [
         {
           "type": "announcement",
@@ -5896,6 +5897,86 @@
           "is_first_availability": true,
           "id": "gpt-6-astra-availability-2",
           "display_date": "2026-09-03",
+          "date_basis": "Source date (timezone unknown)"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-09-04",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://x.com/OpenAI/status/2095968413646737608",
+          "channels": [
+            "ChatGPT Pro",
+            "ChatGPT Enterprise",
+            "ChatGPT Business Premium"
+          ],
+          "is_first_availability": false,
+          "id": "gpt-6-astra-availability-3",
+          "display_date": "2026-09-04",
+          "date_basis": "Source date (timezone unknown)"
+        }
+      ]
+    },
+    {
+      "id": "gpt-6-pro",
+      "company": "OpenAI",
+      "name": "GPT-6 Pro",
+      "slug": "not published",
+      "snapshot_ids": [],
+      "description": "ChatGPT Pro option powered by GPT-6 Astra.",
+      "release_kind": "Model release",
+      "release_note_url": "https://x.com/OpenAI/status/2095998532692140283",
+      "documentation_url": null,
+      "channels": [
+        "ChatGPT Pro",
+        "ChatGPT Business",
+        "ChatGPT Enterprise"
+      ],
+      "notes": "Announced in an official OpenAI post as powered by GPT-6 Astra. No API model ID is published.",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-09-04",
+          "source_timezone": "UTC",
+          "datetime_utc": "2026-09-04T22:12:46+00:00",
+          "datetime_utc8": "2026-09-05T06:12:46+08:00",
+          "weekday_utc8": "Saturday",
+          "precision": "second",
+          "timestamp_basis": "Publication time of the cited official announcement post; not a claim of the earliest spoken announcement or first successful request.",
+          "source_url": "https://x.com/OpenAI/status/2095998532692140283",
+          "channels": [
+            "ChatGPT Pro",
+            "ChatGPT Business",
+            "ChatGPT Enterprise"
+          ],
+          "is_first_availability": null,
+          "timestamp_evidence_url": "https://cdn.syndication.twimg.com/tweet-result?id=2095998532692140283&token=0",
+          "id": "gpt-6-pro-announcement-1",
+          "display_date": "2026-09-05",
+          "date_basis": "UTC+8"
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-09-04",
+          "source_timezone": null,
+          "datetime_utc": null,
+          "datetime_utc8": null,
+          "weekday_utc8": null,
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; time and timezone not established.",
+          "source_url": "https://x.com/OpenAI/status/2095998532692140283",
+          "channels": [
+            "ChatGPT Pro",
+            "ChatGPT Business",
+            "ChatGPT Enterprise"
+          ],
+          "is_first_availability": true,
+          "id": "gpt-6-pro-availability-2",
+          "display_date": "2026-09-04",
           "date_basis": "Source date (timezone unknown)"
         }
       ]
