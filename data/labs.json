@@ -1,0 +1,7 @@
+{
+  "$comment": "Optional per-lab overrides, keyed by the exact `company` value used in release files. `slot` pins a categorical colour (1-8) so a lab keeps its colour as others are added; `color` overrides with any CSS colour. Labs not listed here are picked up automatically.",
+  "labs": {
+    "OpenAI": { "slot": 1, "url": "https://openai.com" },
+    "Anthropic": { "slot": 2, "url": "https://www.anthropic.com" }
+  }
+}
