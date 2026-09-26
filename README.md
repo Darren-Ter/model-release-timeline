@@ -1,38 +1,87 @@
-# Model release timeline
+# Model Release Timeline
 
-Interactive timeline of AI model releases, built from the per-lab files in `data/`.
+**Explore AI model releases, compare launch dates, and see the gaps between them.**
 
-- Hero with a days-since-last-release counter and an "On this day" card showing releases from the same date in earlier years; collapsed by default on mobile
-- Search is always visible. Filters (lab, date range presets or custom, release type, channel) and stats (totals, gaps, per-lab breakdown) are collapsed by default. Active filters appear as removable pills, and filters are kept in the URL so views can be shared
-- Toggle between **announcement** and **documented availability** dates
-- Optional cadence chart with one lane per lab, collapsed by default
-- Centre-spine timeline with alternating cards. Once any filter is applied ("All time" doesn't count), gap badges appear between consecutive matches ("5 days", "Same day") along with "X days since last release", and spine spacing grows with the gap
+[**Explore the live timeline →**](https://aigenius.media/model-timeline/)
 
-## Run
+A searchable timeline of model announcements and documented availability across OpenAI, Anthropic, Google DeepMind, xAI, DeepSeek, Alibaba Qwen, Moonshot AI, MiniMax, and Z.ai. Built with React and TypeScript, with source-linked release data maintained in readable JSON files.
+
+## What you can explore
+
+- **One timeline across labs.** Browse releases in either direction, with descriptions, channels, and links to supporting sources.
+- **Announcement vs. availability.** Switch between when a model was announced and its first documented access.
+- **Search and share.** Filter by lab, date range, release type, or channel. Filters live in the URL, so you can share the exact view.
+- **Release cadence.** See gaps between filtered releases, per-lab statistics, and an optional cadence chart.
+- **Historical context.** A days-since-last-release counter and “On this day” view put releases in context.
+- **Visible uncertainty.** Disputed dates, incomplete records, previews, and later access rollouts are labeled explicitly.
+
+The September 25, 2026 data audit covers 220 records. See the [audit and source notes](docs/release-data-audit-2026-09-25.md) for corrections and remaining uncertainty. Data is maintained in the repository; it is not a live feed.
+
+## Run locally
+
+Use Node.js 22.12+ and npm.
 
 ```bash
-npm install
-npm run dev      # http://localhost:5173
-npm test         # unit tests
-npm run build    # typecheck + production build into dist/
+git clone https://github.com/Darren-Ter/model-release-timeline.git
+cd model-release-timeline
+npm ci
+npm run dev
 ```
 
-## Adding releases from another lab
+Open [localhost:5173/model-timeline/](http://localhost:5173/model-timeline/).
 
-Nothing in the UI is hard-coded to a lab. Labs, release types and channels are all read from the data.
+| Command | Purpose |
+| --- | --- |
+| `npm run dev` | Start the development server |
+| `npm test` | Run data, UI rendering, and Worker routing tests |
+| `npm run typecheck` | Check TypeScript without building |
+| `npm run build` | Build the app into `dist/model-timeline/` |
+| `npm run preview` | Preview the production UI locally |
+| `npm run deploy` | Verify the deployment account, test, build, and publish |
+| `node scripts/verify-deployment.mjs` | Check the production URL, assets, redirects, and existing site |
 
-1. Each lab has its own file in `data/` (`openai.json`, `anthropic.json`, `google-deepmind.json`, `xai.json`, …) shaped as `{ "title", "researched_on", "timezone", "models": [ ... ] }`. To add a lab, create a new file there. Every `*.json` file in the folder except `labs.json` (UI configuration) is merged in automatically, and later files win when two entries share an `id`. Keep `models` sorted newest first by release date.
-2. The minimum per entry is `id`, `company` (the lab name), `name` and `events[]`. Each event needs a `type` (`announcement` or `availability`) and a `source_date` (`YYYY-MM-DD`). All other fields are optional. `display_date`, `is_first_availability`, `channels`, `release_kind`, `snapshot_ids` and the URLs make the UI richer.
-3. Optionally pin the lab's colour in `data/labs.json` (`slot` 1–8 from the categorical palette, or a literal `color`). Labs that aren't listed get the next free slot automatically, in alphabetical order. Pin a slot if a lab's colour must never change as more labs are added.
+## How the data works
 
-Entries that fail validation are skipped and listed in the browser console during `npm run dev`. They don't break the page.
+Each lab has a file in `data/`. The app automatically loads every JSON file there except `labs.json`, which configures lab colors and links. Zod validates the records before they are normalized for the UI; invalid entries are skipped and reported in the development console.
 
-## Date conventions
+```text
+data/             Per-lab release records and visual configuration
+src/components/   Timeline, filters, release details, and charts
+src/data/         Validation, loading, and normalization
+src/lib/          Date, filtering, and release-gap logic
+worker/           Cloudflare subpath routing and tests
+scripts/          Deployment account check and live verification
+docs/             Release-data audit and research notes
+```
 
-The dates come from the dataset's `display_date`. Timestamped announcements are shown in UTC+8. Date-only sources are shown with their source date. Gap and "since last release" values are whole calendar days between those dates. "Today" is the viewer's local date.
+### Add or correct a release
 
-When one event type is missing, the timeline uses the other recorded event and labels that fallback on the card. The details panel shows missing dates as **Not documented**. An availability event marked `is_first_availability: false` is labeled **Recorded access**, not first access. Channels list documented access across the event history, which can include later rollouts.
+1. Update the appropriate lab file in `data/`, or create a new one for an additional lab. The file has the shape `{ "title", "researched_on", "timezone", "models": [...] }`.
+2. Give each model a stable `id`, `company`, `name`, and at least one event with a `type` and `source_date` in `YYYY-MM-DD` format. Use `announcement` or `availability` for timeline events.
+3. Link primary sources using `source_url`; add descriptions, channels, release notes, and documentation where available. Keep models sorted newest first.
+4. Optionally assign the lab a color in `data/labs.json` using a palette `slot` (1–8) or a literal `color`.
+5. Run `npm test` and `npm run build`. Check the entry locally and include the supporting sources when submitting a correction.
 
-Set `date_disputed: true` when primary sources disagree on a release date, and explain the conflict in `notes`. Those cards show **Date uncertain** and do not receive a **New** badge.
+The schema is defined in [src/data/schema.ts](src/data/schema.ts). Existing lab files provide complete examples. Duplicate IDs are merged with later files taking precedence, so use unique IDs for distinct releases.
 
-The [September 25, 2026 audit](docs/release-data-audit-2026-09-25.md) covers all 220 existing records, with corrections, source links, and remaining uncertainty. A later article, report publication, model snapshot suffix, or promised release is not automatically a model launch date.
+### Date conventions
+
+Timestamped announcements are displayed in UTC+8; date-only sources retain their source date. Gap calculations use whole calendar days. “Today” follows the viewer’s local date.
+
+If the selected event type is missing, the timeline uses the other recorded event and labels the fallback. Missing dates appear as **Not documented** in the details panel. Availability marked `is_first_availability: false` appears as **Recorded access**, not first access. Channels can include later rollouts.
+
+When primary sources disagree, set `date_disputed: true` and explain the conflict in `notes`. These entries show **Date uncertain** and do not receive a **New** badge. A publication date, model snapshot suffix, or promised release is not automatically a launch date.
+
+## Deployment
+
+The live app runs on Cloudflare Workers at **[aigenius.media/model-timeline/](https://aigenius.media/model-timeline/)**. Vite builds assets under `/model-timeline/`, and a dedicated Worker serves that subpath while preserving the domain’s existing homepage and tools.
+
+Maintainers should follow [AGENTS.md](AGENTS.md) for account checks, deployment commands, verification, and rollback. Production deployment is manual; pushing to GitHub does not deploy the site.
+
+If you deploy your own copy, replace the Cloudflare account, zone, route, and existing-site service binding in `wrangler.jsonc`, and adapt the deployment identity check. The checked-in configuration targets the maintained production site.
+
+## Stack
+
+React 19 · TypeScript · Vite · Zod · Vitest · Cloudflare Workers
+
+Fonts: Inter, Space Grotesk, and JetBrains Mono, bundled locally through Fontsource.

@@ -1,0 +1,22 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "model-release-timeline",
+  "account_id": "4885217f1786a45387def0b055cf8bb4",
+  "main": "worker/index.ts",
+  "compatibility_date": "2026-09-26",
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [
+    { "pattern": "aigenius.media/model-timeline*", "zone_id": "56e8463c0ee01fe8bd74b17b87d861a2" }
+  ],
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "run_worker_first": true,
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "none"
+  },
+  "services": [
+    { "binding": "EXISTING_SITE", "service": "aigenius-video-downloader" }
+  ]
+}
