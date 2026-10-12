@@ -1,4 +1,5 @@
 import { modelSchema, releaseFileSchema, type RawModel } from './schema';
+import { xPostUrl } from '../lib/xPosts';
 
 export type DateBasis = 'announcement' | 'availability';
 
@@ -27,6 +28,7 @@ export interface Release {
   snapshotIds: string[];
   releaseNoteUrl: string | null;
   documentationUrl: string | null;
+  announcementXUrl: string | null;
   events: ReleaseEvent[];
   announcementDate: string;
   availabilityDate: string;
@@ -83,6 +85,8 @@ export function normalizeModel(raw: RawModel): Release {
     snapshotIds,
     releaseNoteUrl: raw.release_note_url ?? null,
     documentationUrl: raw.documentation_url ?? null,
+    announcementXUrl: xPostUrl(raw.announcement_x_url) ??
+      sorted.filter((e) => e.type === 'announcement').map((e) => xPostUrl(e.sourceUrl)).find(Boolean) ?? null,
     events: sorted,
     announcementDate,
     availabilityDate,

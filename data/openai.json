@@ -61,6 +61,7 @@
     },
     {
       "id": "gpt-6-1-sol",
+      "announcement_x_url": "https://x.com/OpenAI/status/2104986129686741046",
       "company": "OpenAI",
       "name": "GPT-6.1 Sol",
       "slug": "gpt-6.1-sol",
@@ -112,6 +113,7 @@
     },
     {
       "id": "gpt-6-luna",
+      "announcement_x_url": "https://x.com/OpenAI/status/2102460975790137662",
       "company": "OpenAI",
       "name": "GPT-6 Luna",
       "slug": "gpt-6-luna",
@@ -171,6 +173,7 @@
     },
     {
       "id": "gpt-6-sol",
+      "announcement_x_url": "https://x.com/OpenAI/status/2102460975790137662",
       "company": "OpenAI",
       "name": "GPT-6 Sol",
       "slug": "gpt-6-sol",
@@ -230,6 +233,7 @@
     },
     {
       "id": "gpt-6-pro",
+      "announcement_x_url": "https://x.com/OpenAI/status/2095998532692140283",
       "company": "OpenAI",
       "name": "GPT-6 Pro",
       "slug": "not published",
@@ -290,6 +294,7 @@
     },
     {
       "id": "gpt-6-astra",
+      "announcement_x_url": "https://x.com/OpenAI/status/2095595741528125780",
       "company": "OpenAI",
       "name": "GPT-6 Astra",
       "slug": "gpt-6-astra",
@@ -372,6 +377,7 @@
     },
     {
       "id": "gpt-5-6-cyber",
+      "announcement_x_url": "https://x.com/OpenAI/status/2086864365379010729",
       "company": "OpenAI",
       "name": "GPT-5.6 Cyber",
       "slug": "gpt-5.6-cyber",
@@ -2419,6 +2425,7 @@
     },
     {
       "id": "gpt-5",
+      "announcement_x_url": "https://x.com/OpenAI/status/1953504357821165774",
       "company": "OpenAI",
       "name": "GPT-5",
       "slug": "gpt-5",
@@ -2480,6 +2487,7 @@
     },
     {
       "id": "gpt-5-instant",
+      "announcement_x_url": "https://x.com/OpenAI/status/1953504357821165774",
       "company": "OpenAI",
       "name": "GPT-5 Instant",
       "slug": "gpt-5-chat-latest",
@@ -2539,6 +2547,7 @@
     },
     {
       "id": "gpt-5-pro",
+      "announcement_x_url": "https://x.com/OpenAI/status/1953504357821165774",
       "company": "OpenAI",
       "name": "GPT-5 Pro",
       "slug": "gpt-5-pro",
@@ -4569,6 +4578,7 @@
     },
     {
       "id": "gpt-4o",
+      "announcement_x_url": "https://x.com/OpenAI/status/1790072174117613963",
       "company": "OpenAI",
       "name": "GPT-4o",
       "slug": "gpt-4o",

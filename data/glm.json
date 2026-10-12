@@ -328,6 +328,7 @@
     },
     {
       "id": "glm-5-3",
+      "announcement_x_url": "https://x.com/Zai_org/status/2088132969630212372",
       "company": "Z.ai",
       "name": "GLM-5.3",
       "description": "Flagship GLM-5 generation with stronger coding and cyber capabilities.",
@@ -357,6 +358,7 @@
     },
     {
       "id": "glm-5-3-flash",
+      "announcement_x_url": "https://x.com/Zai_org/status/2092616204787626030",
       "company": "Z.ai",
       "name": "GLM-5.3-Flash",
       "description": "Efficient multimodal GLM-5 model for reasoning and agentic workflows.",

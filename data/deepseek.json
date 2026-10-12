@@ -435,6 +435,7 @@
     },
     {
       "id": "deepseek-v4-pro",
+      "announcement_x_url": "https://x.com/deepseek_ai/status/2047516945466188072",
       "company": "DeepSeek",
       "name": "DeepSeek-V4-Pro",
       "description": "Million-token-context V4 flagship model, initially in preview.",
@@ -469,6 +470,7 @@
     },
     {
       "id": "deepseek-v4-flash-vision-exp",
+      "announcement_x_url": "https://x.com/deepseek_ai/status/2090730032574631962",
       "company": "DeepSeek",
       "name": "DeepSeek-V4-Flash-Vision-Exp",
       "description": "Experimental multimodal V4 model for visual and text agents.",
@@ -490,6 +492,7 @@
     },
     {
       "id": "deepseek-v4-1-flash",
+      "announcement_x_url": "https://x.com/deepseek_ai/status/2097930608790167907",
       "company": "DeepSeek",
       "name": "DeepSeek-V4.1-Flash",
       "description": "Efficient multimodal model for coding, reasoning, and agents.",

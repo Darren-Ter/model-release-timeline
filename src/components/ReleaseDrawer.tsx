@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { releaseEvent, type Release } from '../data/normalize';
 import { formatDate, formatWeekday } from '../lib/dates';
+import { XPostLink } from './XPostLink';
 
 interface Props {
   release: Release | null;
@@ -121,8 +122,9 @@ export function ReleaseDrawer({ release, labColor, onClose }: Props) {
             </>
           )}
 
-          {(release.releaseNoteUrl || release.documentationUrl) && (
+          {(release.releaseNoteUrl || release.documentationUrl || release.announcementXUrl) && (
             <p className="drawer-links">
+              {release.announcementXUrl && <XPostLink name={release.name} url={release.announcementXUrl} />}
               {release.releaseNoteUrl && (
                 <a href={release.releaseNoteUrl} target="_blank" rel="noreferrer">
                   Release note ↗

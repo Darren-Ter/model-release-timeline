@@ -5,6 +5,7 @@
   "models": [
     {
       "id": "grok-4-7",
+      "announcement_x_url": "https://x.com/SpaceXSI/status/2102069815225586149",
       "company": "xAI",
       "name": "Grok 4.7",
       "slug": "grok-4.7",
@@ -18,6 +19,7 @@
     },
     {
       "id": "grok-4-6",
+      "announcement_x_url": "https://x.com/SpaceXSI/status/2087562800982077492",
       "company": "xAI",
       "name": "Grok 4.6",
       "slug": "grok-4.6",

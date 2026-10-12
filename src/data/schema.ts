@@ -1,4 +1,5 @@
 import { z } from 'zod';
+import { xPostUrl } from '../lib/xPosts';
 
 const isoDate = z.string().regex(/^\d{4}-\d{2}-\d{2}$/, 'expected YYYY-MM-DD');
 
@@ -32,6 +33,7 @@ export const modelSchema = z.looseObject({
   release_kind: z.string().nullish(),
   release_note_url: z.string().nullish(),
   documentation_url: z.string().nullish(),
+  announcement_x_url: z.string().refine((value) => xPostUrl(value) !== null, 'expected an HTTPS X post permalink').nullish(),
   channels: z.array(z.string()).nullish(),
   notes: z.string().nullish(),
   date_disputed: z.boolean().optional(),

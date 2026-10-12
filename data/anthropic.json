@@ -22,6 +22,7 @@
   "models": [
     {
       "id": "claude-haiku-5-5",
+      "announcement_x_url": "https://x.com/claudeai/status/2107894039626277339",
       "company": "Anthropic",
       "name": "Claude Haiku 5.5",
       "slug": "claude-haiku-5-5",
@@ -68,6 +69,7 @@
     },
     {
       "id": "claude-sonnet-5-5",
+      "announcement_x_url": "https://x.com/claudeai/status/2104633115620823187",
       "company": "Anthropic",
       "name": "Claude Sonnet 5.5",
       "slug": "claude-sonnet-5-5",
@@ -114,6 +116,7 @@
     },
     {
       "id": "claude-opus-5-5",
+      "announcement_x_url": "https://x.com/claudeai/status/2102435511222890900",
       "company": "Anthropic",
       "name": "Claude Opus 5.5",
       "slug": "claude-opus-5-5",
@@ -173,6 +176,7 @@
     },
     {
       "id": "claude-fable-5-1",
+      "announcement_x_url": "https://x.com/claudeai/status/2094848572143407483",
       "company": "Anthropic",
       "name": "Claude Fable 5.1",
       "slug": "claude-fable-5-1",
@@ -232,6 +236,7 @@
     },
     {
       "id": "claude-mythos-5-1",
+      "announcement_x_url": "https://x.com/claudeai/status/2094848572143407483",
       "company": "Anthropic",
       "name": "Claude Mythos 5.1",
       "slug": "claude-mythos-5-1",
@@ -285,6 +290,7 @@
     },
     {
       "id": "claude-opus-5",
+      "announcement_x_url": "https://x.com/claudeai/status/2080699495453528290",
       "company": "Anthropic",
       "name": "Claude Opus 5",
       "slug": "claude-opus-5",
@@ -344,6 +350,7 @@
     },
     {
       "id": "claude-sonnet-5",
+      "announcement_x_url": "https://x.com/claudeai/status/2072017450611142835",
       "company": "Anthropic",
       "name": "Claude Sonnet 5",
       "slug": "claude-sonnet-5",
@@ -403,6 +410,7 @@
     },
     {
       "id": "claude-fable-5",
+      "announcement_x_url": "https://x.com/claudeai/status/2064394146916229443",
       "company": "Anthropic",
       "name": "Claude Fable 5",
       "slug": "claude-fable-5",
@@ -462,6 +470,7 @@
     },
     {
       "id": "claude-mythos-5",
+      "announcement_x_url": "https://x.com/claudeai/status/2064394160522559632",
       "company": "Anthropic",
       "name": "Claude Mythos 5",
       "slug": "claude-mythos-5",
@@ -515,6 +524,7 @@
     },
     {
       "id": "claude-opus-4-8",
+      "announcement_x_url": "https://x.com/claudeai/status/2060042702150930686",
       "company": "Anthropic",
       "name": "Claude Opus 4.8",
       "slug": "claude-opus-4-8",
@@ -574,6 +584,7 @@
     },
     {
       "id": "claude-opus-4-7",
+      "announcement_x_url": "https://x.com/claudeai/status/2044785261393977612",
       "company": "Anthropic",
       "name": "Claude Opus 4.7",
       "slug": "claude-opus-4-7",
@@ -633,6 +644,7 @@
     },
     {
       "id": "claude-mythos-preview",
+      "announcement_x_url": "https://x.com/AnthropicAI/status/2041578392852517128",
       "company": "Anthropic",
       "name": "Claude Mythos Preview",
       "slug": "claude-mythos-preview",
@@ -686,6 +698,7 @@
     },
     {
       "id": "claude-sonnet-4-6",
+      "announcement_x_url": "https://x.com/claudeai/status/2023817132581208353",
       "company": "Anthropic",
       "name": "Claude Sonnet 4.6",
       "slug": "claude-sonnet-4-6",
@@ -745,6 +758,7 @@
     },
     {
       "id": "claude-opus-4-6",
+      "announcement_x_url": "https://x.com/claudeai/status/2019467372609040752",
       "company": "Anthropic",
       "name": "Claude Opus 4.6",
       "slug": "claude-opus-4-6",
@@ -805,6 +819,7 @@
     },
     {
       "id": "claude-opus-4-5",
+      "announcement_x_url": "https://x.com/claudeai/status/1993030546243699119",
       "company": "Anthropic",
       "name": "Claude Opus 4.5",
       "slug": "claude-opus-4-5",
@@ -866,6 +881,7 @@
     },
     {
       "id": "claude-haiku-4-5",
+      "announcement_x_url": "https://x.com/claudeai/status/1978505436358697052",
       "company": "Anthropic",
       "name": "Claude Haiku 4.5",
       "slug": "claude-haiku-4-5",
@@ -927,6 +943,7 @@
     },
     {
       "id": "claude-sonnet-4-5",
+      "announcement_x_url": "https://x.com/claudeai/status/1972706807345725773",
       "company": "Anthropic",
       "name": "Claude Sonnet 4.5",
       "slug": "claude-sonnet-4-5",
@@ -988,6 +1005,7 @@
     },
     {
       "id": "claude-opus-4-1",
+      "announcement_x_url": "https://x.com/AnthropicAI/status/1952768432027431127",
       "company": "Anthropic",
       "name": "Claude Opus 4.1",
       "slug": "claude-opus-4-1",
@@ -1049,6 +1067,7 @@
     },
     {
       "id": "claude-opus-4",
+      "announcement_x_url": "https://x.com/AnthropicAI/status/1925591505332576377",
       "company": "Anthropic",
       "name": "Claude Opus 4",
       "slug": "claude-opus-4-20250514",
@@ -1110,6 +1129,7 @@
     },
     {
       "id": "claude-sonnet-4",
+      "announcement_x_url": "https://x.com/AnthropicAI/status/1925591505332576377",
       "company": "Anthropic",
       "name": "Claude Sonnet 4",
       "slug": "claude-sonnet-4-20250514",
@@ -1171,6 +1191,7 @@
     },
     {
       "id": "claude-3-7-sonnet",
+      "announcement_x_url": "https://x.com/AnthropicAI/status/1894092430560965029",
       "company": "Anthropic",
       "name": "Claude 3.7 Sonnet",
       "slug": "claude-3-7-sonnet-20250219",
@@ -1230,6 +1251,7 @@
     },
     {
       "id": "claude-3-5-haiku",
+      "announcement_x_url": "https://x.com/AnthropicAI/status/1848742740420341988",
       "company": "Anthropic",
       "name": "Claude 3.5 Haiku",
       "slug": "claude-3-5-haiku-20241022",
@@ -1285,6 +1307,7 @@
     },
     {
       "id": "claude-3-5-sonnet-october",
+      "announcement_x_url": "https://x.com/AnthropicAI/status/1848742740420341988",
       "company": "Anthropic",
       "name": "Claude 3.5 Sonnet (October)",
       "slug": "claude-3-5-sonnet-20241022",
@@ -1343,6 +1366,7 @@
     },
     {
       "id": "claude-3-5-sonnet-june",
+      "announcement_x_url": "https://x.com/AnthropicAI/status/1803790676988920098",
       "company": "Anthropic",
       "name": "Claude 3.5 Sonnet (June)",
       "slug": "claude-3-5-sonnet-20240620",
@@ -1402,6 +1426,7 @@
     },
     {
       "id": "claude-3-haiku",
+      "announcement_x_url": "https://x.com/AnthropicAI/status/1764653830468428150",
       "company": "Anthropic",
       "name": "Claude 3 Haiku",
       "slug": "claude-3-haiku-20240307",
@@ -1461,6 +1486,7 @@
     },
     {
       "id": "claude-3-opus",
+      "announcement_x_url": "https://x.com/AnthropicAI/status/1764653830468428150",
       "company": "Anthropic",
       "name": "Claude 3 Opus",
       "slug": "claude-3-opus-20240229",
@@ -1520,6 +1546,7 @@
     },
     {
       "id": "claude-3-sonnet",
+      "announcement_x_url": "https://x.com/AnthropicAI/status/1764653830468428150",
       "company": "Anthropic",
       "name": "Claude 3 Sonnet",
       "slug": "claude-3-sonnet-20240229",

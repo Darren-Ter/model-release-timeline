@@ -9,6 +9,7 @@ A searchable timeline of model announcements and documented availability across 
 ## What you can explore
 
 - **One timeline across labs.** Browse releases in either direction, with descriptions, channels, and links to supporting sources.
+- **Official announcement posts.** Use the X icon on a release card to open its verified announcement post in a new tab. An unavailable icon means an exact official post has not been verified.
 - **Announcement vs. availability.** Switch between when a model was announced and its first documented access.
 - **Search and share.** Filter by lab, date range, release type, or channel. Filters live in the URL, so you can share the exact view.
 - **Release cadence.** See gaps between filtered releases, per-lab statistics, and an optional cadence chart.
@@ -16,6 +17,8 @@ A searchable timeline of model announcements and documented availability across 
 - **Visible uncertainty.** Disputed dates, incomplete records, previews, and later access rollouts are labeled explicitly.
 
 The October 12, 2026 refresh checks all nine labs for recent text, reasoning, and coding releases and brings the timeline to 226 records. See the [latest research and source notes](docs/release-data-refresh-2026-10-12.md) and the [September historical audit](docs/release-data-audit-2026-09-25.md) for evidence and remaining uncertainty. Data is maintained in the repository; it is not a live feed. Standalone image, video, speech, embedding, and moderation models are outside the current scope.
+
+The [X announcement audit](docs/x-announcement-posts-2026-10-12.md) covers all 27 Claude records and 23 Gemini records, with exact official posts verified for 48 of those releases.
 
 ## Run locally
 
@@ -60,6 +63,7 @@ docs/             Release-data audit and research notes
 1. Update the appropriate lab file in `data/`, or create a new one for an additional lab. The file has the shape `{ "title", "researched_on", "timezone", "models": [...] }`.
 2. Give each model a stable `id`, `company`, `name`, and at least one event with a `type` and `source_date` in `YYYY-MM-DD` format. Use `announcement` or `availability` for timeline events.
 3. Link primary sources using `source_url`; add descriptions, channels, release notes, and documentation where available. Keep models sorted newest first.
+   Set `announcement_x_url` to the exact official `https://x.com/<account>/status/<id>` announcement permalink when verified. Shared posts may be reused for explicitly named variants. A later availability or promotional post is not a substitute for the announcement. Existing X announcement event sources also supply the icon's link; other event types do not.
 4. Optionally assign the lab a color in `data/labs.json` using a palette `slot` (1–8) or a literal `color`.
 5. Run `npm test` and `npm run build`. Check the entry locally and include the supporting sources when submitting a correction.
 

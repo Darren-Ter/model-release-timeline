@@ -5,6 +5,7 @@
   "models": [
     {
       "id": "minimax-m3-1-flash-preview",
+      "announcement_x_url": "https://x.com/MiniMaxAgent/status/2104079819881517400",
       "company": "MiniMax",
       "name": "MiniMax M3.1-Flash-Preview",
       "slug": "MiniMax-M3.1-Flash-Preview",

@@ -4,6 +4,7 @@ import { adjacentGaps } from '../lib/gaps';
 import { daysBetween, formatGap, formatWeekday } from '../lib/dates';
 import type { SortOrder } from '../lib/filter';
 import { LabMark } from './LabMark';
+import { XPostLink } from './XPostLink';
 
 interface Props {
   releases: Release[];
@@ -122,40 +123,43 @@ export function TimelineList({ releases, basis, sort, showGaps, daysSinceLatest,
               )}
               <li className={`tl-item side-${side}`} style={{ ['--lab' as string]: labColor(r.lab) }}>
                 <span className="tl-node" aria-hidden="true" />
-                <button type="button" className="rcard" id={`release-${r.id}`} onClick={() => onSelect(r.id)}>
-                  <span className="rcard-top">
-                    <LabMark lab={r.lab} />
-                    <span className="rcard-lab">{r.lab}</span>
-                    {r.kind !== 'Model release' && <span className="badge">{r.kind}</span>}
-                    {isNew && !r.dateDisputed && <span className="badge badge-new">New</span>}
-                    <span className="rcard-date">
-                      <time dateTime={date}>
-                        {MONTHS[+date.slice(5, 7) - 1].slice(0, 3)} {+date.slice(8)}
-                      </time>
-                      <span className="rcard-when">
-                        {formatWeekday(date)}
-                        {time && ` · ${time}`}
+                <div className="rcard-wrap">
+                  <button type="button" className="rcard" id={`release-${r.id}`} onClick={() => onSelect(r.id)}>
+                    <span className="rcard-top">
+                      <LabMark lab={r.lab} />
+                      <span className="rcard-lab">{r.lab}</span>
+                      {r.kind !== 'Model release' && <span className="badge">{r.kind}</span>}
+                      {isNew && !r.dateDisputed && <span className="badge badge-new">New</span>}
+                      <span className="rcard-date">
+                        <time dateTime={date}>
+                          {MONTHS[+date.slice(5, 7) - 1].slice(0, 3)} {+date.slice(8)}
+                        </time>
+                        <span className="rcard-when">
+                          {formatWeekday(date)}
+                          {time && ` · ${time}`}
+                        </span>
                       </span>
                     </span>
-                  </span>
-                  <span className="rcard-name">{r.name}</span>
-                  {r.description && <span className="rcard-desc">{r.description}</span>}
-                  {(isFallback || r.dateDisputed) && (
-                    <span className="rcard-date-note">
-                      {r.dateDisputed && 'Date uncertain. '}
-                      {isFallback && `${event.type === 'announcement' ? 'Announcement' : event.type === 'availability' ? 'Availability' : 'Recorded event'} date · ${basis === 'announcement' ? 'announcement' : 'availability'} not documented`}
+                    <span className="rcard-name">{r.name}</span>
+                    {r.description && <span className="rcard-desc">{r.description}</span>}
+                    {(isFallback || r.dateDisputed) && (
+                      <span className="rcard-date-note">
+                        {r.dateDisputed && 'Date uncertain. '}
+                        {isFallback && `${event.type === 'announcement' ? 'Announcement' : event.type === 'availability' ? 'Availability' : 'Recorded event'} date · ${basis === 'announcement' ? 'announcement' : 'availability'} not documented`}
+                      </span>
+                    )}
+                    <span className="rcard-footer">
+                      <span className="tags">
+                        {r.channels.map((c) => (
+                          <span key={c} className="tag">
+                            {c}
+                          </span>
+                        ))}
+                      </span>
                     </span>
-                  )}
-                  {r.channels.length > 0 && (
-                    <span className="tags">
-                      {r.channels.map((c) => (
-                        <span key={c} className="tag">
-                          {c}
-                        </span>
-                      ))}
-                    </span>
-                  )}
-                </button>
+                  </button>
+                  <XPostLink name={r.name} url={r.announcementXUrl} className="rcard-x" />
+                </div>
               </li>
             </Fragment>
           );

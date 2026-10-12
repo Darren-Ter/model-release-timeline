@@ -5,6 +5,7 @@
   "models": [
     {
       "id": "qwen3-8-omni-flash",
+      "announcement_x_url": "https://x.com/Alibaba_Qwen/status/2100785962414702599",
       "company": "Alibaba Qwen",
       "name": "Qwen3.8-Omni-Flash",
       "slug": "qwen3.8-omni-flash",
@@ -520,6 +521,7 @@
     },
     {
       "id": "qwen3-8-max",
+      "announcement_x_url": "https://x.com/Alibaba_Qwen/status/2084093402967396594",
       "company": "Alibaba Qwen",
       "name": "Qwen3.8-Max",
       "description": "Flagship model for coding, work, research, and long-horizon agents.",
