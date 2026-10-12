@@ -1,8 +1,45 @@
 {
   "title": "Alibaba Qwen model releases",
-  "researched_on": "2026-09-25",
+  "researched_on": "2026-10-12",
   "timezone": "UTC+08:00",
   "models": [
+    {
+      "id": "qwen3-8-omni-flash",
+      "company": "Alibaba Qwen",
+      "name": "Qwen3.8-Omni-Flash",
+      "slug": "qwen3.8-omni-flash",
+      "description": "Omnimodal reasoning and agent model for coding and knowledge work, with text, image, audio, and video inputs and a 1M-token context window.",
+      "release_kind": "Model release",
+      "release_note_url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
+      "documentation_url": "https://www.alibabacloud.com/help/en/model-studio/qwen-omni",
+      "channels": [
+        "Qwen API"
+      ],
+      "notes": "The rendered launch article dates hosted API access to September 18. Open-source releases of Qwen-MM-Plugins and Qwen-Live Harness do not establish open weights for this model. The specialized Realtime voice variant is outside this timeline’s text, reasoning, and coding release scope.",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-09-18",
+          "source_url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; exact release time not established.",
+          "channels": [
+            "Qwen API"
+          ]
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-09-18",
+          "source_url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; exact release time not established.",
+          "channels": [
+            "Qwen API"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
     {
       "id": "qwen2",
       "company": "Alibaba Qwen",

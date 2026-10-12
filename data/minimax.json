@@ -1,8 +1,46 @@
 {
   "title": "MiniMax language model releases",
-  "researched_on": "2026-09-25",
+  "researched_on": "2026-10-12",
   "timezone": "UTC+08:00",
   "models": [
+    {
+      "id": "minimax-m3-1-flash-preview",
+      "company": "MiniMax",
+      "name": "MiniMax M3.1-Flash-Preview",
+      "slug": "MiniMax-M3.1-Flash-Preview",
+      "description": "Preview multimodal coding and agent model with a 1M-token context window and adjustable, always-on reasoning.",
+      "release_kind": "Model preview",
+      "release_note_url": "https://x.com/MiniMaxAgent/status/2104079819881517400",
+      "documentation_url": "https://platform.minimax.io/docs/guides/text-generation",
+      "channels": [
+        "MiniMax Code",
+        "Subscription API"
+      ],
+      "notes": "The official September 27 post establishes the MiniMax Code debut; the September 28 Code changelog records the same preview. Current documentation also lists subscription API access through Token Plan / M Plan, without a separate API rollout date recorded here. Preview access does not establish open-weight availability.",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-09-27",
+          "source_url": "https://x.com/MiniMaxAgent/status/2104079819881517400",
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; exact release time not established.",
+          "channels": [
+            "MiniMax Code"
+          ]
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-09-27",
+          "source_url": "https://x.com/MiniMaxAgent/status/2104079819881517400",
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; exact release time not established.",
+          "channels": [
+            "MiniMax Code"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
     {
       "id": "minimax-text-01",
       "company": "MiniMax",

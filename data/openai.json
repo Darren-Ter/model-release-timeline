@@ -1,8 +1,8 @@
 {
   "title": "OpenAI model releases",
   "coverage_start": "2024-01-01",
-  "coverage_end": "2026-09-25",
-  "researched_on": "2026-09-25",
+  "coverage_end": "2026-10-12",
+  "researched_on": "2026-10-12",
   "timezone": "UTC+08:00",
   "methodology": [
     "Covers named text, reasoning and coding releases, publicly announced external previews, and explicitly dated model updates. Standalone media, embedding and moderation models are excluded.",
@@ -22,6 +22,94 @@
     "https://developers.openai.com/api/docs/models"
   ],
   "models": [
+    {
+      "id": "chat-latest-october-2026",
+      "company": "OpenAI",
+      "name": "chat-latest (October 2026 update)",
+      "slug": "chat-latest",
+      "description": "October refresh of the rolling API snapshot of the latest ChatGPT chat model.",
+      "release_kind": "Dated update",
+      "release_note_url": "https://developers.openai.com/api/docs/changelog",
+      "documentation_url": "https://developers.openai.com/api/docs/models/chat-latest",
+      "channels": [
+        "API"
+      ],
+      "notes": "A dated rolling-alias update, not a separately named foundational model. The changelog does not publish a pinned snapshot or identify the underlying model; it does not establish a separate ChatGPT rollout date.",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-10-07",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; exact release time not established.",
+          "channels": [
+            "API"
+          ]
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-10-07",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; exact release time not established.",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "gpt-6-1-sol",
+      "company": "OpenAI",
+      "name": "GPT-6.1 Sol",
+      "slug": "gpt-6.1-sol",
+      "description": "Reasoning model for complex coding, professional work, and long-running agent tasks.",
+      "release_kind": "Model release",
+      "release_note_url": "https://developers.openai.com/api/docs/changelog",
+      "documentation_url": "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+      "channels": [
+        "API",
+        "Codex",
+        "ChatGPT Work"
+      ],
+      "notes": "Codex and ChatGPT Work access is documented in the September 29 product changelog and depends on plan and workspace settings. Ultrafast mode added October 8 is a processing option for this model, not a separate model release.",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-09-29",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; exact release time not established.",
+          "channels": [
+            "API"
+          ]
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-09-29",
+          "source_url": "https://developers.openai.com/api/docs/changelog",
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; exact release time not established.",
+          "channels": [
+            "API"
+          ],
+          "is_first_availability": true
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-09-29",
+          "source_url": "https://learn.chatgpt.com/docs/changelog",
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; exact release time not established.",
+          "channels": [
+            "Codex",
+            "ChatGPT Work"
+          ],
+          "is_first_availability": false
+        }
+      ]
+    },
     {
       "id": "gpt-6-luna",
       "company": "OpenAI",

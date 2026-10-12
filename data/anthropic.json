@@ -1,8 +1,8 @@
 {
   "title": "Anthropic Claude model releases",
   "coverage_start": "2024-01-01",
-  "coverage_end": "2026-09-25",
-  "researched_on": "2026-09-25",
+  "coverage_end": "2026-10-12",
+  "researched_on": "2026-10-12",
   "timezone": "UTC+08:00",
   "methodology": [
     "Covers named text, reasoning and coding releases, publicly announced external previews, and explicitly dated model updates. Standalone media, embedding and moderation models are excluded.",
@@ -20,6 +20,98 @@
     "https://platform.claude.com/docs/en/about-claude/model-deprecations"
   ],
   "models": [
+    {
+      "id": "claude-haiku-5-5",
+      "company": "Anthropic",
+      "name": "Claude Haiku 5.5",
+      "slug": "claude-haiku-5-5",
+      "description": "Small Claude model for high-volume and latency-sensitive work, with adaptive thinking and a 1M-token context window.",
+      "release_kind": "Model release",
+      "release_note_url": "https://www.anthropic.com/claude-haiku-5-5",
+      "documentation_url": "https://platform.claude.com/docs/en/models/overview",
+      "channels": [
+        "Claude API",
+        "Amazon Bedrock",
+        "Google Cloud",
+        "Microsoft Foundry"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-10-07",
+          "source_url": "https://www.anthropic.com/claude-haiku-5-5",
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; exact release time not established.",
+          "channels": [
+            "Claude API",
+            "Amazon Bedrock",
+            "Google Cloud",
+            "Microsoft Foundry"
+          ]
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-10-07",
+          "source_url": "https://platform.claude.com/docs/en/release-notes/overview",
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; exact release time not established.",
+          "channels": [
+            "Claude API",
+            "Amazon Bedrock",
+            "Google Cloud",
+            "Microsoft Foundry"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
+    {
+      "id": "claude-sonnet-5-5",
+      "company": "Anthropic",
+      "name": "Claude Sonnet 5.5",
+      "slug": "claude-sonnet-5-5",
+      "description": "Sonnet update for coding and knowledge work with adaptive thinking and more efficient inference.",
+      "release_kind": "Model release",
+      "release_note_url": "https://www.anthropic.com/claude-sonnet-5-5",
+      "documentation_url": "https://platform.claude.com/docs/en/models/overview",
+      "channels": [
+        "Claude API",
+        "Amazon Bedrock",
+        "Google Cloud",
+        "Microsoft Foundry"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-09-28",
+          "source_url": "https://www.anthropic.com/claude-sonnet-5-5",
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; exact release time not established.",
+          "channels": [
+            "Claude API",
+            "Amazon Bedrock",
+            "Google Cloud",
+            "Microsoft Foundry"
+          ]
+        },
+        {
+          "type": "availability",
+          "source_date": "2026-09-28",
+          "source_url": "https://platform.claude.com/docs/en/release-notes/overview",
+          "precision": "date_only",
+          "timestamp_basis": "Official source date; exact release time not established.",
+          "channels": [
+            "Claude API",
+            "Amazon Bedrock",
+            "Google Cloud",
+            "Microsoft Foundry"
+          ],
+          "is_first_availability": true
+        }
+      ]
+    },
     {
       "id": "claude-opus-5-5",
       "company": "Anthropic",

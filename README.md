@@ -15,11 +15,12 @@ A searchable timeline of model announcements and documented availability across 
 - **Historical context.** A days-since-last-release counter and “On this day” view put releases in context.
 - **Visible uncertainty.** Disputed dates, incomplete records, previews, and later access rollouts are labeled explicitly.
 
-The September 25, 2026 data audit covers 220 records. See the [audit and source notes](docs/release-data-audit-2026-09-25.md) for corrections and remaining uncertainty. Data is maintained in the repository; it is not a live feed.
+The October 12, 2026 refresh checks all nine labs for recent text, reasoning, and coding releases and brings the timeline to 226 records. See the [latest research and source notes](docs/release-data-refresh-2026-10-12.md) and the [September historical audit](docs/release-data-audit-2026-09-25.md) for evidence and remaining uncertainty. Data is maintained in the repository; it is not a live feed. Standalone image, video, speech, embedding, and moderation models are outside the current scope.
 
 ## Run locally
 
 Use Node.js 22.12+ and npm.
+The checked-in `.nvmrc` selects Node.js 24 for users of nvm; run `nvm install` and `nvm use` before installing dependencies.
 
 ```bash
 git clone https://github.com/Darren-Ter/model-release-timeline.git
