@@ -2,6 +2,18 @@ import { z } from 'zod';
 import { xPostUrl } from '../lib/xPosts';
 
 const isoDate = z.string().regex(/^\d{4}-\d{2}-\d{2}$/, 'expected YYYY-MM-DD');
+const postUrl = z.string().refine((value) => xPostUrl(value) !== null, 'expected an HTTPS X post permalink');
+
+const teaserSchema = z.object({
+  author: z.string().min(1),
+  text: z.string().min(1),
+  x_url: postUrl,
+  datetime_utc8: z.iso.datetime({ offset: true }),
+  announcement_datetime_utc8: z.iso.datetime({ offset: true }),
+  context: z.object({ text: z.string().min(1), x_url: postUrl }).optional(),
+}).refine((teaser) => Date.parse(teaser.datetime_utc8) < Date.parse(teaser.announcement_datetime_utc8), {
+  message: 'teaser must precede the official announcement post',
+});
 
 // Mirrors the structure of the files in data/. Only the fields the UI reads are
 // required; everything else is optional so other labs' files can be sparser.
@@ -33,7 +45,8 @@ export const modelSchema = z.looseObject({
   release_kind: z.string().nullish(),
   release_note_url: z.string().nullish(),
   documentation_url: z.string().nullish(),
-  announcement_x_url: z.string().refine((value) => xPostUrl(value) !== null, 'expected an HTTPS X post permalink').nullish(),
+  announcement_x_url: postUrl.nullish(),
+  teaser: teaserSchema.nullish(),
   channels: z.array(z.string()).nullish(),
   notes: z.string().nullish(),
   date_disputed: z.boolean().optional(),

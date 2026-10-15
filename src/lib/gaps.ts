@@ -1,5 +1,5 @@
 import { releaseDate, type DateBasis, type Release } from '../data/normalize';
-import { daysBetween } from './dates';
+import { daysBetween, DEFAULT_TIMEZONE, type DisplayTimezone } from './dates';
 
 export interface GapStats {
   count: number;
@@ -13,20 +13,20 @@ export interface GapStats {
  * Day gaps between neighbours of an already-sorted list: result[i] is the gap
  * between list[i] and list[i + 1], always non-negative.
  */
-export function adjacentGaps(list: Release[], basis: DateBasis): number[] {
-  return list.slice(1).map((r, i) => Math.abs(daysBetween(releaseDate(list[i], basis), releaseDate(r, basis))));
+export function adjacentGaps(list: Release[], basis: DateBasis, timezone: DisplayTimezone = DEFAULT_TIMEZONE): number[] {
+  return list.slice(1).map((r, i) => Math.abs(daysBetween(releaseDate(list[i], basis, timezone), releaseDate(r, basis, timezone))));
 }
 
-export function gapStats(releases: Release[], basis: DateBasis, today: string): GapStats {
+export function gapStats(releases: Release[], basis: DateBasis, today: string, timezone: DisplayTimezone = DEFAULT_TIMEZONE): GapStats {
   if (!releases.length) return { count: 0, latest: null, daysSinceLatest: null, medianGap: null, longest: null };
 
-  const chrono = [...releases].sort((a, b) => releaseDate(a, basis).localeCompare(releaseDate(b, basis)));
+  const chrono = [...releases].sort((a, b) => releaseDate(a, basis, timezone).localeCompare(releaseDate(b, basis, timezone)));
   const latest = chrono[chrono.length - 1];
   const gaps: number[] = [];
   let longest: GapStats['longest'] = null;
 
   for (let i = 1; i < chrono.length; i++) {
-    const days = daysBetween(releaseDate(chrono[i - 1], basis), releaseDate(chrono[i], basis));
+    const days = daysBetween(releaseDate(chrono[i - 1], basis, timezone), releaseDate(chrono[i], basis, timezone));
     gaps.push(days);
     if (!longest || days > longest.days) longest = { days, from: chrono[i - 1], to: chrono[i] };
   }
@@ -41,7 +41,7 @@ export function gapStats(releases: Release[], basis: DateBasis, today: string): 
   return {
     count: releases.length,
     latest,
-    daysSinceLatest: daysBetween(releaseDate(latest, basis), today),
+    daysSinceLatest: daysBetween(releaseDate(latest, basis, timezone), today),
     medianGap,
     longest,
   };

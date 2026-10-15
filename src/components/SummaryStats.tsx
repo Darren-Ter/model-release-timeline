@@ -1,5 +1,5 @@
 import type { GapStats } from '../lib/gaps';
-import { formatDate, formatGap } from '../lib/dates';
+import { DEFAULT_TIMEZONE, formatDate, formatGap, type DisplayTimezone } from '../lib/dates';
 import { releaseDate, type DateBasis } from '../data/normalize';
 import type { LabInfo } from '../lib/labColors';
 
@@ -8,13 +8,14 @@ interface Props {
   stats: GapStats;
   perLab: { lab: LabInfo; stats: GapStats }[];
   basis: DateBasis;
+  timezone?: DisplayTimezone;
   onSelect: (id: string) => void;
 }
 
 const since = (d: number | null) => (d === null ? '—' : d === 0 ? 'Today' : `${formatGap(d)} ago`);
 const gap = (d: number | null) => (d === null ? '—' : formatGap(Math.round(d)));
 
-export function SummaryStats({ open, stats, perLab, basis, onSelect }: Props) {
+export function SummaryStats({ open, stats, perLab, basis, timezone = DEFAULT_TIMEZONE, onSelect }: Props) {
   const { count, latest, daysSinceLatest, medianGap, longest } = stats;
   const maxCount = Math.max(1, ...perLab.map((p) => p.stats.count));
 
@@ -31,7 +32,7 @@ export function SummaryStats({ open, stats, perLab, basis, onSelect }: Props) {
           <span className="stat-value">{since(daysSinceLatest)}</span>
           {latest && (
             <button type="button" className="stat-sub link" onClick={() => onSelect(latest.id)}>
-              {latest.name} · {formatDate(releaseDate(latest, basis))}
+              {latest.name} · {formatDate(releaseDate(latest, basis, timezone))}
             </button>
           )}
         </div>

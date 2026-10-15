@@ -1,4 +1,5 @@
 import { releaseDate, type DateBasis, type Release } from '../data/normalize';
+import { DEFAULT_TIMEZONE, type DisplayTimezone } from './dates';
 
 export type SortOrder = 'desc' | 'asc';
 
@@ -11,6 +12,7 @@ export interface Filters {
   to: string | null; // inclusive YYYY-MM-DD
   basis: DateBasis;
   sort: SortOrder;
+  timezone: DisplayTimezone;
 }
 
 export const DEFAULT_FILTERS: Filters = {
@@ -22,6 +24,7 @@ export const DEFAULT_FILTERS: Filters = {
   to: null,
   basis: 'announcement',
   sort: 'desc',
+  timezone: DEFAULT_TIMEZONE,
 };
 
 /** True when anything narrows the set (basis and sort don't count). */
@@ -39,18 +42,18 @@ export function applyFilters(releases: Release[], f: Filters): Release[] {
     if (f.labs.length && !f.labs.includes(r.lab)) return false;
     if (f.kinds.length && !f.kinds.includes(r.kind)) return false;
     if (f.channels.length && !r.channels.some((c) => f.channels.includes(c))) return false;
-    const d = releaseDate(r, f.basis);
+    const d = releaseDate(r, f.basis, f.timezone);
     if (f.from && d < f.from) return false;
     if (f.to && d > f.to) return false;
     return matchesQuery(r, f.query);
   });
-  return sortReleases(out, f.basis, f.sort);
+  return sortReleases(out, f.basis, f.sort, f.timezone);
 }
 
-export function sortReleases(releases: Release[], basis: DateBasis, sort: SortOrder): Release[] {
+export function sortReleases(releases: Release[], basis: DateBasis, sort: SortOrder, timezone: DisplayTimezone = DEFAULT_TIMEZONE): Release[] {
   const dir = sort === 'asc' ? 1 : -1;
   return [...releases].sort((a, b) => {
-    const c = releaseDate(a, basis).localeCompare(releaseDate(b, basis));
+    const c = releaseDate(a, basis, timezone).localeCompare(releaseDate(b, basis, timezone));
     if (c !== 0) return c * dir;
     return a.lab.localeCompare(b.lab) || a.name.localeCompare(b.name);
   });

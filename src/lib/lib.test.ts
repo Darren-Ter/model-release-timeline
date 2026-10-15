@@ -69,10 +69,12 @@ describe('real dataset', () => {
     expect(o3.availabilityDate).toBe('2025-04-16');
   });
 
-  it('finds Claude 4 on May 22 in later years', () => {
-    const r = onThisDay(releases, 'announcement', '2026-05-22');
+  it('finds Claude 4 on May 22 Pacific time and May 23 in UTC+8', () => {
+    const r = onThisDay(releases, 'announcement', '2026-05-22', 'pt');
     expect(r.exact.map((i) => i.release.name)).toEqual(expect.arrayContaining(['Claude Opus 4', 'Claude Sonnet 4']));
     expect(r.exact.every((i) => i.yearsAgo === 1)).toBe(true);
+    expect(onThisDay(releases, 'announcement', '2026-05-23').exact.map((i) => i.release.name))
+      .toEqual(expect.arrayContaining(['Claude Opus 4', 'Claude Sonnet 4']));
   });
 });
 

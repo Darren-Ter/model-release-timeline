@@ -1,8 +1,25 @@
 {
   "title": "Z.ai GLM model releases",
-  "researched_on": "2026-10-12",
+  "researched_on": "2026-10-13",
   "timezone": "UTC+08:00",
   "models": [
+    {
+      "id": "glm-legal",
+      "company": "Z.ai",
+      "name": "GLM-Legal",
+      "release_kind": "Model preview",
+      "description": "Legal reasoning and document-workflow model built on GLM-5.3-Flash; beta API access is by application.",
+      "release_note_url": "https://z.ai/blog/glm-legal",
+      "documentation_url": "https://z.ai/consultation/legal",
+      "events": [
+        {
+          "type": "announcement",
+          "source_date": "2026-10-12",
+          "source_url": "https://z.ai/blog/glm-legal"
+        }
+      ],
+      "notes": "The October 12 research announcement invites applications for GLM-Legal beta API access. It does not establish a first-access date or general API availability. AutoClaw integration is described as coming soon; no AutoClaw availability event or open-weight release is inferred. The article provides a date only, so no exact announcement time is assigned."
+    },
     {
       "id": "glm-4",
       "company": "Z.ai",

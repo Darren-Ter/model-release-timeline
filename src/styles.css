@@ -516,6 +516,30 @@ body {
   align-items: center;
   flex-wrap: wrap;
 }
+.timezone-select {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  color: var(--muted);
+  font-size: 12px;
+}
+.timezone-select select {
+  min-width: 0;
+  max-width: 180px;
+  border: 0;
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
+}
+.timezone-select:focus-within {
+  border-color: var(--accent);
+}
 .tool-btn {
   display: inline-flex;
   align-items: center;
@@ -1011,6 +1035,8 @@ body {
   grid-template-columns: minmax(0, 1fr) 64px minmax(0, 1fr);
   align-items: center;
   padding: 6px 0;
+  /* Interleaved rows span both columns; their empty half must not cover other cards. */
+  pointer-events: none;
 }
 /* Without gap rows, opposite-side cards interlock to keep the spine dense. */
 .tl:not(.with-gaps) .tl-item + .tl-item {
@@ -1044,9 +1070,54 @@ body {
   position: relative;
   width: 100%;
   transition: transform 0.2s ease, opacity 0.5s ease;
+  pointer-events: auto;
 }
-.rcard-wrap:hover {
-  transform: translateY(-3px);
+.rcard-main {
+  position: relative;
+}
+.has-teaser .rcard {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.teaser-note {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--text-2);
+}
+.teaser-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin: 0;
+}
+.teaser-summary strong {
+  font-family: var(--mono);
+  color: var(--text);
+}
+.teaser-context,
+.teaser-basis {
+  margin: 6px 0 0;
+  color: var(--muted);
+}
+.rcard-teaser {
+  padding: 10px 18px 12px;
+  border: 1px solid var(--border);
+  border-top: 0;
+  border-radius: 0 0 var(--radius) var(--radius);
+  background: var(--surface-2);
+}
+.rcard-wrap:hover .rcard-teaser {
+  border-color: color-mix(in oklab, var(--lab) 55%, var(--border));
+}
+.drawer-teaser {
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface-2);
+}
+.teaser-note .teaser-facts {
+  margin-top: 12px;
+  font-size: 12px;
 }
 .rcard {
   position: relative;
@@ -1071,6 +1142,7 @@ body {
   height: 3px;
   border-radius: var(--radius) var(--radius) 0 0;
   background: linear-gradient(90deg, var(--lab), transparent 80%);
+  pointer-events: none;
 }
 .side-right .rcard::before {
   background: linear-gradient(90deg, var(--lab), transparent 80%);
@@ -1079,18 +1151,19 @@ body {
   background: linear-gradient(270deg, var(--lab), transparent 80%);
 }
 /* connector to the spine */
-.rcard::after {
+.rcard-wrap::after {
   content: '';
   position: absolute;
   top: 50%;
   width: 26px;
   height: 2px;
   background: color-mix(in oklab, var(--lab) 45%, var(--spine));
+  pointer-events: none;
 }
-.side-left .rcard::after {
+.side-left .rcard-wrap::after {
   right: -27px;
 }
-.side-right .rcard::after {
+.side-right .rcard-wrap::after {
   left: -27px;
 }
 .rcard-wrap:hover .rcard {
@@ -1155,6 +1228,21 @@ body {
   color: var(--text-2);
   font-size: 14px;
 }
+.rcard-x-time {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 2px 8px;
+  margin-top: 2px;
+  color: var(--text-2);
+  font-size: 11px;
+}
+.rcard-x-time-label {
+  color: var(--muted);
+}
+.rcard-x-time time {
+  font-family: var(--mono);
+}
 
 .rcard-date-note,
 .date-caveat {
@@ -1172,8 +1260,8 @@ body {
 .rcard-footer {
   display: flex;
   align-items: center;
-  min-height: 36px;
-  padding-right: 46px;
+  min-height: 44px;
+  padding-right: 54px;
 }
 .x-post-link {
   display: inline-flex;
@@ -1202,6 +1290,9 @@ body {
   position: absolute;
   right: 18px;
   bottom: 16px;
+  width: 44px;
+  height: 44px;
+  z-index: 1;
 }
 .tag {
   font-size: 11px;
@@ -1458,8 +1549,8 @@ body {
   .rcard {
     min-height: 0;
   }
-  .side-left .rcard::after,
-  .side-right .rcard::after {
+  .side-left .rcard-wrap::after,
+  .side-right .rcard-wrap::after {
     left: -15px;
     right: auto;
     width: 14px;
@@ -1507,7 +1598,7 @@ body {
     flex-basis: 100%;
   }
   .toolbar-actions {
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 6px;
   }
   .tool-btn {
@@ -1531,5 +1622,8 @@ body {
   }
   .rcard-name {
     font-size: 19px;
+  }
+  .rcard-top {
+    flex-wrap: wrap;
   }
 }

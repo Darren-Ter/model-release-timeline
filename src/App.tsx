@@ -5,7 +5,7 @@ import { applyFilters, facet, hasActiveFilters } from './lib/filter';
 import { gapStats } from './lib/gaps';
 import { onThisDay } from './lib/onThisDay';
 import { buildLabs } from './lib/labColors';
-import { daysBetween, localToday } from './lib/dates';
+import { daysBetween, todayInTimezone, TIMEZONES, type DisplayTimezone } from './lib/dates';
 import { useFilters } from './state/useFilters';
 import { Hero } from './components/Hero';
 import { FilterBar } from './components/FilterBar';
@@ -15,14 +15,14 @@ import { TimelineList } from './components/TimelineList';
 import { OnThisDay } from './components/OnThisDay';
 import { ReleaseDrawer } from './components/ReleaseDrawer';
 
-/** Re-reads the local date every minute so "today" rolls over at midnight. */
-function useToday() {
-  const [today, setToday] = useState(localToday);
+/** Re-read the instant every minute; timezone changes update the date immediately. */
+function useToday(timezone: DisplayTimezone) {
+  const [now, setNow] = useState(() => new Date());
   useEffect(() => {
-    const t = setInterval(() => setToday(localToday()), 60_000);
+    const t = setInterval(() => setNow(new Date()), 60_000);
     return () => clearInterval(t);
   }, []);
-  return today;
+  return todayInTimezone(timezone, now);
 }
 
 const labs = buildLabs(
@@ -36,39 +36,39 @@ const channels = facet(releases, (r) => r.channels);
 const byId = new Map(releases.map((r) => [r.id, r]));
 
 export default function App() {
-  const today = useToday();
   const { filters, update, reset } = useFilters();
+  const { basis, timezone } = filters;
+  const today = useToday(timezone);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [statsOpen, setStatsOpen] = useState(false);
-  const { basis } = filters;
 
   const filtered = useMemo(() => applyFilters(releases, filters), [filters]);
-  const stats = useMemo(() => gapStats(filtered, basis, today), [filtered, basis, today]);
+  const stats = useMemo(() => gapStats(filtered, basis, today, timezone), [filtered, basis, today, timezone]);
   const perLab = useMemo(
     () =>
       labs
-        .map((lab) => ({ lab, stats: gapStats(filtered.filter((r) => r.lab === lab.name), basis, today) }))
+        .map((lab) => ({ lab, stats: gapStats(filtered.filter((r) => r.lab === lab.name), basis, today, timezone) }))
         .filter((p) => p.stats.count > 0),
-    [filtered, basis, today],
+    [filtered, basis, today, timezone],
   );
-  const otd = useMemo(() => onThisDay(releases, basis, today), [basis, today]);
+  const otd = useMemo(() => onThisDay(releases, basis, today, timezone), [basis, today, timezone]);
   const years = useMemo(
-    () => [...new Set(releases.map((r) => +releaseDate(r, basis).slice(0, 4)))].sort((a, b) => b - a),
-    [basis],
+    () => [...new Set(releases.map((r) => +releaseDate(r, basis, timezone).slice(0, 4)))].sort((a, b) => b - a),
+    [basis, timezone],
   );
 
   // Hero: most recent release date overall (not filtered), and everything on that day.
   const hero = useMemo(() => {
-    const past = releases.filter((r) => releaseDate(r, basis) <= today);
-    const latestDate = past.reduce<string | null>((m, r) => (!m || releaseDate(r, basis) > m ? releaseDate(r, basis) : m), null);
-    const earliest = releases.reduce<string | null>((m, r) => (!m || releaseDate(r, basis) < m ? releaseDate(r, basis) : m), null);
+    const past = releases.filter((r) => releaseDate(r, basis, timezone) <= today);
+    const latestDate = past.reduce<string | null>((m, r) => (!m || releaseDate(r, basis, timezone) > m ? releaseDate(r, basis, timezone) : m), null);
+    const earliest = releases.reduce<string | null>((m, r) => (!m || releaseDate(r, basis, timezone) < m ? releaseDate(r, basis, timezone) : m), null);
     return {
       latestDate,
-      latest: latestDate ? past.filter((r) => releaseDate(r, basis) === latestDate) : [],
+      latest: latestDate ? past.filter((r) => releaseDate(r, basis, timezone) === latestDate) : [],
       daysSince: latestDate ? daysBetween(latestDate, today) : null,
       firstYear: earliest?.slice(0, 4) ?? null,
     };
-  }, [basis, today]);
+  }, [basis, today, timezone]);
 
   const activeCount =
     (filters.query.trim() ? 1 : 0) +
@@ -109,7 +109,7 @@ export default function App() {
           onToggleStats={() => setStatsOpen((o) => !o)}
         />
 
-        <SummaryStats open={statsOpen} stats={stats} perLab={perLab} basis={basis} onSelect={select} />
+        <SummaryStats open={statsOpen} stats={stats} perLab={perLab} basis={basis} timezone={timezone} onSelect={select} />
 
         <p className="result-line" aria-live="polite">
           {showGaps ? (
@@ -129,6 +129,7 @@ export default function App() {
             releases={filtered}
             labs={labs}
             basis={basis}
+            timezone={timezone}
             from={filters.from}
             to={filters.to}
             today={today}
@@ -139,6 +140,7 @@ export default function App() {
         <TimelineList
           releases={filtered}
           basis={basis}
+          timezone={timezone}
           sort={filters.sort}
           showGaps={showGaps}
           daysSinceLatest={stats.daysSinceLatest}
@@ -149,12 +151,13 @@ export default function App() {
       </main>
 
       <footer className="foot muted">
-        Dates follow the dataset: timestamped announcements in {datasetMeta.timezone ?? 'the dataset timezone'}, otherwise the
-        official source date.
+        Times and calendar days use {TIMEZONES[timezone].label}. Pacific and Eastern times follow daylight saving.
+        {' '}Date-only records assume 00:00 PDT (UTC−7) before conversion; ~ marks assumed times.
       </footer>
 
       <ReleaseDrawer
         release={selectedId ? byId.get(selectedId) ?? null : null}
+        timezone={timezone}
         labColor={labColor}
         onClose={() => setSelectedId(null)}
       />

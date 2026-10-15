@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 import type { Filters } from '../lib/filter';
-import { addDays, formatDate } from '../lib/dates';
+import { addDays, formatDate, TIMEZONES, isDisplayTimezone } from '../lib/dates';
 import type { LabInfo } from '../lib/labColors';
 
 interface Option {
@@ -115,6 +115,14 @@ export function FilterBar(props: Props) {
               </button>
             ))}
           </div>
+          <label className="timezone-select">
+            <span>Timezone</span>
+            <select value={filters.timezone} onChange={(e) => {
+              if (isDisplayTimezone(e.target.value)) update({ timezone: e.target.value });
+            }}>
+              {Object.entries(TIMEZONES).map(([value, { option }]) => <option key={value} value={value}>{option}</option>)}
+            </select>
+          </label>
           <button
             type="button"
             className="tool-btn icon"

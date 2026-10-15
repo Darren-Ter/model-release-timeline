@@ -19,10 +19,57 @@ export function addDays(iso: string, n: number): string {
   return fromDayNumber(toDayNumber(iso) + n);
 }
 
-/** The viewer's local calendar date. */
-export function localToday(now: Date = new Date()): string {
-  const pad = (n: number) => String(n).padStart(2, '0');
-  return `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())}`;
+export const TIMEZONES = {
+  utc8: { zone: 'Asia/Kuala_Lumpur', label: 'UTC+8', option: 'UTC+8 · Malaysia' },
+  pt: { zone: 'America/Los_Angeles', label: 'Pacific Time', option: 'PT · Pacific (PDT/PST)' },
+  et: { zone: 'America/New_York', label: 'Eastern Time', option: 'ET · Eastern (EDT/EST)' },
+} as const;
+export type DisplayTimezone = keyof typeof TIMEZONES;
+export const DEFAULT_TIMEZONE: DisplayTimezone = 'utc8';
+export const isDisplayTimezone = (value: string | null): value is DisplayTimezone =>
+  value !== null && Object.hasOwn(TIMEZONES, value);
+
+// IANA zones handle US daylight saving for each instant, including historical dates.
+const zoneFormats = Object.fromEntries(Object.entries(TIMEZONES).map(([key, { zone }]) => [key, {
+  date: new Intl.DateTimeFormat('en-CA', { year: 'numeric', month: '2-digit', day: '2-digit', timeZone: zone }),
+  time: new Intl.DateTimeFormat('en-GB', { hour: '2-digit', minute: '2-digit', hourCycle: 'h23', timeZone: zone }),
+  timestamp: new Intl.DateTimeFormat('en-GB', {
+    day: '2-digit', month: 'short', year: 'numeric',
+    hour: '2-digit', minute: '2-digit', hourCycle: 'h23', timeZone: zone,
+  }),
+  label: new Intl.DateTimeFormat('en-US', { timeZone: zone, timeZoneName: 'short' }),
+}])) as Record<DisplayTimezone, {
+  date: Intl.DateTimeFormat; time: Intl.DateTimeFormat; timestamp: Intl.DateTimeFormat; label: Intl.DateTimeFormat;
+}>;
+
+/** Date-only records use midnight at fixed PDT (UTC−7), as the display assumption. */
+export const assumePdtMidnight = (iso: string): string => `${iso}T00:00:00-07:00`;
+
+/** Convert a verified or explicitly assumed instant to the selected calendar day. */
+export function dateInTimezone(datetime: string | Date, timezone: DisplayTimezone = DEFAULT_TIMEZONE): string {
+  const parts = zoneFormats[timezone].date.formatToParts(new Date(datetime));
+  const part = (type: string) => parts.find((p) => p.type === type)!.value;
+  return `${part('year')}-${part('month')}-${part('day')}`;
+}
+
+export function todayInTimezone(timezone: DisplayTimezone = DEFAULT_TIMEZONE, now = new Date()): string {
+  return dateInTimezone(now, timezone);
+}
+
+export function timezoneLabel(datetime: string, timezone: DisplayTimezone = DEFAULT_TIMEZONE): string {
+  return timezone === 'utc8' ? 'UTC+8' : zoneFormats[timezone].label.formatToParts(new Date(datetime))
+    .find((p) => p.type === 'timeZoneName')!.value;
+}
+
+export function formatTime(datetime: string, timezone: DisplayTimezone = DEFAULT_TIMEZONE, options: { timezone?: boolean } = {}): string {
+  const label = options.timezone === false ? '' : ` ${timezoneLabel(datetime, timezone)}`;
+  return `${zoneFormats[timezone].time.format(new Date(datetime))}${label}`;
+}
+
+export function formatTimestamp(datetime: string, timezone: DisplayTimezone = DEFAULT_TIMEZONE, options: { weekday?: boolean; timezone?: boolean } = {}): string {
+  const weekday = options.weekday ? `${formatWeekday(dateInTimezone(datetime, timezone))}, ` : '';
+  const label = options.timezone === false ? '' : ` ${timezoneLabel(datetime, timezone)}`;
+  return `${weekday}${zoneFormats[timezone].timestamp.format(new Date(datetime))}${label}`;
 }
 
 export function formatGap(days: number): string {

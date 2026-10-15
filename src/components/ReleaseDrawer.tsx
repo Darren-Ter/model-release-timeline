@@ -1,18 +1,15 @@
 import { useEffect, useRef } from 'react';
-import { releaseEvent, type Release } from '../data/normalize';
-import { formatDate, formatWeekday } from '../lib/dates';
+import { displayEventDatetime, eventDatetime, releaseEvent, type Release, type ReleaseEvent } from '../data/normalize';
+import { DEFAULT_TIMEZONE, formatTimestamp, type DisplayTimezone } from '../lib/dates';
 import { XPostLink } from './XPostLink';
+import { TeaserNote } from './TeaserNote';
 
 interface Props {
   release: Release | null;
+  timezone?: DisplayTimezone;
   labColor: (lab: string) => string;
   onClose: () => void;
 }
-
-const timeFmt = (datetime: string) => {
-  const m = datetime.match(/T(\d{2}:\d{2})(?::\d{2})?([+-]\d{2}:\d{2}|Z)$/);
-  return m ? `${m[1]} UTC${m[2] === 'Z' ? '' : m[2]}` : null;
-};
 
 const host = (url: string) => {
   try {
@@ -22,10 +19,17 @@ const host = (url: string) => {
   }
 };
 
-export function ReleaseDrawer({ release, labColor, onClose }: Props) {
+export function ReleaseDrawer({ release, timezone = DEFAULT_TIMEZONE, labColor, onClose }: Props) {
   const ref = useRef<HTMLDialogElement>(null);
   const announcement = release ? releaseEvent(release, 'announcement') : null;
   const availability = release ? releaseEvent(release, 'availability') : null;
+  const eventTime = (event: ReleaseEvent) => {
+    const datetime = displayEventDatetime(release!, event);
+    return <>
+      <time dateTime={datetime}>{formatTimestamp(datetime, timezone, { weekday: true })}</time>
+      {!eventDatetime(release!, event) && <span className="approx">Assumed 00:00 PDT (UTC−7)</span>}
+    </>;
+  };
 
   useEffect(() => {
     const d = ref.current;
@@ -64,9 +68,17 @@ export function ReleaseDrawer({ release, labColor, onClose }: Props) {
 
           <dl className="facts">
             <dt>Announced</dt>
-            <dd>{announcement ? formatDate(announcement.date) : 'Not documented'}</dd>
+            <dd>{announcement ? eventTime(announcement) : 'Not documented'}</dd>
+            {release.announcementXUrl && release.announcementXDatetime && (
+              <>
+                <dt>X announcement</dt>
+                <dd><a href={release.announcementXUrl} target="_blank" rel="noopener noreferrer">
+                  <time dateTime={release.announcementXDatetime}>{formatTimestamp(release.announcementXDatetime, timezone)}</time> ↗
+                </a></dd>
+              </>
+            )}
             <dt>{availability?.isFirstAvailability ? 'First documented access' : 'Recorded access'}</dt>
-            <dd>{availability ? formatDate(availability.date) : 'Not documented'}</dd>
+            <dd>{availability ? eventTime(availability) : 'Not documented'}</dd>
             {release.channels.length > 0 && (
               <>
                 <dt>Recorded channels</dt>
@@ -93,6 +105,13 @@ export function ReleaseDrawer({ release, labColor, onClose }: Props) {
             )}
           </dl>
 
+          {release.teaser && (
+            <>
+              <h3>Launch teaser</h3>
+              <TeaserNote release={release} timezone={timezone} details className="drawer-teaser" />
+            </>
+          )}
+
           <h3>Events</h3>
           <ol className="events">
             {release.events.map((e) => (
@@ -100,9 +119,8 @@ export function ReleaseDrawer({ release, labColor, onClose }: Props) {
                 <div className="event-head">
                   <span className={`event-type event-${e.type}`}>{e.type}</span>
                   <span>
-                    {formatWeekday(e.date)}, {formatDate(e.date)}
-                    {e.datetime && timeFmt(e.datetime) && <span className="muted"> · {timeFmt(e.datetime)}</span>}
-                    {e.approximate && <span className="approx">date only</span>}
+                    {eventTime(e)}
+                    {!e.datetime && eventDatetime(release, e) && <span className="approx">X post time</span>}
                   </span>
                 </div>
                 {e.channels.length > 0 && <div className="muted small">{e.channels.join(', ')}</div>}

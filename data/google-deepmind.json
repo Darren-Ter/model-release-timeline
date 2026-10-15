@@ -91,6 +91,17 @@
     {
       "id": "gemini-3-5-flash",
       "announcement_x_url": "https://x.com/GoogleDeepMind/status/2056787987774816525",
+      "teaser": {
+        "author": "Logan Kilpatrick",
+        "text": "Gemini",
+        "x_url": "https://x.com/OfficialLoganK/status/2056528490011476100",
+        "datetime_utc8": "2026-05-19T08:12:55+08:00",
+        "announcement_datetime_utc8": "2026-05-20T01:24:04+08:00",
+        "context": {
+          "text": "The teaser video was created with Gemini Omni, announced at the same I/O event.",
+          "x_url": "https://x.com/OfficialLoganK/status/2056786790468776037"
+        }
+      },
       "company": "Google DeepMind",
       "name": "Gemini 3.5 Flash",
       "slug": "gemini-3.5-flash",
@@ -105,6 +116,13 @@
     {
       "id": "gemini-3-1-flash-lite",
       "announcement_x_url": "https://x.com/GoogleDeepMind/status/2028872381477929185",
+      "teaser": {
+        "author": "Logan Kilpatrick",
+        "text": "gemini",
+        "x_url": "https://x.com/OfficialLoganK/status/2028630697141842112",
+        "datetime_utc8": "2026-03-03T08:37:02+08:00",
+        "announcement_datetime_utc8": "2026-03-04T00:37:25+08:00"
+      },
       "company": "Google DeepMind",
       "name": "Gemini 3.1 Flash-Lite",
       "slug": "gemini-3.1-flash-lite",
@@ -119,6 +137,13 @@
     {
       "id": "gemini-3-1-pro",
       "announcement_x_url": "https://x.com/GoogleDeepMind/status/2024516464892334129",
+      "teaser": {
+        "author": "Logan Kilpatrick",
+        "text": "Gemini",
+        "x_url": "https://x.com/OfficialLoganK/status/2024302012091752768",
+        "datetime_utc8": "2026-02-19T09:56:24+08:00",
+        "announcement_datetime_utc8": "2026-02-20T00:08:33+08:00"
+      },
       "company": "Google DeepMind",
       "name": "Gemini 3.1 Pro",
       "slug": "gemini-3.1-pro-preview",

@@ -1,5 +1,6 @@
 import { modelSchema, releaseFileSchema, type RawModel } from './schema';
-import { xPostUrl } from '../lib/xPosts';
+import { xPostDatetime, xPostUrl } from '../lib/xPosts';
+import { assumePdtMidnight, dateInTimezone, DEFAULT_TIMEZONE, type DisplayTimezone } from '../lib/dates';
 
 export type DateBasis = 'announcement' | 'availability';
 
@@ -7,12 +8,23 @@ export interface ReleaseEvent {
   id: string;
   type: string;
   date: string; // YYYY-MM-DD calendar day as displayed by the dataset
+  sourceDate: string; // Original calendar date before any dataset display conversion.
   /** Full timestamp in the dataset's display timezone, when one was established. */
   datetime: string | null;
   approximate: boolean;
   sourceUrl: string | null;
   channels: string[];
   isFirstAvailability: boolean;
+}
+
+export interface ReleaseTeaser {
+  author: string;
+  text: string;
+  url: string;
+  datetime: string;
+  /** Timestamp of the official X announcement, independent of date-only release events. */
+  announcementDatetime: string;
+  context: { text: string; url: string } | null;
 }
 
 export interface Release {
@@ -29,6 +41,9 @@ export interface Release {
   releaseNoteUrl: string | null;
   documentationUrl: string | null;
   announcementXUrl: string | null;
+  /** Creation time of the linked official X post, independent of release event dates. */
+  announcementXDatetime: string | null;
+  teaser: ReleaseTeaser | null;
   events: ReleaseEvent[];
   announcementDate: string;
   availabilityDate: string;
@@ -46,6 +61,7 @@ function toEvent(raw: RawModel['events'][number], index: number, modelId: string
     id: raw.id ?? `${modelId}-${raw.type}-${index + 1}`,
     type: raw.type,
     date: raw.display_date ?? raw.source_date,
+    sourceDate: raw.source_date,
     datetime: raw.datetime_utc8 ?? null,
     approximate: (raw.precision ?? 'date_only') === 'date_only',
     sourceUrl: raw.source_url ?? null,
@@ -71,6 +87,8 @@ export function normalizeModel(raw: RawModel): Release {
 
   const snapshotIds = raw.snapshot_ids ?? [];
   const slug = raw.slug && raw.slug !== 'not published' ? raw.slug : null;
+  const announcementXUrl = xPostUrl(raw.announcement_x_url) ??
+    sorted.filter((e) => e.type === 'announcement').map((e) => xPostUrl(e.sourceUrl)).find(Boolean) ?? null;
 
   return {
     id: raw.id,
@@ -85,8 +103,19 @@ export function normalizeModel(raw: RawModel): Release {
     snapshotIds,
     releaseNoteUrl: raw.release_note_url ?? null,
     documentationUrl: raw.documentation_url ?? null,
-    announcementXUrl: xPostUrl(raw.announcement_x_url) ??
-      sorted.filter((e) => e.type === 'announcement').map((e) => xPostUrl(e.sourceUrl)).find(Boolean) ?? null,
+    announcementXUrl,
+    announcementXDatetime: xPostDatetime(announcementXUrl),
+    teaser: raw.teaser ? {
+      author: raw.teaser.author,
+      text: raw.teaser.text,
+      url: xPostUrl(raw.teaser.x_url)!,
+      datetime: raw.teaser.datetime_utc8,
+      announcementDatetime: raw.teaser.announcement_datetime_utc8,
+      context: raw.teaser.context ? {
+        text: raw.teaser.context.text,
+        url: xPostUrl(raw.teaser.context.x_url)!,
+      } : null,
+    } : null,
     events: sorted,
     announcementDate,
     availabilityDate,
@@ -137,8 +166,24 @@ export function normalizeFiles(files: Record<string, unknown>): {
   return { releases: [...byId.values()], issues };
 }
 
-export function releaseDate(r: Release, basis: DateBasis): string {
-  return basis === 'announcement' ? r.announcementDate : r.availabilityDate;
+/** Presentation dates follow verified instants or the explicit PDT display assumption. */
+export function releaseDate(r: Release, basis: DateBasis, timezone: DisplayTimezone = DEFAULT_TIMEZONE): string {
+  return displayEventDate(r, timelineEvent(r, basis), timezone);
+}
+
+/** An official announcement post establishes announcement time, never availability time. */
+export function eventDatetime(r: Release, event: ReleaseEvent): string | null {
+  return event.datetime ?? (event.type === 'announcement' && event.id === releaseEvent(r, 'announcement')?.id
+    ? r.announcementXDatetime : null);
+}
+
+/** Use a display-only assumption when no verified event or announcement-post time exists. */
+export function displayEventDatetime(r: Release, event: ReleaseEvent): string {
+  return eventDatetime(r, event) ?? assumePdtMidnight(event.sourceDate);
+}
+
+export function displayEventDate(r: Release, event: ReleaseEvent, timezone: DisplayTimezone = DEFAULT_TIMEZONE): string {
+  return dateInTimezone(displayEventDatetime(r, event), timezone);
 }
 
 /** The sourced event for this basis, without inventing a missing event. */

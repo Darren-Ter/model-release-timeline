@@ -1,14 +1,16 @@
 import { Fragment, useEffect, useRef } from 'react';
-import { releaseDate, releaseEvent, timelineEvent, type DateBasis, type Release } from '../data/normalize';
+import { displayEventDatetime, eventDatetime, releaseDate, releaseEvent, timelineEvent, type DateBasis, type Release } from '../data/normalize';
 import { adjacentGaps } from '../lib/gaps';
-import { daysBetween, formatGap, formatWeekday } from '../lib/dates';
+import { daysBetween, DEFAULT_TIMEZONE, formatGap, formatTime, formatTimestamp, formatWeekday, type DisplayTimezone } from '../lib/dates';
 import type { SortOrder } from '../lib/filter';
 import { LabMark } from './LabMark';
 import { XPostLink } from './XPostLink';
+import { TeaserNote } from './TeaserNote';
 
 interface Props {
   releases: Release[];
   basis: DateBasis;
+  timezone?: DisplayTimezone;
   sort: SortOrder;
   showGaps: boolean;
   daysSinceLatest: number | null;
@@ -19,13 +21,6 @@ interface Props {
 
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 const NEW_WITHIN_DAYS = 14;
-
-/** "+08:00" → "UTC+8", "+05:30" → "UTC+5:30", "Z" → "UTC". */
-const utcLabel = (offset: string) => {
-  const m = offset.match(/^([+-])(\d{2}):(\d{2})$/);
-  if (!m) return 'UTC';
-  return `UTC${m[1]}${+m[2]}${m[3] === '00' ? '' : `:${m[3]}`}`;
-};
 
 /** Spine length grows with the gap (square-root scale) so long silences read as long. */
 const gapHeight = (days: number) => Math.round(Math.min(120, Math.max(22, 10 + Math.sqrt(days) * 9)));
@@ -66,7 +61,7 @@ function useReveal(dep: unknown) {
   return ref;
 }
 
-export function TimelineList({ releases, basis, sort, showGaps, daysSinceLatest, today, labColor, onSelect }: Props) {
+export function TimelineList({ releases, basis, timezone = DEFAULT_TIMEZONE, sort, showGaps, daysSinceLatest, today, labColor, onSelect }: Props) {
   const ref = useReveal(releases);
 
   if (!releases.length) {
@@ -78,7 +73,7 @@ export function TimelineList({ releases, basis, sort, showGaps, daysSinceLatest,
     );
   }
 
-  const gaps = adjacentGaps(releases, basis);
+  const gaps = adjacentGaps(releases, basis, timezone);
   const since =
     showGaps && daysSinceLatest !== null && daysSinceLatest >= 0 ? (
       <Gap
@@ -96,14 +91,15 @@ export function TimelineList({ releases, basis, sort, showGaps, daysSinceLatest,
       <ol className={`tl${showGaps ? ' with-gaps' : ''}`} ref={ref}>
         {sort === 'desc' && since}
         {releases.map((r, i) => {
-          const date = releaseDate(r, basis);
-          const prev = i > 0 ? releaseDate(releases[i - 1], basis) : null;
+          const date = releaseDate(r, basis, timezone);
+          const prev = i > 0 ? releaseDate(releases[i - 1], basis, timezone) : null;
           const year = date.slice(0, 4);
           const month = date.slice(0, 7);
           const event = timelineEvent(r, basis);
           const isFallback = !releaseEvent(r, basis);
-          const dt = event.datetime;
-          const time = dt ? `${dt.slice(11, 16)} ${utcLabel(dt.slice(19))}` : null;
+          const dt = displayEventDatetime(r, event);
+          const time = formatTime(dt, timezone, { timezone: false });
+          const isAssumed = !eventDatetime(r, event);
           const age = daysBetween(date, today);
           const isNew = age >= 0 && age <= NEW_WITHIN_DAYS;
           const side = i % 2 === 0 ? 'left' : 'right';
@@ -123,42 +119,51 @@ export function TimelineList({ releases, basis, sort, showGaps, daysSinceLatest,
               )}
               <li className={`tl-item side-${side}`} style={{ ['--lab' as string]: labColor(r.lab) }}>
                 <span className="tl-node" aria-hidden="true" />
-                <div className="rcard-wrap">
-                  <button type="button" className="rcard" id={`release-${r.id}`} onClick={() => onSelect(r.id)}>
-                    <span className="rcard-top">
-                      <LabMark lab={r.lab} />
-                      <span className="rcard-lab">{r.lab}</span>
-                      {r.kind !== 'Model release' && <span className="badge">{r.kind}</span>}
-                      {isNew && !r.dateDisputed && <span className="badge badge-new">New</span>}
-                      <span className="rcard-date">
-                        <time dateTime={date}>
-                          {MONTHS[+date.slice(5, 7) - 1].slice(0, 3)} {+date.slice(8)}
-                        </time>
-                        <span className="rcard-when">
-                          {formatWeekday(date)}
-                          {time && ` · ${time}`}
+                <div className={`rcard-wrap${r.teaser ? ' has-teaser' : ''}`}>
+                  <div className="rcard-main">
+                    <button type="button" className="rcard" id={`release-${r.id}`} onClick={() => onSelect(r.id)}>
+                      <span className="rcard-top">
+                        <LabMark lab={r.lab} />
+                        <span className="rcard-lab">{r.lab}</span>
+                        {r.kind !== 'Model release' && <span className="badge">{r.kind}</span>}
+                        {isNew && !r.dateDisputed && <span className="badge badge-new">New</span>}
+                        <span className="rcard-date">
+                          <time dateTime={date}>
+                            {MONTHS[+date.slice(5, 7) - 1].slice(0, 3)} {+date.slice(8)}
+                          </time>
+                          <span className="rcard-when" title={isAssumed ? 'Assumed 00:00 PDT (UTC−7); exact event time unknown' : undefined}>
+                            {formatWeekday(date)}
+                            {` · ${isAssumed ? '~' : ''}${time}`}
+                          </span>
                         </span>
                       </span>
-                    </span>
-                    <span className="rcard-name">{r.name}</span>
-                    {r.description && <span className="rcard-desc">{r.description}</span>}
-                    {(isFallback || r.dateDisputed) && (
-                      <span className="rcard-date-note">
-                        {r.dateDisputed && 'Date uncertain. '}
-                        {isFallback && `${event.type === 'announcement' ? 'Announcement' : event.type === 'availability' ? 'Availability' : 'Recorded event'} date · ${basis === 'announcement' ? 'announcement' : 'availability'} not documented`}
+                      <span className="rcard-name">{r.name}</span>
+                      {r.description && <span className="rcard-desc">{r.description}</span>}
+                      {r.announcementXDatetime && (
+                        <span className="rcard-x-time">
+                          <span className="rcard-x-time-label">X announcement</span>
+                          <time dateTime={r.announcementXDatetime}>{formatTimestamp(r.announcementXDatetime, timezone, { timezone: false })}</time>
+                        </span>
+                      )}
+                      {(isFallback || r.dateDisputed) && (
+                        <span className="rcard-date-note">
+                          {r.dateDisputed && 'Date uncertain. '}
+                          {isFallback && `${event.type === 'announcement' ? 'Announcement' : event.type === 'availability' ? 'Availability' : 'Recorded event'} date · ${basis === 'announcement' ? 'announcement' : 'availability'} not documented`}
+                        </span>
+                      )}
+                      <span className="rcard-footer">
+                        <span className="tags">
+                          {r.channels.map((c) => (
+                            <span key={c} className="tag">
+                              {c}
+                            </span>
+                          ))}
+                        </span>
                       </span>
-                    )}
-                    <span className="rcard-footer">
-                      <span className="tags">
-                        {r.channels.map((c) => (
-                          <span key={c} className="tag">
-                            {c}
-                          </span>
-                        ))}
-                      </span>
-                    </span>
-                  </button>
-                  <XPostLink name={r.name} url={r.announcementXUrl} className="rcard-x" />
+                    </button>
+                    <XPostLink name={r.name} url={r.announcementXUrl} className="rcard-x" />
+                  </div>
+                  <TeaserNote release={r} timezone={timezone} className="rcard-teaser" />
                 </div>
               </li>
             </Fragment>

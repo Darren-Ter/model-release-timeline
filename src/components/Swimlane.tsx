@@ -1,12 +1,13 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { releaseDate, releaseEvent, type DateBasis, type Release } from '../data/normalize';
-import { formatDate, fromDayNumber, toDayNumber } from '../lib/dates';
+import { DEFAULT_TIMEZONE, formatDate, fromDayNumber, toDayNumber, type DisplayTimezone } from '../lib/dates';
 import type { LabInfo } from '../lib/labColors';
 
 interface Props {
   releases: Release[];
   labs: LabInfo[];
   basis: DateBasis;
+  timezone?: DisplayTimezone;
   from: string | null;
   to: string | null;
   today: string;
@@ -73,7 +74,7 @@ function makeTicks(start: number, end: number, width: number) {
   return ticks;
 }
 
-export function Swimlane({ releases, labs, basis, from, to, today, onSelect }: Props) {
+export function Swimlane({ releases, labs, basis, timezone = DEFAULT_TIMEZONE, from, to, today, onSelect }: Props) {
   const [ref, width] = useWidth<HTMLDivElement>();
   const [hover, setHover] = useState<Group | null>(null);
   const labelW = width < 560 ? 84 : 128;
@@ -87,14 +88,14 @@ export function Swimlane({ releases, labs, basis, from, to, today, onSelect }: P
   const groups = useMemo(() => {
     const map = new Map<string, Group>();
     for (const r of releases) {
-      const date = releaseDate(r, basis);
+      const date = releaseDate(r, basis, timezone);
       const key = `${r.lab}|${date}`;
       const g = map.get(key) ?? { key, lab: r.lab, date, releases: [] };
       g.releases.push(r);
       map.set(key, g);
     }
     return [...map.values()];
-  }, [releases, basis]);
+  }, [releases, basis, timezone]);
 
   const days = groups.map((g) => toDayNumber(g.date));
   const todayN = toDayNumber(today);
