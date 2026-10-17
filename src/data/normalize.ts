@@ -119,7 +119,7 @@ export function normalizeModel(raw: RawModel): Release {
     events: sorted,
     announcementDate,
     availabilityDate,
-    searchText: [raw.name, raw.id, slug, raw.company, raw.description, ...snapshotIds]
+    searchText: [raw.name, raw.id, slug, raw.company, raw.description, ...(raw.aliases ?? []), ...snapshotIds]
       .filter(Boolean)
       .join(' ')
       .toLowerCase(),

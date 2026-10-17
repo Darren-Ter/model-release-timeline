@@ -1,8 +1,26 @@
 {
   "title": "Google DeepMind Gemini model releases",
-  "researched_on": "2026-10-12",
+  "researched_on": "2026-10-17",
   "timezone": "UTC+08:00",
   "models": [
+    {
+      "id": "gemini-4-argon",
+      "company": "Google DeepMind",
+      "name": "Gemini 4 Argon",
+      "slug": "gemini-4-argon",
+      "aliases": ["google/gemini-4-argon", "Gemini Argon"],
+      "description": "Frontier reasoning model for complex software engineering, professional workflows, science, and cybersecurity defense.",
+      "release_kind": "Model release",
+      "release_note_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+      "documentation_url": "https://ai.google.dev/gemini-api/docs/models/gemini-4-argon",
+      "channels": ["Fairwind Program", "Gemini API", "Google AI Studio", "Gemini platform", "Google Antigravity", "Gemini", "AI Mode in Search"],
+      "notes": "Announced September 30 with access limited to trusted cyber defenders through the Fairwind Program. The October 13 launch article and Gemini API changelog document the later public rollout, not the model's first access. Gemini app and AI Mode access is for Google AI Pro and Ultra subscribers; Antigravity access is for Ultra subscribers. No exact official X announcement post was verified in this check; event dates remain date-only.",
+      "events": [
+        { "type": "announcement", "source_date": "2026-09-30", "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/", "precision": "date_only", "channels": ["Fairwind Program"] },
+        { "type": "availability", "source_date": "2026-09-30", "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/", "precision": "date_only", "channels": ["Fairwind Program"], "is_first_availability": true },
+        { "type": "availability", "source_date": "2026-10-13", "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/", "precision": "date_only", "channels": ["Gemini API", "Google AI Studio", "Gemini platform", "Google Antigravity", "Gemini", "AI Mode in Search"], "is_first_availability": false }
+      ]
+    },
     {
       "id": "gemini-3-8-flash-cyber",
       "announcement_x_url": "https://x.com/Google/status/2095175518068904380",

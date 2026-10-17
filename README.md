@@ -18,9 +18,13 @@ A searchable timeline of model announcements and documented availability across 
 - **Historical context.** A days-since-last-release counter and “On this day” view put releases in context.
 - **Visible uncertainty.** Disputed dates, incomplete records, previews, and later access rollouts are labeled explicitly.
 
-The October 12, 2026 refresh checked all nine labs for recent text, reasoning, and coding releases. The October 13 follow-up adds GLM-Legal's announcement and brings the timeline to 227 records, with beta API access by application and no inferred public availability date. See the [latest Chinese-lab source notes](docs/chinese-release-data-refresh-2026-10-13.md), the [nine-lab refresh](docs/release-data-refresh-2026-10-12.md), and the [September historical audit](docs/release-data-audit-2026-09-25.md) for evidence and remaining uncertainty. Data is maintained in the repository; it is not a live feed. Standalone image, video, speech, embedding, and moderation models are outside the current scope.
+The [October 17, 2026 nine-lab check](docs/release-data-refresh-2026-10-17.md) adds DeepSeek-V4.1-Flash-1017 and Gemini 4 Argon, bringing the timeline to **273 records**. Argon's September 30 limited release and October 13 public rollout are recorded separately within one entry. Previously recorded recent releases remain intact.
+
+The October 15, 2026 Qwen audit reconciles all 90 entries in OpenRouter’s Qwen catalog: 77 text, reasoning, coding, and general multimodal entries are represented, and 13 standalone image, speech, embedding, or reranking entries are outside the scope. It added 44 records, bringing the timeline to 271 records at that time. Serving variants and original family sizes remain searchable through aliases without inventing additional launches. See the [Qwen catalog and X audit](docs/qwen-openrouter-audit-2026-10-15.md), the [October 13 Chinese-lab notes](docs/chinese-release-data-refresh-2026-10-13.md), the [nine-lab refresh](docs/release-data-refresh-2026-10-12.md), and the [September historical audit](docs/release-data-audit-2026-09-25.md) for evidence and remaining uncertainty. Data is maintained in the repository; it is not a live feed.
 
 The [X announcement audit](docs/x-announcement-posts-2026-10-12.md) covers all 27 Claude records and 23 Gemini records, with exact official posts verified for 48 of those releases.
+
+The [2026 Qwen release-pattern analysis](docs/qwen-release-patterns-2026.md) records the observed weekdays, announcement hours, family launch order, and follow-up intervals, with the full 14-post source sample and calculation snapshot.
 
 ## Run locally
 
@@ -65,6 +69,7 @@ docs/             Release-data audit and research notes
 1. Update the appropriate lab file in `data/`, or create a new one for an additional lab. The file has the shape `{ "title", "researched_on", "timezone", "models": [...] }`.
 2. Give each model a stable `id`, `company`, `name`, and at least one event with a `type` and `source_date` in `YYYY-MM-DD` format. Use `announcement` or `availability` for timeline events.
 3. Link primary sources using `source_url`; add descriptions, channels, release notes, and documentation where available. Keep models sorted newest first.
+   Use `aliases` for searchable alternate names, catalog identifiers, and original family members already covered by the same release. Keep actual dated API snapshots in `snapshot_ids`. An alias does not create a release event.
    Set `announcement_x_url` to the exact official `https://x.com/<account>/status/<id>` announcement permalink when verified. Shared posts may be reused for explicitly named variants. A later availability or promotional post is not a substitute for the announcement. Existing X announcement event sources also supply the icon's link; other event types do not.
    A verified `teaser` can record its `author`, `text`, `x_url`, `datetime_utc8`, and `announcement_datetime_utc8`, plus optional source-linked `context`. Lead times use the two timestamps, rounded down to whole minutes. Keep this comparison separate from date-only announcement and availability events. See the [Logan teaser evidence](docs/logan-gemini-teasers-2026-10-13.md).
 4. Optionally assign the lab a color in `data/labs.json` using a palette `slot` (1–8) or a literal `color`.

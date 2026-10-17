@@ -1,0 +1,927 @@
+{
+  "researched_on": "2026-10-15",
+  "catalog_source": "https://openrouter.ai/qwen",
+  "api_source": "https://openrouter.ai/api/v1/models",
+  "original_release_count": 21,
+  "added_release_count": 44,
+  "entries": [
+    {
+      "openrouter_id": "qwen/qwen3.8-max-prime",
+      "in_current_api": true,
+      "release_id": "qwen3-8-max-0902",
+      "disposition": "service_variant",
+      "was_missing": true,
+      "source_url": "https://www.alibabacloud.com/help/en/model-studio/prime-mode",
+      "reason": "Official Prime documentation defines a faster serving mode with the original model capabilities; no distinct foundation-model launch is inferred."
+    },
+    {
+      "openrouter_id": "qwen/qwen3.8-omni-flash",
+      "in_current_api": true,
+      "release_id": "qwen3-8-omni-flash",
+      "disposition": "existing_release_or_family",
+      "was_missing": false
+    },
+    {
+      "openrouter_id": "qwen/qwen3.8-max-0902",
+      "in_current_api": true,
+      "release_id": "qwen3-8-max-0902",
+      "disposition": "release",
+      "was_missing": true
+    },
+    {
+      "openrouter_id": "qwen/qwen3.8-flash",
+      "in_current_api": true,
+      "release_id": "qwen3-8-flash",
+      "disposition": "release",
+      "was_missing": true
+    },
+    {
+      "openrouter_id": "qwen/qwen3-reranker-0.6b",
+      "in_current_api": false,
+      "disposition": "outside_scope",
+      "reason": "Standalone image, speech, embedding, or reranking model."
+    },
+    {
+      "openrouter_id": "qwen/qwen3-reranker-4b",
+      "in_current_api": false,
+      "disposition": "outside_scope",
+      "reason": "Standalone image, speech, embedding, or reranking model."
+    },
+    {
+      "openrouter_id": "qwen/qwen3.8-27b",
+      "in_current_api": true,
+      "release_id": "qwen3-8-27b",
+      "disposition": "existing_release_or_family",
+      "was_missing": false
+    },
+    {
+      "openrouter_id": "qwen/qwen3-reranker-8b",
+      "in_current_api": false,
+      "disposition": "outside_scope",
+      "reason": "Standalone image, speech, embedding, or reranking model."
+    },
+    {
+      "openrouter_id": "qwen/qwen3-asr-1.7b",
+      "in_current_api": false,
+      "disposition": "outside_scope",
+      "reason": "Standalone image, speech, embedding, or reranking model."
+    },
+    {
+      "openrouter_id": "qwen/qwen3-asr-0.6b",
+      "in_current_api": false,
+      "disposition": "outside_scope",
+      "reason": "Standalone image, speech, embedding, or reranking model."
+    },
+    {
+      "openrouter_id": "qwen/qwen3.8-2.4t-a95b",
+      "in_current_api": true,
+      "release_id": "qwen3-8-max",
+      "disposition": "existing_release_or_family",
+      "was_missing": false
+    },
+    {
+      "openrouter_id": "qwen/qwen-image-3-pro",
+      "in_current_api": false,
+      "disposition": "outside_scope",
+      "reason": "Standalone image, speech, embedding, or reranking model."
+    },
+    {
+      "openrouter_id": "qwen/qwen-image-3",
+      "in_current_api": false,
+      "disposition": "outside_scope",
+      "reason": "Standalone image, speech, embedding, or reranking model."
+    },
+    {
+      "openrouter_id": "qwen/qwen3.8-max",
+      "in_current_api": false,
+      "release_id": "qwen3-8-max",
+      "disposition": "existing_release_or_family",
+      "was_missing": false
+    },
+    {
+      "openrouter_id": "qwen/qwen3.7-flash",
+      "in_current_api": true,
+      "release_id": "qwen3-7-flash",
+      "disposition": "release",
+      "was_missing": true
+    },
+    {
+      "openrouter_id": "qwen/qwen-audio-3.0-tts-flash",
+      "in_current_api": false,
+      "disposition": "outside_scope",
+      "reason": "Standalone image, speech, embedding, or reranking model."
+    },
+    {
+      "openrouter_id": "qwen/qwen-audio-3.0-tts-plus",
+      "in_current_api": false,
+      "disposition": "outside_scope",
+      "reason": "Standalone image, speech, embedding, or reranking model."
+    },
+    {
+      "openrouter_id": "qwen/qwen3.7-plus",
+      "in_current_api": true,
+      "release_id": "qwen3-7-plus",
+      "disposition": "release",
+      "was_missing": true
+    },
+    {
+      "openrouter_id": "qwen/qwen3.7-max",
+      "in_current_api": true,
+      "release_id": "qwen3-7-max",
+      "disposition": "existing_release_or_family",
+      "was_missing": false
+    },
+    {
+      "openrouter_id": "qwen/qwen3-asr-flash-2026-02-10",
+      "in_current_api": false,
+      "disposition": "outside_scope",
+      "reason": "Standalone image, speech, embedding, or reranking model."
+    },
+    {
+      "openrouter_id": "qwen/qwen3.5-plus-20260420",
+      "in_current_api": true,
+      "release_id": "qwen3-5-plus-2026-04-20",
+      "disposition": "release",
+      "was_missing": true
+    },
+    {
+      "openrouter_id": "qwen/qwen3.6-flash",
+      "in_current_api": true,
+      "release_id": "qwen3-6-flash",
+      "disposition": "release",
+      "was_missing": true
+    },
+    {
+      "openrouter_id": "qwen/qwen3.6-35b-a3b",
+      "in_current_api": true,
+      "release_id": "qwen3-6-35b-a3b",
+      "disposition": "existing_release_or_family",
+      "was_missing": false
+    },
+    {
+      "openrouter_id": "qwen/qwen3.6-max-preview",
+      "in_current_api": false,
+      "release_id": "qwen3-6-max-preview",
+      "disposition": "existing_release_or_family",
+      "was_missing": false
+    },
+    {
+      "openrouter_id": "qwen/qwen3.6-27b",
+      "in_current_api": true,
+      "release_id": "qwen3-6-27b",
+      "disposition": "existing_release_or_family",
+      "was_missing": false
+    },
+    {
+      "openrouter_id": "qwen/qwen3.6-plus",
+      "in_current_api": true,
+      "release_id": "qwen3-6-plus",
+      "disposition": "release",
+      "was_missing": true
+    },
+    {
+      "openrouter_id": "qwen/qwen3.6-plus-preview",
+      "in_current_api": false,
+      "release_id": "qwen3-6-plus-preview",
+      "disposition": "release",
+      "was_missing": true
+    },
+    {
+      "openrouter_id": "qwen/qwen3.5-9b",
+      "in_current_api": true,
+      "release_id": "qwen3-5-9b",
+      "disposition": "release",
+      "was_missing": true
+    },
+    {
+      "openrouter_id": "qwen/qwen3.5-35b-a3b",
+      "in_current_api": true,
+      "release_id": "qwen3-5-35b-a3b",
+      "disposition": "release",
+      "was_missing": true
+    },
+    {
+      "openrouter_id": "qwen/qwen3.5-27b",
+      "in_current_api": true,
+      "release_id": "qwen3-5-27b",
+      "disposition": "release",
+      "was_missing": true
+    },
+    {
+      "openrouter_id": "qwen/qwen3.5-122b-a10b",
+      "in_current_api": true,
+      "release_id": "qwen3-5-122b-a10b",
+      "disposition": "release",
+      "was_missing": true
+    },
+    {
+      "openrouter_id": "qwen/qwen3.5-flash-02-23",
+      "in_current_api": true,
+      "release_id": "qwen3-5-flash",
+      "disposition": "release",
+      "was_missing": true
+    },
+    {
+      "openrouter_id": "qwen/qwen3.5-plus-02-15",
+      "in_current_api": true,
+      "release_id": "qwen3-5-plus",
+      "disposition": "existing_release_or_family",
+      "was_missing": false
+    },
+    {
+      "openrouter_id": "qwen/qwen3.5-397b-a17b",
+      "in_current_api": true,
+      "release_id": "qwen3-5-397b-a17b",
+      "disposition": "existing_release_or_family",
+      "was_missing": false
+    },
+    {
+      "openrouter_id": "qwen/qwen3-max-thinking",
+      "in_current_api": false,
+      "release_id": "qwen3-max-thinking",
+      "disposition": "existing_release_or_family",
+      "was_missing": false
+    },
+    {
+      "openrouter_id": "qwen/qwen3-coder-next",
+      "in_current_api": true,
+      "release_id": "qwen3-coder-next",
+      "disposition": "existing_release_or_family",
+      "was_missing": false
+    },
+    {
+      "openrouter_id": "qwen/qwen3-embedding-0.6b",
+      "in_current_api": false,
+      "disposition": "outside_scope",
+      "reason": "Standalone image, speech, embedding, or reranking model."
+    },
+    {
+      "openrouter_id": "qwen/qwen3-embedding-8b",
+      "in_current_api": false,
+      "disposition": "outside_scope",
+      "reason": "Standalone image, speech, embedding, or reranking model."
+    },
+    {
+      "openrouter_id": "qwen/qwen3-embedding-4b",
+      "in_current_api": false,
+      "disposition": "outside_scope",
+      "reason": "Standalone image, speech, embedding, or reranking model."
+    },
+    {
+      "openrouter_id": "qwen/qwen3-vl-32b-instruct",
+      "in_current_api": false,
+      "release_id": "qwen3-vl-32b-instruct",
+      "disposition": "release",
+      "was_missing": true
+    },
+    {
+      "openrouter_id": "qwen/qwen3-vl-8b-thinking",
+      "in_current_api": false,
+      "release_id": "qwen3-vl-8b-thinking",
+      "disposition": "release",
+      "was_missing": true
+    },
+    {
+      "openrouter_id": "qwen/qwen3-vl-8b-instruct",
+      "in_current_api": true,
+      "release_id": "qwen3-vl-8b-instruct",
+      "disposition": "release",
+      "was_missing": true
+    },
+    {
+      "openrouter_id": "qwen/qwen3-vl-30b-a3b-thinking",
+      "in_current_api": true,
+      "release_id": "qwen3-vl-30b-a3b-thinking",
+      "disposition": "release",
+      "was_missing": true
+    },
+    {
+      "openrouter_id": "qwen/qwen3-vl-30b-a3b-instruct",
+      "in_current_api": true,
+      "release_id": "qwen3-vl-30b-a3b-instruct",
+      "disposition": "release",
+      "was_missing": true
+    },
+    {
+      "openrouter_id": "qwen/qwen3-vl-235b-a22b-thinking",
+      "in_current_api": false,
+      "release_id": "qwen3-vl-235b-a22b-thinking",
+      "disposition": "release",
+      "was_missing": true
+    },
+    {
+      "openrouter_id": "qwen/qwen3-vl-235b-a22b-instruct",
+      "in_current_api": true,
+      "release_id": "qwen3-vl-235b-a22b-instruct",
+      "disposition": "release",
+      "was_missing": true
+    },
+    {
+      "openrouter_id": "qwen/qwen3-max",
+      "in_current_api": false,
+      "release_id": "qwen3-max",
+      "disposition": "existing_release_or_family",
+      "was_missing": false
+    },
+    {
+      "openrouter_id": "qwen/qwen3-coder-plus",
+      "in_current_api": false,
+      "release_id": "qwen3-coder-plus",
+      "disposition": "release",
+      "was_missing": true
+    },
+    {
+      "openrouter_id": "qwen/qwen3-coder-flash",
+      "in_current_api": true,
+      "release_id": "qwen3-coder-flash",
+      "disposition": "release",
+      "was_missing": true
+    },
+    {
+      "openrouter_id": "qwen/qwen3-next-80b-a3b-thinking",
+      "in_current_api": true,
+      "release_id": "qwen3-next-80b-a3b",
+      "disposition": "existing_release_or_family",
+      "was_missing": false
+    },
+    {
+      "openrouter_id": "qwen/qwen3-next-80b-a3b-instruct",
+      "in_current_api": true,
+      "release_id": "qwen3-next-80b-a3b",
+      "disposition": "existing_release_or_family",
+      "was_missing": false
+    },
+    {
+      "openrouter_id": "qwen/qwen-plus-2025-07-28",
+      "in_current_api": false,
+      "release_id": "qwen-plus-2025-07-28",
+      "disposition": "release",
+      "was_missing": true
+    },
+    {
+      "openrouter_id": "qwen/qwen3-30b-a3b-thinking-2507",
+      "in_current_api": false,
+      "release_id": "qwen3-30b-a3b-thinking-2507",
+      "disposition": "release",
+      "was_missing": true
+    },
+    {
+      "openrouter_id": "qwen/qwen3-coder-30b-a3b-instruct",
+      "in_current_api": true,
+      "release_id": "qwen3-coder-30b-a3b-instruct",
+      "disposition": "release",
+      "was_missing": true
+    },
+    {
+      "openrouter_id": "qwen/qwen3-30b-a3b-instruct-2507",
+      "in_current_api": true,
+      "release_id": "qwen3-30b-a3b-instruct-2507",
+      "disposition": "release",
+      "was_missing": true
+    },
+    {
+      "openrouter_id": "qwen/qwen3-235b-a22b-thinking-2507",
+      "in_current_api": true,
+      "release_id": "qwen3-235b-a22b-thinking-2507",
+      "disposition": "release",
+      "was_missing": true
+    },
+    {
+      "openrouter_id": "qwen/qwen3-coder",
+      "in_current_api": true,
+      "release_id": "qwen3-coder",
+      "disposition": "existing_release_or_family",
+      "was_missing": false
+    },
+    {
+      "openrouter_id": "qwen/qwen3-235b-a22b-2507",
+      "in_current_api": true,
+      "release_id": "qwen3-235b-a22b-instruct-2507",
+      "disposition": "release",
+      "was_missing": true
+    },
+    {
+      "openrouter_id": "qwen/qwen3-0.6b-04-28",
+      "in_current_api": false,
+      "release_id": "qwen3",
+      "disposition": "existing_release_or_family",
+      "was_missing": false
+    },
+    {
+      "openrouter_id": "qwen/qwen3-1.7b",
+      "in_current_api": false,
+      "release_id": "qwen3",
+      "disposition": "existing_release_or_family",
+      "was_missing": false
+    },
+    {
+      "openrouter_id": "qwen/qwen3-4b",
+      "in_current_api": false,
+      "release_id": "qwen3",
+      "disposition": "existing_release_or_family",
+      "was_missing": false
+    },
+    {
+      "openrouter_id": "qwen/qwen3-30b-a3b",
+      "in_current_api": true,
+      "release_id": "qwen3",
+      "disposition": "existing_release_or_family",
+      "was_missing": false
+    },
+    {
+      "openrouter_id": "qwen/qwen3-8b",
+      "in_current_api": false,
+      "release_id": "qwen3",
+      "disposition": "existing_release_or_family",
+      "was_missing": false
+    },
+    {
+      "openrouter_id": "qwen/qwen3-14b",
+      "in_current_api": true,
+      "release_id": "qwen3",
+      "disposition": "existing_release_or_family",
+      "was_missing": false
+    },
+    {
+      "openrouter_id": "qwen/qwen3-32b",
+      "in_current_api": true,
+      "release_id": "qwen3",
+      "disposition": "existing_release_or_family",
+      "was_missing": false
+    },
+    {
+      "openrouter_id": "qwen/qwen3-235b-a22b",
+      "in_current_api": false,
+      "release_id": "qwen3",
+      "disposition": "existing_release_or_family",
+      "was_missing": false
+    },
+    {
+      "openrouter_id": "qwen/qwen2.5-coder-7b-instruct",
+      "in_current_api": false,
+      "release_id": "qwen2-5-coder-7b-instruct",
+      "disposition": "release",
+      "was_missing": true
+    },
+    {
+      "openrouter_id": "qwen/qwen2.5-vl-3b-instruct",
+      "in_current_api": false,
+      "release_id": "qwen2-5-vl-3b-instruct",
+      "disposition": "release",
+      "was_missing": true
+    },
+    {
+      "openrouter_id": "qwen/qwen2.5-vl-32b-instruct",
+      "in_current_api": false,
+      "release_id": "qwen2-5-vl-32b-instruct",
+      "disposition": "release",
+      "was_missing": true
+    },
+    {
+      "openrouter_id": "qwen/qwq-32b",
+      "in_current_api": false,
+      "release_id": "qwq-32b",
+      "disposition": "existing_release_or_family",
+      "was_missing": false
+    },
+    {
+      "openrouter_id": "qwen/qwen2.5-32b-instruct",
+      "in_current_api": false,
+      "release_id": "qwen2-5",
+      "disposition": "existing_release_or_family",
+      "was_missing": false
+    },
+    {
+      "openrouter_id": "qwen/qwen-vl-plus",
+      "in_current_api": false,
+      "release_id": "qwen-vl-plus",
+      "disposition": "release",
+      "was_missing": true
+    },
+    {
+      "openrouter_id": "qwen/qwen-vl-max",
+      "in_current_api": false,
+      "release_id": "qwen-vl-max",
+      "disposition": "release",
+      "was_missing": true
+    },
+    {
+      "openrouter_id": "qwen/qwen-turbo",
+      "in_current_api": false,
+      "release_id": "qwen-turbo-qwen2-5",
+      "disposition": "release",
+      "was_missing": true
+    },
+    {
+      "openrouter_id": "qwen/qwen2.5-vl-72b-instruct",
+      "in_current_api": true,
+      "release_id": "qwen2-5-vl-72b-instruct",
+      "disposition": "release",
+      "was_missing": true
+    },
+    {
+      "openrouter_id": "qwen/qwen-plus",
+      "in_current_api": true,
+      "release_id": "qwen-plus-qwen2-5",
+      "disposition": "release",
+      "was_missing": true
+    },
+    {
+      "openrouter_id": "qwen/qwen-max",
+      "in_current_api": false,
+      "release_id": "qwen2-5-max",
+      "disposition": "existing_release_or_family",
+      "was_missing": false
+    },
+    {
+      "openrouter_id": "qwen/qwq-32b-preview",
+      "in_current_api": false,
+      "release_id": "qwq-32b-preview",
+      "disposition": "release",
+      "was_missing": true
+    },
+    {
+      "openrouter_id": "qwen/qwen-2.5-coder-32b-instruct",
+      "in_current_api": true,
+      "release_id": "qwen2-5-coder-32b",
+      "disposition": "existing_release_or_family",
+      "was_missing": false
+    },
+    {
+      "openrouter_id": "qwen/qwen-2.5-7b-instruct",
+      "in_current_api": true,
+      "release_id": "qwen2-5",
+      "disposition": "existing_release_or_family",
+      "was_missing": false
+    },
+    {
+      "openrouter_id": "qwen/qwen-2.5-72b-instruct",
+      "in_current_api": true,
+      "release_id": "qwen2-5",
+      "disposition": "existing_release_or_family",
+      "was_missing": false
+    },
+    {
+      "openrouter_id": "qwen/qwen-2.5-vl-7b-instruct",
+      "in_current_api": false,
+      "release_id": "qwen2-5-vl-7b-instruct",
+      "disposition": "release",
+      "was_missing": true
+    },
+    {
+      "openrouter_id": "qwen/qwen-2-7b-instruct",
+      "in_current_api": false,
+      "release_id": "qwen2",
+      "disposition": "existing_release_or_family",
+      "was_missing": false
+    },
+    {
+      "openrouter_id": "qwen/qwen-2-72b-instruct",
+      "in_current_api": false,
+      "release_id": "qwen2",
+      "disposition": "existing_release_or_family",
+      "was_missing": false
+    },
+    {
+      "openrouter_id": "qwen/qwen-7b-chat",
+      "in_current_api": false,
+      "release_id": "qwen1-5-7b-chat",
+      "disposition": "release",
+      "was_missing": true
+    },
+    {
+      "openrouter_id": "qwen/qwen-72b-chat",
+      "in_current_api": false,
+      "release_id": "qwen1-5-72b-chat",
+      "disposition": "release",
+      "was_missing": true
+    },
+    {
+      "openrouter_id": "qwen/qwen-4b-chat",
+      "in_current_api": false,
+      "release_id": "qwen1-5-4b-chat",
+      "disposition": "release",
+      "was_missing": true
+    },
+    {
+      "openrouter_id": "qwen/qwen-32b-chat",
+      "in_current_api": false,
+      "release_id": "qwen1-5-32b-chat",
+      "disposition": "release",
+      "was_missing": true
+    },
+    {
+      "openrouter_id": "qwen/qwen-14b-chat",
+      "in_current_api": false,
+      "release_id": "qwen1-5-14b-chat",
+      "disposition": "release",
+      "was_missing": true
+    },
+    {
+      "openrouter_id": "qwen/qwen-110b-chat",
+      "in_current_api": false,
+      "release_id": "qwen1-5-110b-chat",
+      "disposition": "release",
+      "was_missing": true
+    }
+  ],
+  "verified_x_posts": [
+    {
+      "url": "https://x.com/Alibaba_Qwen/status/2100785962414702599",
+      "author": "Alibaba_Qwen",
+      "created_at": "2026-09-18T03:16:18.000Z",
+      "verification": "Author, status ID, text, and timestamp fetched from X public syndication JSON.",
+      "excerpt": "🚀 Meet Qwen3.8-Omni-Flash, Qwen's first omni-modal model built around agentic capabilities! Native audio-video understanding, reasoning, and tool use",
+      "release_ids": [
+        "qwen3-8-omni-flash"
+      ]
+    },
+    {
+      "url": "https://x.com/Alibaba_Qwen/status/1836449414220779584",
+      "author": "Alibaba_Qwen",
+      "created_at": "2024-09-18T16:57:14.000Z",
+      "verification": "Author, status ID, text, and timestamp fetched from X public syndication JSON.",
+      "excerpt": "Welcome to the party of Qwen2.5 foundation models! This time, we have the biggest release ever in the",
+      "release_ids": [
+        "qwen2-5",
+        "qwen2-5-coder-7b-instruct"
+      ]
+    },
+    {
+      "url": "https://x.com/Alibaba_Qwen/status/1856040217897251044",
+      "author": "Alibaba_Qwen",
+      "created_at": "2024-11-11T18:24:06.000Z",
+      "verification": "Author, status ID, text, and timestamp fetched from X public syndication JSON.",
+      "excerpt": "🚀Now it is the time, Nov. 11 10:24! The perfect time for our best coder model ever! Qwen2.5-Coder-32B-Instruct!",
+      "release_ids": [
+        "qwen2-5-coder-32b"
+      ]
+    },
+    {
+      "url": "https://x.com/Alibaba_Qwen/status/1897361654763151544",
+      "author": "Alibaba_Qwen",
+      "created_at": "2025-03-05T19:00:44.000Z",
+      "verification": "Author, status ID, text, and timestamp fetched from X public syndication JSON.",
+      "excerpt": "Today, we release QwQ-32B, our new reasoning model with only 32 billion parameters that rivals cutting-edge reasoning model,",
+      "release_ids": [
+        "qwq-32b"
+      ]
+    },
+    {
+      "url": "https://x.com/Alibaba_Qwen/status/2018718453570707465",
+      "author": "Alibaba_Qwen",
+      "created_at": "2026-02-03T16:09:19.000Z",
+      "verification": "Author, status ID, text, and timestamp fetched from X public syndication JSON.",
+      "excerpt": "🚀 Introducing Qwen3-Coder-Next, an open-weight LM built for coding agents &amp; local development. What’s new: 🤖 Scaling agentic",
+      "release_ids": [
+        "qwen3-coder-next"
+      ]
+    },
+    {
+      "url": "https://x.com/Alibaba_Qwen/status/2023331062433153103",
+      "author": "Alibaba_Qwen",
+      "created_at": "2026-02-16T09:38:11.000Z",
+      "verification": "Author, status ID, text, and timestamp fetched from X public syndication JSON.",
+      "excerpt": "🚀 Qwen3.5-397B-A17B is here: The first open-weight model in the Qwen3.5 series. 🖼️Native multimodal. Trained for real-world agents.",
+      "release_ids": [
+        "qwen3-5-397b-a17b"
+      ]
+    },
+    {
+      "url": "https://x.com/Alibaba_Qwen/status/2044768734234243427",
+      "author": "Alibaba_Qwen",
+      "created_at": "2026-04-16T13:23:50.000Z",
+      "verification": "Author, status ID, text, and timestamp fetched from X public syndication JSON.",
+      "excerpt": "⚡ Meet Qwen3.6-35B-A3B：Now Open-Source！🚀🚀 A sparse MoE model, 35B total params, 3B active. Apache 2.0 license. 🔥 Agentic",
+      "release_ids": [
+        "qwen3-6-35b-a3b"
+      ]
+    },
+    {
+      "url": "https://x.com/Alibaba_Qwen/status/2046939764428009914",
+      "author": "Alibaba_Qwen",
+      "created_at": "2026-04-22T13:10:44.000Z",
+      "verification": "Author, status ID, text, and timestamp fetched from X public syndication JSON.",
+      "excerpt": "🚀 Meet Qwen3.6-27B, our latest dense, open-source model, packing flagship-level coding power! Yes, 27B, and Qwen3.6-27B punches way",
+      "release_ids": [
+        "qwen3-6-27b"
+      ]
+    },
+    {
+      "url": "https://x.com/Alibaba_Qwen/status/2084093402967396594",
+      "author": "Alibaba_Qwen",
+      "created_at": "2026-08-03T01:46:02.000Z",
+      "verification": "Author, status ID, text, and timestamp fetched from X public syndication JSON.",
+      "excerpt": "Meet Qwen3.8-Max: A New Bar for Coding and Cowork. https://t.co/mJaA8vr6xT",
+      "release_ids": [
+        "qwen3-8-max"
+      ]
+    },
+    {
+      "url": "https://x.com/Alibaba_Qwen/status/2088280182356611304",
+      "author": "Alibaba_Qwen",
+      "created_at": "2026-08-14T15:02:48.000Z",
+      "verification": "Author, status ID, text, and timestamp fetched from X public syndication JSON.",
+      "excerpt": "We promised open weights for Qwen3.8. Now, time to meet them! 🎉 ⚡ Qwen3.8-27B: - A native multimodal",
+      "release_ids": [
+        "qwen3-8-27b"
+      ]
+    },
+    {
+      "url": "https://x.com/Alibaba_Qwen/status/2094968708288680276",
+      "author": "Alibaba_Qwen",
+      "created_at": "2026-09-02T02:00:37.000Z",
+      "verification": "Author, status ID, text, and timestamp fetched from X public syndication JSON.",
+      "excerpt": "🚀Qwen3.8-Max just got upgraded. Meet Qwen3.8-Max-0902! 2.4T parameters. 1M context tokens. Built for real world complexity. Further post",
+      "release_ids": [
+        "qwen3-8-max-0902"
+      ]
+    },
+    {
+      "url": "https://x.com/Alibaba_Qwen/status/2092591393424515114",
+      "author": "Alibaba_Qwen",
+      "created_at": "2026-08-26T12:34:01.000Z",
+      "verification": "Author, status ID, text, and timestamp fetched from X public syndication JSON.",
+      "excerpt": "⚡Meet Qwen3.8-Flash, a multimodal MoE and an early preview of the Qwen4 architecture, now open-weight! The production version",
+      "release_ids": [
+        "qwen3-8-flash"
+      ]
+    },
+    {
+      "url": "https://x.com/Alibaba_Qwen/status/2061506641120641494",
+      "author": "Alibaba_Qwen",
+      "created_at": "2026-06-01T17:54:18.000Z",
+      "verification": "Author, status ID, text, and timestamp fetched from X public syndication JSON.",
+      "excerpt": "👏👏 Introducing Qwen3.7-Plus — a multimodal agent model that unifies vision and language into one versatile agent foundation.",
+      "release_ids": [
+        "qwen3-7-plus"
+      ]
+    },
+    {
+      "url": "https://x.com/Alibaba_Qwen/status/2039705104723611829",
+      "author": "Alibaba_Qwen",
+      "created_at": "2026-04-02T14:02:47.000Z",
+      "verification": "Author, status ID, text, and timestamp fetched from X public syndication JSON.",
+      "excerpt": "（1/8）🚀 Introducing Qwen3.6-Plus: Towards Real-World Agents! 🤖 Today, we’re thrilled to drop a major milestone in our journey",
+      "release_ids": [
+        "qwen3-6-plus"
+      ]
+    },
+    {
+      "url": "https://x.com/Alibaba_Qwen/status/2026339351530188939",
+      "author": "Alibaba_Qwen",
+      "created_at": "2026-02-24T16:52:03.000Z",
+      "verification": "Author, status ID, text, and timestamp fetched from X public syndication JSON.",
+      "excerpt": "🚀 Introducing the Qwen 3.5 Medium Model Series Qwen3.5-Flash · Qwen3.5-35B-A3B · Qwen3.5-122B-A10B · Qwen3.5-27B ✨ More intelligence,",
+      "release_ids": [
+        "qwen3-5-122b-a10b",
+        "qwen3-5-35b-a3b",
+        "qwen3-5-27b",
+        "qwen3-5-flash"
+      ]
+    },
+    {
+      "url": "https://x.com/Alibaba_Qwen/status/2028460046510965160",
+      "author": "Alibaba_Qwen",
+      "created_at": "2026-03-02T13:18:56.000Z",
+      "verification": "Author, status ID, text, and timestamp fetched from X public syndication JSON.",
+      "excerpt": "🚀 Introducing the Qwen 3.5 Small Model Series Qwen3.5-0.8B · Qwen3.5-2B · Qwen3.5-4B · Qwen3.5-9B ✨ More intelligence,",
+      "release_ids": [
+        "qwen3-5-9b"
+      ]
+    },
+    {
+      "url": "https://x.com/Alibaba_Qwen/status/1970594923503391182",
+      "author": "Alibaba_Qwen",
+      "created_at": "2025-09-23T21:03:36.000Z",
+      "verification": "Author, status ID, text, and timestamp fetched from X public syndication JSON.",
+      "excerpt": "🚀 We're thrilled to unveil Qwen3-VL — the most powerful vision-language model in the Qwen series yet! 🔥",
+      "release_ids": [
+        "qwen3-vl-235b-a22b-instruct",
+        "qwen3-vl-235b-a22b-thinking"
+      ]
+    },
+    {
+      "url": "https://x.com/Alibaba_Qwen/status/1974289216113947039",
+      "author": "Alibaba_Qwen",
+      "created_at": "2025-10-04T01:43:24.000Z",
+      "verification": "Author, status ID, text, and timestamp fetched from X public syndication JSON.",
+      "excerpt": "🚀 Qwen3-VL-30B-A3B-Instruct &amp; Thinking are here! Smaller size, same powerhouse performance 💪—packed with all the capabilities of Qwen3-VL!",
+      "release_ids": [
+        "qwen3-vl-30b-a3b-instruct",
+        "qwen3-vl-30b-a3b-thinking"
+      ]
+    },
+    {
+      "url": "https://x.com/Alibaba_Qwen/status/1978150959621734624",
+      "author": "Alibaba_Qwen",
+      "created_at": "2025-10-14T17:28:35.000Z",
+      "verification": "Author, status ID, text, and timestamp fetched from X public syndication JSON.",
+      "excerpt": "Introducing the compact, dense versions of Qwen3-VL — now available in 4B and 8B pairs, each with both",
+      "release_ids": [
+        "qwen3-vl-8b-instruct",
+        "qwen3-vl-8b-thinking"
+      ]
+    },
+    {
+      "url": "https://x.com/Alibaba_Qwen/status/1980665932625383868",
+      "author": "Alibaba_Qwen",
+      "created_at": "2025-10-21T16:02:11.000Z",
+      "verification": "Author, status ID, text, and timestamp fetched from X public syndication JSON.",
+      "excerpt": "Introducing Qwen3-VL-2B and Qwen3-VL-32B! From edge to cloud, these dense powerhouses deliver ultimate performance per GPU memory, packing",
+      "release_ids": [
+        "qwen3-vl-32b-instruct"
+      ]
+    },
+    {
+      "url": "https://x.com/Alibaba_Qwen/status/1947344511988076547",
+      "author": "Alibaba_Qwen",
+      "created_at": "2025-07-21T17:14:46.000Z",
+      "verification": "Author, status ID, text, and timestamp fetched from X public syndication JSON.",
+      "excerpt": "Bye Qwen3-235B-A22B, hello Qwen3-235B-A22B-2507! After talking with the community and thinking it through, we decided to stop using",
+      "release_ids": [
+        "qwen3-235b-a22b-instruct-2507"
+      ]
+    },
+    {
+      "url": "https://x.com/Alibaba_Qwen/status/1948688466386280706",
+      "author": "Alibaba_Qwen",
+      "created_at": "2025-07-25T10:15:09.000Z",
+      "verification": "Author, status ID, text, and timestamp fetched from X public syndication JSON.",
+      "excerpt": "🚀 We’re excited to introduce Qwen3-235B-A22B-Thinking-2507 — our most advanced reasoning model yet! Over the past 3 months,",
+      "release_ids": [
+        "qwen3-235b-a22b-thinking-2507"
+      ]
+    },
+    {
+      "url": "https://x.com/Alibaba_Qwen/status/1950227114793586867",
+      "author": "Alibaba_Qwen",
+      "created_at": "2025-07-29T16:09:12.000Z",
+      "verification": "Author, status ID, text, and timestamp fetched from X public syndication JSON.",
+      "excerpt": "🚀 Qwen3-30B-A3B Small Update: Smarter, faster, and local deployment-friendly. ✨ Key Enhancements: ✅ Enhanced reasoning, coding, and math",
+      "release_ids": [
+        "qwen3-30b-a3b-instruct-2507"
+      ]
+    },
+    {
+      "url": "https://x.com/Alibaba_Qwen/status/1950570969036361799",
+      "author": "Alibaba_Qwen",
+      "created_at": "2025-07-30T14:55:33.000Z",
+      "verification": "Author, status ID, text, and timestamp fetched from X public syndication JSON.",
+      "excerpt": "🚀 Qwen3-30B-A3B-Thinking-2507, a medium-size model that can think! • Nice performance on reasoning tasks, including math, science, code",
+      "release_ids": [
+        "qwen3-30b-a3b-thinking-2507"
+      ]
+    },
+    {
+      "url": "https://x.com/Alibaba_Qwen/status/1950925444057792808",
+      "author": "Alibaba_Qwen",
+      "created_at": "2025-07-31T14:24:06.000Z",
+      "verification": "Author, status ID, text, and timestamp fetched from X public syndication JSON.",
+      "excerpt": "🦥 Qwen3-Coder-Flash: Qwen3-Coder-30B-A3B-Instruct 💚 Just lightning-fast, accurate code generation. ✅ Native 256K context (supports up to 1M tokens",
+      "release_ids": [
+        "qwen3-coder-30b-a3b-instruct"
+      ]
+    },
+    {
+      "url": "https://x.com/Alibaba_Qwen/status/1952767585596145773",
+      "author": "Alibaba_Qwen",
+      "created_at": "2025-08-05T16:24:07.000Z",
+      "verification": "Author, status ID, text, and timestamp fetched from X public syndication JSON.",
+      "excerpt": "Today we release the APIs of our Flash series, which support Qwen3-Coder and Qwen3-2507 now. Both APIs support",
+      "release_ids": [
+        "qwen3-coder-flash"
+      ]
+    },
+    {
+      "url": "https://x.com/Alibaba_Qwen/status/1904227859616641534",
+      "author": "Alibaba_Qwen",
+      "created_at": "2025-03-24T17:44:35.000Z",
+      "verification": "Author, status ID, text, and timestamp fetched from X public syndication JSON.",
+      "excerpt": "72B too big for VLM? 7B not strong enough! Then you should use our 32B model, Qwen2.5-VL-32B-Instruct! Blog:",
+      "release_ids": [
+        "qwen2-5-vl-32b-instruct"
+      ]
+    },
+    {
+      "url": "https://x.com/Alibaba_Qwen/status/1861951789467394419",
+      "author": "Alibaba_Qwen",
+      "created_at": "2024-11-28T01:54:34.000Z",
+      "verification": "Author, status ID, text, and timestamp fetched from X public syndication JSON.",
+      "excerpt": "🪶We're releasing a preview of QwQ /kwju:/ — an open model designed to advance AI reasoning capabilities. Blog:",
+      "release_ids": [
+        "qwq-32b-preview"
+      ]
+    },
+    {
+      "url": "https://x.com/Alibaba_Qwen/status/1776262376700223968",
+      "author": "Alibaba_Qwen",
+      "created_at": "2024-04-05T14:55:26.000Z",
+      "verification": "Author, status ID, text, and timestamp fetched from X public syndication JSON.",
+      "excerpt": "Today, we release a new model of the Qwen1.5 series: Qwen1.5-32B and Qwen1.5-32B-Chat! Blog: https://t.co/HG9xXU3Bn1 HF: https://t.co/oE1DBcrRNq ,",
+      "release_ids": [
+        "qwen1-5-32b-chat"
+      ]
+    }
+  ]
+}

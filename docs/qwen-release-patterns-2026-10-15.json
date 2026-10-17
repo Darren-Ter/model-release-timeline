@@ -1,0 +1,184 @@
+{
+  "timezone": "Asia/Kuala_Lumpur (UTC+08:00)",
+  "period": "2026-01-01 through 2026-10-15",
+  "distinct_launch_posts": 14,
+  "weekday_counts": {
+    "Monday": 4,
+    "Tuesday": 1,
+    "Wednesday": 4,
+    "Thursday": 3,
+    "Friday": 2,
+    "Saturday": 0,
+    "Sunday": 0
+  },
+  "time_bins": {
+    "00:00–01:59": 3,
+    "02:00–08:59": 0,
+    "09:00–11:59": 2,
+    "12:00–19:59": 1,
+    "20:00–23:59": 8
+  },
+  "late_evening_or_after_midnight": 11,
+  "family_gaps_days": [
+    45,
+    48,
+    75
+  ],
+  "flash_lags_days": {
+    "3.5": 7,
+    "3.6": 14,
+    "3.7": 62,
+    "3.8": 23
+  },
+  "posts": [
+    {
+      "url": "https://x.com/Alibaba_Qwen/status/2015805330652111144",
+      "utc": "2026-01-26T15:13:37.000Z",
+      "local": "Monday 26 Jan, 23:13",
+      "models": [
+        "qwen3-max-thinking"
+      ]
+    },
+    {
+      "url": "https://x.com/Alibaba_Qwen/status/2018718453570707465",
+      "utc": "2026-02-03T16:09:19.000Z",
+      "local": "Wednesday 4 Feb, 00:09",
+      "models": [
+        "qwen3-coder-next"
+      ]
+    },
+    {
+      "url": "https://x.com/Alibaba_Qwen/status/2023331062433153103",
+      "utc": "2026-02-16T09:38:11.000Z",
+      "local": "Monday 16 Feb, 17:38",
+      "models": [
+        "qwen3-5-397b-a17b"
+      ]
+    },
+    {
+      "url": "https://x.com/Alibaba_Qwen/status/2026339351530188939",
+      "utc": "2026-02-24T16:52:03.000Z",
+      "local": "Wednesday 25 Feb, 00:52",
+      "models": [
+        "qwen3-5-122b-a10b",
+        "qwen3-5-35b-a3b",
+        "qwen3-5-27b",
+        "qwen3-5-flash"
+      ]
+    },
+    {
+      "url": "https://x.com/Alibaba_Qwen/status/2028460046510965160",
+      "utc": "2026-03-02T13:18:56.000Z",
+      "local": "Monday 2 Mar, 21:18",
+      "models": [
+        "qwen3-5-9b"
+      ]
+    },
+    {
+      "url": "https://x.com/Alibaba_Qwen/status/2039705104723611829",
+      "utc": "2026-04-02T14:02:47.000Z",
+      "local": "Thursday 2 Apr, 22:02",
+      "models": [
+        "qwen3-6-plus"
+      ]
+    },
+    {
+      "url": "https://x.com/Alibaba_Qwen/status/2044768734234243427",
+      "utc": "2026-04-16T13:23:50.000Z",
+      "local": "Thursday 16 Apr, 21:23",
+      "models": [
+        "qwen3-6-35b-a3b"
+      ]
+    },
+    {
+      "url": "https://x.com/Alibaba_Qwen/status/2046939764428009914",
+      "utc": "2026-04-22T13:10:44.000Z",
+      "local": "Wednesday 22 Apr, 21:10",
+      "models": [
+        "qwen3-6-27b"
+      ]
+    },
+    {
+      "url": "https://x.com/Alibaba_Qwen/status/2057450220708147250",
+      "utc": "2026-05-21T13:15:32.000Z",
+      "local": "Thursday 21 May, 21:15",
+      "models": [
+        "qwen3-7-max"
+      ]
+    },
+    {
+      "url": "https://x.com/Alibaba_Qwen/status/2061506641120641494",
+      "utc": "2026-06-01T17:54:18.000Z",
+      "local": "Tuesday 2 Jun, 01:54",
+      "models": [
+        "qwen3-7-plus"
+      ]
+    },
+    {
+      "url": "https://x.com/Alibaba_Qwen/status/2084093402967396594",
+      "utc": "2026-08-03T01:46:02.000Z",
+      "local": "Monday 3 Aug, 09:46",
+      "models": [
+        "qwen3-8-max"
+      ]
+    },
+    {
+      "url": "https://x.com/Alibaba_Qwen/status/2088280182356611304",
+      "utc": "2026-08-14T15:02:48.000Z",
+      "local": "Friday 14 Aug, 23:02",
+      "models": [
+        "qwen3-8-27b"
+      ]
+    },
+    {
+      "url": "https://x.com/Alibaba_Qwen/status/2092591393424515114",
+      "utc": "2026-08-26T12:34:01.000Z",
+      "local": "Wednesday 26 Aug, 20:34",
+      "models": [
+        "qwen3-8-flash"
+      ]
+    },
+    {
+      "url": "https://x.com/Alibaba_Qwen/status/2100785962414702599",
+      "utc": "2026-09-18T03:16:18.000Z",
+      "local": "Friday 18 Sept, 11:16",
+      "models": [
+        "qwen3-8-omni-flash"
+      ]
+    }
+  ],
+  "method": {
+    "timing_sample": "Distinct official Alibaba_Qwen launch posts with exact timestamps; shared batch posts count once.",
+    "excluded_from_timing": [
+      "Previews",
+      "Dated snapshot updates",
+      "Later platform rollouts and promotional replies",
+      "Date-only records and approximate dashboard display times"
+    ],
+    "scope": "Language, reasoning, coding, and general multimodal models tracked in this project.",
+    "family_date_basis": "Selected main launch dates from official articles, repository news, and dated release logs; separate from X posting dates.",
+    "flash_gap_basis": "Calendar days from the selected main launch to the dated API or weight milestone identified in the Markdown report."
+  },
+  "family_launches": [
+    {
+      "family": "3.5",
+      "main_launch": "2026-02-16",
+      "first": "397B-A17B open model and Plus"
+    },
+    {
+      "family": "3.6",
+      "main_launch": "2026-04-02",
+      "first": "Plus"
+    },
+    {
+      "family": "3.7",
+      "main_launch": "2026-05-20",
+      "first": "Max"
+    },
+    {
+      "family": "3.8",
+      "main_launch": "2026-08-03",
+      "first": "Max"
+    }
+  ]
+}

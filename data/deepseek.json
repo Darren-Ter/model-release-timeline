@@ -1,8 +1,25 @@
 {
   "title": "DeepSeek model releases",
-  "researched_on": "2026-10-12",
+  "researched_on": "2026-10-17",
   "timezone": "UTC+08:00",
   "models": [
+    {
+      "id": "deepseek-v4-1-flash-1017",
+      "company": "DeepSeek",
+      "name": "DeepSeek-V4.1-Flash-1017",
+      "aliases": ["deepseek/deepseek-v4.1-flash-1017", "DeepSeek V4.1 Flash 1017"],
+      "release_kind": "Dated update",
+      "description": "V4.1 Flash update improving coding, reasoning, and agent tasks while reducing task runtime and output length.",
+      "release_note_url": "https://api-docs.deepseek.com/news/news261017/",
+      "documentation_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "announcement_x_url": "https://x.com/deepseek_ai/status/2111375640717033777",
+      "channels": ["DeepSeek API", "DeepSeek Web", "DeepSeek App", "Open weights"],
+      "notes": "The October 17 changelog identifies this named update separately from the September 10 V4.1-Flash release. The API alias deepseek-flash now serves it; the calling method and pricing are unchanged. The launch article also links the published weights. The official X announcement was posted at 2026-10-17 16:35:54 UTC+8; this does not establish an exact first-access time. Search & Fetch APIs announced alongside it are features, not additional model releases.",
+      "events": [
+        { "type": "announcement", "source_date": "2026-10-17", "source_url": "https://api-docs.deepseek.com/news/news261017/", "precision": "date_only", "channels": ["DeepSeek API", "DeepSeek Web", "DeepSeek App", "Open weights"] },
+        { "type": "availability", "source_date": "2026-10-17", "source_url": "https://api-docs.deepseek.com/news/news261017/", "precision": "date_only", "timestamp_basis": "Official launch article and changelog date; exact first-access time not established.", "channels": ["DeepSeek API", "DeepSeek Web", "DeepSeek App", "Open weights"], "is_first_availability": true }
+      ]
+    },
     {
       "id": "deepseek-v2",
       "company": "DeepSeek",

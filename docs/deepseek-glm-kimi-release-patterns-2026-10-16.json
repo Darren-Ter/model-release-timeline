@@ -1,0 +1,350 @@
+{
+  "checked_on": "2026-10-16",
+  "timezone": "UTC+08:00",
+  "method": "X first-party syndication JSON verified author, post ID, text identifying a launch, and UTC creation time. One qualifying launch post per model/family in this sample; shared launches counted once. Prefer earlier qualifying access announcement when found, including Coding Plan. Not a census or proof of exact first availability.",
+  "records": [
+    {
+      "lab": "DeepSeek",
+      "model": "DeepSeek-V3",
+      "source_url": "https://x.com/deepseek_ai/status/1872242657348710721",
+      "author": "deepseek_ai",
+      "datetime_utc": "2024-12-26T11:26:48+00:00",
+      "datetime_utc8": "2024-12-26T19:26:48+08:00",
+      "weekday_utc8": "Thursday",
+      "minutes_utc8": 1166
+    },
+    {
+      "lab": "DeepSeek",
+      "model": "DeepSeek-R1",
+      "source_url": "https://x.com/deepseek_ai/status/1881318130334814301",
+      "author": "deepseek_ai",
+      "datetime_utc": "2025-01-20T12:29:30+00:00",
+      "datetime_utc8": "2025-01-20T20:29:30+08:00",
+      "weekday_utc8": "Monday",
+      "minutes_utc8": 1229
+    },
+    {
+      "lab": "DeepSeek",
+      "model": "DeepSeek-V3-0324",
+      "source_url": "https://x.com/deepseek_ai/status/1904526863604883661",
+      "author": "deepseek_ai",
+      "datetime_utc": "2025-03-25T13:32:43+00:00",
+      "datetime_utc8": "2025-03-25T21:32:43+08:00",
+      "weekday_utc8": "Tuesday",
+      "minutes_utc8": 1292
+    },
+    {
+      "lab": "DeepSeek",
+      "model": "DeepSeek-R1-0528",
+      "source_url": "https://x.com/deepseek_ai/status/1928061589107900779",
+      "author": "deepseek_ai",
+      "datetime_utc": "2025-05-29T12:11:19+00:00",
+      "datetime_utc8": "2025-05-29T20:11:19+08:00",
+      "weekday_utc8": "Thursday",
+      "minutes_utc8": 1211
+    },
+    {
+      "lab": "DeepSeek",
+      "model": "DeepSeek-V3.1",
+      "source_url": "https://x.com/deepseek_ai/status/1958417062008918312",
+      "author": "deepseek_ai",
+      "datetime_utc": "2025-08-21T06:33:07+00:00",
+      "datetime_utc8": "2025-08-21T14:33:07+08:00",
+      "weekday_utc8": "Thursday",
+      "minutes_utc8": 873
+    },
+    {
+      "lab": "DeepSeek",
+      "model": "DeepSeek-V3.1-Terminus",
+      "source_url": "https://x.com/deepseek_ai/status/1970117808035074215",
+      "author": "deepseek_ai",
+      "datetime_utc": "2025-09-22T13:27:43+00:00",
+      "datetime_utc8": "2025-09-22T21:27:43+08:00",
+      "weekday_utc8": "Monday",
+      "minutes_utc8": 1287
+    },
+    {
+      "lab": "DeepSeek",
+      "model": "DeepSeek-V3.2-Exp",
+      "source_url": "https://x.com/deepseek_ai/status/1972604768309871061",
+      "author": "deepseek_ai",
+      "datetime_utc": "2025-09-29T10:10:00+00:00",
+      "datetime_utc8": "2025-09-29T18:10:00+08:00",
+      "weekday_utc8": "Monday",
+      "minutes_utc8": 1090
+    },
+    {
+      "lab": "DeepSeek",
+      "model": "DeepSeek-V3.2 / Speciale",
+      "source_url": "https://x.com/deepseek_ai/status/1995452641430651132",
+      "author": "deepseek_ai",
+      "datetime_utc": "2025-12-01T11:19:18+00:00",
+      "datetime_utc8": "2025-12-01T19:19:18+08:00",
+      "weekday_utc8": "Monday",
+      "minutes_utc8": 1159
+    },
+    {
+      "lab": "DeepSeek",
+      "model": "DeepSeek-V4-Pro / Flash Preview",
+      "source_url": "https://x.com/deepseek_ai/status/2047516922263285776",
+      "author": "deepseek_ai",
+      "datetime_utc": "2026-04-24T03:24:09+00:00",
+      "datetime_utc8": "2026-04-24T11:24:09+08:00",
+      "weekday_utc8": "Friday",
+      "minutes_utc8": 684
+    },
+    {
+      "lab": "DeepSeek",
+      "model": "DeepSeek-V4-Flash-Vision-Exp",
+      "source_url": "https://x.com/deepseek_ai/status/2090730032574631962",
+      "author": "deepseek_ai",
+      "datetime_utc": "2026-08-21T09:17:38+00:00",
+      "datetime_utc8": "2026-08-21T17:17:38+08:00",
+      "weekday_utc8": "Friday",
+      "minutes_utc8": 1037
+    },
+    {
+      "lab": "DeepSeek",
+      "model": "DeepSeek-V4.1-Flash",
+      "source_url": "https://x.com/deepseek_ai/status/2097930608790167907",
+      "author": "deepseek_ai",
+      "datetime_utc": "2026-09-10T06:10:09+00:00",
+      "datetime_utc8": "2026-09-10T14:10:09+08:00",
+      "weekday_utc8": "Thursday",
+      "minutes_utc8": 850
+    },
+    {
+      "lab": "GLM",
+      "model": "GLM-4.6",
+      "source_url": "https://x.com/Zai_org/status/1973034639708344767",
+      "author": "Zai_org",
+      "datetime_utc": "2025-09-30T14:38:09+00:00",
+      "datetime_utc8": "2025-09-30T22:38:09+08:00",
+      "weekday_utc8": "Tuesday",
+      "minutes_utc8": 1358
+    },
+    {
+      "lab": "GLM",
+      "model": "GLM-4.7",
+      "source_url": "https://x.com/Zai_org/status/2003156119087382683",
+      "author": "Zai_org",
+      "datetime_utc": "2025-12-22T17:30:10+00:00",
+      "datetime_utc8": "2025-12-23T01:30:10+08:00",
+      "weekday_utc8": "Tuesday",
+      "minutes_utc8": 90
+    },
+    {
+      "lab": "GLM",
+      "model": "GLM-4.7-Flash",
+      "source_url": "https://x.com/Zai_org/status/2013261304060866758",
+      "author": "Zai_org",
+      "datetime_utc": "2026-01-19T14:44:34+00:00",
+      "datetime_utc8": "2026-01-19T22:44:34+08:00",
+      "weekday_utc8": "Monday",
+      "minutes_utc8": 1364
+    },
+    {
+      "lab": "GLM",
+      "model": "GLM-5",
+      "source_url": "https://x.com/Zai_org/status/2021638634739527773",
+      "author": "Zai_org",
+      "datetime_utc": "2026-02-11T17:33:05+00:00",
+      "datetime_utc8": "2026-02-12T01:33:05+08:00",
+      "weekday_utc8": "Thursday",
+      "minutes_utc8": 93
+    },
+    {
+      "lab": "GLM",
+      "model": "GLM-5.1 Coding Plan",
+      "source_url": "https://x.com/Zai_org/status/2037490078126084514",
+      "author": "Zai_org",
+      "datetime_utc": "2026-03-27T11:21:04+00:00",
+      "datetime_utc8": "2026-03-27T19:21:04+08:00",
+      "weekday_utc8": "Friday",
+      "minutes_utc8": 1161
+    },
+    {
+      "lab": "GLM",
+      "model": "GLM-5.2 Coding Plan",
+      "source_url": "https://x.com/Zai_org/status/2065704919299235870",
+      "author": "Zai_org",
+      "datetime_utc": "2026-06-13T07:56:46+00:00",
+      "datetime_utc8": "2026-06-13T15:56:46+08:00",
+      "weekday_utc8": "Saturday",
+      "minutes_utc8": 956
+    },
+    {
+      "lab": "GLM",
+      "model": "GLM-5.3",
+      "source_url": "https://x.com/Zai_org/status/2088132965922476159",
+      "author": "Zai_org",
+      "datetime_utc": "2026-08-14T05:17:49+00:00",
+      "datetime_utc8": "2026-08-14T13:17:49+08:00",
+      "weekday_utc8": "Friday",
+      "minutes_utc8": 797
+    },
+    {
+      "lab": "GLM",
+      "model": "GLM-5.3-Flash",
+      "source_url": "https://x.com/Zai_org/status/2092616204787626030",
+      "author": "Zai_org",
+      "datetime_utc": "2026-08-26T14:12:36+00:00",
+      "datetime_utc8": "2026-08-26T22:12:36+08:00",
+      "weekday_utc8": "Wednesday",
+      "minutes_utc8": 1332
+    },
+    {
+      "lab": "Kimi",
+      "model": "Kimi k1.5 research introduction",
+      "source_url": "https://x.com/Kimi_Moonshot/status/1881332472748851259",
+      "author": "Kimi_Moonshot",
+      "datetime_utc": "2025-01-20T13:26:29+00:00",
+      "datetime_utc8": "2025-01-20T21:26:29+08:00",
+      "weekday_utc8": "Monday",
+      "minutes_utc8": 1286
+    },
+    {
+      "lab": "Kimi",
+      "model": "Kimi K2",
+      "source_url": "https://x.com/Kimi_Moonshot/status/1943687594560332025",
+      "author": "Kimi_Moonshot",
+      "datetime_utc": "2025-07-11T15:03:29+00:00",
+      "datetime_utc8": "2025-07-11T23:03:29+08:00",
+      "weekday_utc8": "Friday",
+      "minutes_utc8": 1383
+    },
+    {
+      "lab": "Kimi",
+      "model": "Kimi K2-0905",
+      "source_url": "https://x.com/Kimi_Moonshot/status/1963802687230947698",
+      "author": "Kimi_Moonshot",
+      "datetime_utc": "2025-09-05T03:13:40+00:00",
+      "datetime_utc8": "2025-09-05T11:13:40+08:00",
+      "weekday_utc8": "Friday",
+      "minutes_utc8": 673
+    },
+    {
+      "lab": "Kimi",
+      "model": "Kimi K2 Thinking",
+      "source_url": "https://x.com/Kimi_Moonshot/status/1986449512538513505",
+      "author": "Kimi_Moonshot",
+      "datetime_utc": "2025-11-06T15:04:04+00:00",
+      "datetime_utc8": "2025-11-06T23:04:04+08:00",
+      "weekday_utc8": "Thursday",
+      "minutes_utc8": 1384
+    },
+    {
+      "lab": "Kimi",
+      "model": "Kimi K2.5",
+      "source_url": "https://x.com/Kimi_Moonshot/status/2016024049869324599",
+      "author": "Kimi_Moonshot",
+      "datetime_utc": "2026-01-27T05:42:44+00:00",
+      "datetime_utc8": "2026-01-27T13:42:44+08:00",
+      "weekday_utc8": "Tuesday",
+      "minutes_utc8": 822
+    },
+    {
+      "lab": "Kimi",
+      "model": "Kimi K2.6",
+      "source_url": "https://x.com/Kimi_Moonshot/status/2046249571882500354",
+      "author": "Kimi_Moonshot",
+      "datetime_utc": "2026-04-20T15:28:10+00:00",
+      "datetime_utc8": "2026-04-20T23:28:10+08:00",
+      "weekday_utc8": "Monday",
+      "minutes_utc8": 1408
+    },
+    {
+      "lab": "Kimi",
+      "model": "Kimi K2.7 Code",
+      "source_url": "https://x.com/Kimi_Moonshot/status/2065377579130142937",
+      "author": "Kimi_Moonshot",
+      "datetime_utc": "2026-06-12T10:16:02+00:00",
+      "datetime_utc8": "2026-06-12T18:16:02+08:00",
+      "weekday_utc8": "Friday",
+      "minutes_utc8": 1096
+    },
+    {
+      "lab": "Kimi",
+      "model": "Kimi K3",
+      "source_url": "https://x.com/Kimi_Moonshot/status/2077830229968683203",
+      "author": "Kimi_Moonshot",
+      "datetime_utc": "2026-07-16T18:58:25+00:00",
+      "datetime_utc8": "2026-07-17T02:58:25+08:00",
+      "weekday_utc8": "Friday",
+      "minutes_utc8": 178
+    }
+  ],
+  "summaries": {
+    "DeepSeek": {
+      "n": 11,
+      "weekdays": {
+        "Thursday": 4,
+        "Monday": 4,
+        "Tuesday": 1,
+        "Friday": 2
+      },
+      "window_utc8": "18:00–22:00",
+      "in_window": 7,
+      "n_2026": 3,
+      "weekdays_2026": {
+        "Friday": 2,
+        "Thursday": 1
+      },
+      "in_window_2026": 0
+    },
+    "GLM": {
+      "n": 8,
+      "weekdays": {
+        "Tuesday": 2,
+        "Monday": 1,
+        "Thursday": 1,
+        "Friday": 2,
+        "Saturday": 1,
+        "Wednesday": 1
+      },
+      "window_utc8": "22:00–02:00",
+      "in_window": 5,
+      "n_2026": 6,
+      "weekdays_2026": {
+        "Monday": 1,
+        "Thursday": 1,
+        "Friday": 2,
+        "Saturday": 1,
+        "Wednesday": 1
+      },
+      "in_window_2026": 3
+    },
+    "Kimi": {
+      "n": 8,
+      "weekdays": {
+        "Monday": 2,
+        "Friday": 4,
+        "Thursday": 1,
+        "Tuesday": 1
+      },
+      "window_utc8": "21:00–03:00",
+      "in_window": 5,
+      "n_2026": 4,
+      "weekdays_2026": {
+        "Tuesday": 1,
+        "Monday": 1,
+        "Friday": 2
+      },
+      "in_window_2026": 2
+    }
+  },
+  "later_glm_open_weight_announcements": [
+    {
+      "model": "GLM-5.1 open-weight announcement",
+      "source_url": "https://x.com/Zai_org/status/2041550153354519022",
+      "datetime_utc8": "2026-04-08T00:14:21+08:00",
+      "weekday_utc8": "Wednesday"
+    },
+    {
+      "model": "GLM-5.2 open-weight announcement",
+      "source_url": "https://x.com/Zai_org/status/2066938937344495629",
+      "datetime_utc8": "2026-06-17T01:40:19+08:00",
+      "weekday_utc8": "Wednesday"
+    }
+  ]
+}

@@ -40,6 +40,7 @@ export const modelSchema = z.looseObject({
   company: z.string(),
   name: z.string(),
   slug: z.string().nullish(),
+  aliases: z.array(z.string()).nullish(),
   snapshot_ids: z.array(z.string()).nullish(),
   description: z.string().nullish(),
   release_kind: z.string().nullish(),
