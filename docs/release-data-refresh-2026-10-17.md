@@ -46,4 +46,4 @@ No further qualifying release was found in the sources checked. This does not es
 - TypeScript and the production build pass. Vite reports its existing large-chunk advisory.
 - A comparison against the pre-edit files confirms all 271 previous model records are unchanged; only two model records were added.
 - Browser checks of the production-build preview confirm 273 records, the October 17 research date, both searchable additions, DeepSeek's official X time, and Argon's separate September 30 and October 13 availability events.
-- Changes are saved locally. **No production deployment was performed.**
+- The data check was initially saved locally. It was subsequently **published and verified on October 17**; see the [deployment and rollback record](deployment-2026-10-17.md).
