@@ -24,6 +24,8 @@ The October 15, 2026 Qwen audit reconciles all 90 entries in OpenRouter’s Qwen
 
 The [X announcement audit](docs/x-announcement-posts-2026-10-12.md) covers all 27 Claude records and 23 Gemini records, with exact official posts verified for 48 of those releases.
 
+The [October 19 Moonshot X audit](docs/moonshot-x-announcement-audit-2026-10-19.md) adds verified official announcement links for eight of the ten Kimi records, including K2.7 Code. Exact original official posts for Kimi-Dev and K2.8 Preview remain unverified.
+
 The [2026 Qwen release-pattern analysis](docs/qwen-release-patterns-2026.md) records the observed weekdays, announcement hours, family launch order, and follow-up intervals, with the full 14-post source sample and calculation snapshot.
 
 ## Run locally

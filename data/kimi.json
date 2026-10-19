@@ -7,6 +7,7 @@
       "id": "kimi-k1-5",
       "company": "Moonshot AI",
       "name": "Kimi K1.5",
+      "announcement_x_url": "https://x.com/Kimi_Moonshot/status/1881332472748851259",
       "description": "Reasoning model trained with reinforcement learning.",
       "release_note_url": "https://www.kimi.com/en/blog/",
       "events": [
@@ -35,6 +36,7 @@
       "id": "kimi-k2",
       "company": "Moonshot AI",
       "name": "Kimi K2",
+      "announcement_x_url": "https://x.com/Kimi_Moonshot/status/1943687594560332025",
       "description": "Open-weight model for coding and agentic tasks.",
       "release_note_url": "https://www.kimi.com/en/blog/kimi-k2",
       "channels": [
@@ -65,6 +67,7 @@
       "id": "kimi-k2-instruct-0905",
       "company": "Moonshot AI",
       "name": "Kimi-K2-Instruct-0905",
+      "announcement_x_url": "https://x.com/Kimi_Moonshot/status/1963802687230947698",
       "release_kind": "Dated update",
       "description": "K2 update with stronger agentic coding and 256K context.",
       "release_note_url": "https://www.kimi.com/en/blog/",
@@ -80,6 +83,7 @@
       "id": "kimi-k2-thinking",
       "company": "Moonshot AI",
       "name": "Kimi K2 Thinking",
+      "announcement_x_url": "https://x.com/Kimi_Moonshot/status/1986449512538513505",
       "description": "Reasoning-focused K2 model for multi-step agent work.",
       "release_note_url": "https://www.kimi.com/en/blog/kimi-k2-thinking",
       "events": [
@@ -108,6 +112,7 @@
       "id": "kimi-k2-5",
       "company": "Moonshot AI",
       "name": "Kimi K2.5",
+      "announcement_x_url": "https://x.com/Kimi_Moonshot/status/2016024049869324599",
       "description": "General-purpose multimodal model for reasoning, coding, and agents.",
       "release_note_url": "https://www.kimi.com/en/blog/kimi-k2-5",
       "channels": [
@@ -138,6 +143,7 @@
       "id": "kimi-k2-6",
       "company": "Moonshot AI",
       "name": "Kimi K2.6",
+      "announcement_x_url": "https://x.com/Kimi_Moonshot/status/2046249571882500354",
       "description": "K2 series update for reasoning and agentic work.",
       "release_note_url": "https://www.kimi.com/en/blog/kimi-k2-6",
       "events": [
@@ -170,6 +176,7 @@
       "id": "kimi-k2-7-code",
       "company": "Moonshot AI",
       "name": "Kimi K2.7 Code",
+      "announcement_x_url": "https://x.com/Kimi_Moonshot/status/2065377579130142937",
       "description": "Open coding model for Kimi Code with thinking enabled.",
       "release_note_url": "https://www.kimi.com/code/docs/en/kimi-code/whats-new.html",
       "channels": [
@@ -198,6 +205,7 @@
       "id": "kimi-k3",
       "company": "Moonshot AI",
       "name": "Kimi K3",
+      "announcement_x_url": "https://x.com/Kimi_Moonshot/status/2077830229968683203",
       "description": "Flagship reasoning and coding model with a 1M-token context window.",
       "release_note_url": "https://www.kimi.com/en/blog/kimi-k3",
       "channels": [

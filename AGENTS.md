@@ -8,6 +8,15 @@
 - If this approved login is unavailable, ask the user to log in with it. Do not invent an alternative identity or store tokens in this repository.
 - `npm run deploy` checks the approved Cloudflare identity before tests, build, and publication. Do not bypass that check.
 
+## Release research and X announcement posts
+
+- Use the installed **Grok CLI** to find exact official X announcement posts when adding or auditing releases. A failed browser fetch or web search does not establish that a post is missing.
+- Check Grok's active identity, profile/configuration, and linked services before authenticated use; never print authentication files or tokens. Follow the account restrictions above.
+- Keep research read-only, with only web tools enabled and subagent spawning disabled: `grok --no-subagents --tools web_search,web_fetch --max-turns 8 -p '<research query>'`.
+- Independently verify each candidate's exact status ID, official author, launch-identifying content, and creation timestamp directly on X or through X's first-party public syndication response. Grok output and search snippets alone are discovery evidence.
+- Save verified permalinks in the corresponding model's `announcement_x_url` in `data/`; recording them only in a research document does not enable the timeline's X links. Record the evidence and any unresolved searches in `docs/`.
+- Prefer the original announcement for the exact model or dated update. Do not substitute a profile, teaser, later promotion, or unrelated thread reply. Keep announcement posting time separate from first availability and preserve independently sourced event dates.
+
 ## Production configuration
 
 - URL: https://aigenius.media/model-timeline/ (the path without the final slash redirects here, preserving query parameters).
